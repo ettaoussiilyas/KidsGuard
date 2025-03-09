@@ -19,15 +19,16 @@
 </head>
 <body class="antialiased bg-white">
     <!-- header -->
-    <x-header />
+    @include('partials.headers.homeHeader')
+    
     
     <!-- main -->
     <main>
-        
+        @include('guest.home')
     </main>
     
     <!-- footer -->
-    <x-footer />
+    @include('partials.footers.homeFooter')
     
     <!-- script -->
     <script src="{{ asset('js/app.js') }}"></script>
