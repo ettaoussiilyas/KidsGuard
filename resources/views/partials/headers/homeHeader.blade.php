@@ -12,12 +12,12 @@
                 <!-- Buttons -->
                 <div class="hidden md:flex space-x-4">
                     <!-- Login Button -->
-                    <a href="#" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200">
+                    <a href="{{ route('login.show') }}" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200">
                         <span class="font-['Open_Sans'] font-semibold">Login</span>
                     </a>
 
                     <!-- Register Button -->
-                    <a href="#" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200">
+                    <a href="{{ route('register.show') }}" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200">
                         <span class="font-['Open_Sans'] font-semibold">Register</span>
                     </a>
                 </div>
@@ -46,10 +46,10 @@
             <nav class="flex flex-col space-y-4 mt-2">
                 @guest
                     <div class="flex flex-col space-y-3 pt-2">
-                        <a href="#" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200 w-full">
+                        <a href="{{ route('login.show') }}" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200 w-full">
                             <span class="font-['Open_Sans'] font-semibold">Login</span>
                         </a>
-                        <a href="#" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200 w-full">
+                        <a href="{{ route('register.show') }}" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200 w-full">
                             <span class="font-['Open_Sans'] font-semibold">Register</span>
                         </a>
                     </div>
