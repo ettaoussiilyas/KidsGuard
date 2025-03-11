@@ -15,6 +15,8 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
+        // dd($request);
+
         $credentials = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
@@ -23,7 +25,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials, $request->filled('remember'))) {
             $request->session()->regenerate();
 
-            return redirect()->route('dashboard');
+            return redirect()->route('parent.space');
         }
 
         return back()->withErrors([
