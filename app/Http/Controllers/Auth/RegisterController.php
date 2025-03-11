@@ -20,11 +20,11 @@ class RegisterController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:120|unique:users',
+            'email' => 'required|string|email|max:60|unique:users',
             'password' => 'required|string|min:8|confirmed',
         ]);
 
-        User::craete([
+        User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
@@ -32,7 +32,7 @@ class RegisterController extends Controller
 
         Auth::attempt($request->only('email', 'password'));
 
-        return redirect()->route('login');
+        return redirect()->route('parent.space');
     }
 
 

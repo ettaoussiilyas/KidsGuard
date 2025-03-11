@@ -25,5 +25,5 @@ Route::middleware('auth')->group(function () {
     // Logout Route
     Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
     // Dashboard Route
-    Route::get('/dashboard', [ParentController::class, 'index'])->name('dashboard')->middleware('auth');
+    Route::get('/guardian', [ParentController::class, 'index'])->name('parent.space')->middleware('auth');
 });

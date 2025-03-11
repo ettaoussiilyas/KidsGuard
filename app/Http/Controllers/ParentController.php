@@ -6,8 +6,8 @@ class ParentController extends Controller
 {
     
 
-    public function showParnerDashboard()
+    public function index()
     {
-        return view('dashboard');
+        return view('parent.index');
     }
 }
