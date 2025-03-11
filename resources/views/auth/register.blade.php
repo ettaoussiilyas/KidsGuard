@@ -53,7 +53,7 @@
                 <input id="password" type="password" class="pl-10 w-full rounded-xl border-2 border-gray-300 py-3 px-4 text-gray-700 focus:outline-none focus:border-[#4A90E2] focus:ring-2 focus:ring-[#4A90E2]/20 transition duration-200 @error('password') border-[#FF6B6B] @enderror" name="password"  autocomplete="new-password" placeholder="••••••••">
             </div>
             @error('password')
-                <p class="text-[#FF6B6B] text-xs italic mt-1">{{ $message }}</p>
+                <p class="text-red text-sm font-semibold tracking-wide mt-2 mb-1 px-2">{{ $message }}</p>
             @enderror
         </div>
 
