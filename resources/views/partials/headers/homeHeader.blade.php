@@ -27,7 +27,7 @@
             @auth
                 <!-- Login Button -->
                 <div class="flex flex-col space-y-3 pt-2">
-                    <a href="{{ route('dashbourd') }}" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200 w-full">
+                    <a href="{{ route('parent.space') }}" class="bg-[#FFD600] text-[#4A90E2] px-6 py-2 rounded-xl font-medium shadow-md flex items-center justify-center hover:bg-opacity-90 transition duration-200 w-full">
                         <span class="font-['Open_Sans'] font-semibold">Dashboard</span>
                     </a>
                 </div>
