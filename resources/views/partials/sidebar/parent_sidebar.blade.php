@@ -1,12 +1,11 @@
 <div class="fixed left-0 top-0 h-full w-20 md:w-64 bg-[#9B59B6] text-white flex flex-col justify-between transition-all duration-300 shadow-lg z-20">
     <!-- Logo and Brand -->
+        <!-- Logo and Brand -->
     <div class="p-4 flex flex-col items-center">
-        <div class="relative w-16 h-16 md:w-24 md:h-24 mb-4">
-            <div class="absolute inset-0 bg-white rounded-full opacity-20 animate-pulse"></div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2302/2302834.png" alt="KidsGuard" class="w-full h-full relative z-10">
+        <div class="w-16 h-16 md:w-auto md:h-auto mb-2">
+            <img src="{{ asset('images/logo.png') }}" alt="KidsGuard" class="w-full h-full">
         </div>
-        <h1 class="hidden md:block text-xl font-['Baloo_2'] font-bold text-center">KidsGuard</h1>
-        <div class="hidden md:block w-16 h-1 bg-[#FFD600] rounded-full mt-2 mb-6"></div>
+        <div class="hidden md:block w-full h-1 bg-[#FFD600] rounded-none mt-2 mb-6"></div>
     </div>
     
     <!-- Navigation Menu -->
@@ -26,7 +25,7 @@
             
             <!-- Kids Profiles -->
             <li>
-                <a href="{{ route('#') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('kids.profiles') ? 'bg-white/20' : '' }}">
+                <a href="" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('kids.profiles') ? 'bg-white/20' : '' }}">
                     <div class="w-10 h-10 flex items-center justify-center bg-[#FFD600] rounded-full mb-1 md:mb-0 md:mr-3">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
@@ -81,7 +80,9 @@
             <button type="submit" class="w-full flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 text-white">
                 <div class="w-10 h-10 flex items-center justify-center bg-[#FF6B6B] rounded-full mb-1 md:mb-0 md:mr-3">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                            <a href="{{ route('logout') }}"></a>
+                        </path>
                     </svg>
                 </div>
                 <span class="text-xs md:text-base font-medium">Logout</span>
