@@ -1,17 +1,26 @@
 <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-10 ml-20 md:ml-64">
     <div class="flex items-center justify-between px-6 py-4">
         <!-- Left side: Page title and breadcrumbs -->
-        <div>
-            <h1 class="text-2xl font-['Baloo_2'] font-bold text-[#4A90E2]">
-                @yield('page_title', 'Dashboard')
-            </h1>
-            <div class="flex items-center text-sm text-gray-500">
-                <a href="#" class="hover:text-[#9B59B6] transition-colors">Home</a>
-                @hasSection('breadcrumb')
-                    <span class="mx-2">/</span>
-                    @yield('breadcrumb')
-                @endif
-            </div>
+
+        
+        <!-- Toggle Switch -->
+        <div class="flex flex-col items-center">
+            <form action="{{ route('kids.space') }}" method="POST" class="inline">
+                @csrf
+                <button type="submit" id="mode-toggle" class="relative inline-flex items-center px-5 py-2 rounded-full bg-gradient-to-r from-[#9B59B6] to-[#4A90E2] text-white font-medium shadow-md hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none">
+                    <span class="mr-2 text-base">Kid Mode</span>
+                    <div class="w-10 h-6 bg-white/90 rounded-full p-1 flex items-center">
+                        <div class="toggle-circle w-4 h-4 bg-[#FFD600] rounded-full shadow-md transform transition-transform duration-300"></div>
+                    </div>
+                </button>
+            </form>
+            <span class="text-xs mt-1 text-gray-600">
+                <svg class="w-4 h-4 inline-block text-[#9B59B6]" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                </svg>
+                One-click access to Kid's space
+            </span>
         </div>
         
         <!-- Right side: Notifications and profile -->

@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ParentController;
+use App\Http\Controllers\KidController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -26,4 +27,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
     // Dashboard Route
     Route::get('/guardian', [ParentController::class, 'index'])->name('parent.space')->middleware('auth');
+    //Switch to Kid Mode
+    Route::post('/hero', [KidController::class, 'index'])->name('kids.space');
 });
+
