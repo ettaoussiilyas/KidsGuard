@@ -31,3 +31,24 @@ Route::middleware('auth')->group(function () {
     Route::post('/hero', [KidController::class, 'index'])->name('kids.space');
 });
 
+// Admin routes
+Route::middleware('role:admin')->group(function () {
+    Route::get('/admin/dashboard', function () {
+        return view('admin.dashboard');
+    });
+});
+
+// Parent routes
+Route::middleware('role:parent')->group(function () {
+    Route::get('/parent/dashboard', function () {
+        return view('parent.dashboard');
+    });
+});
+
+// Child routes
+Route::middleware('role:child')->group(function () {
+    Route::get('/child/dashboard', function () {
+        return view('child.dashboard');
+    });
+});
+
