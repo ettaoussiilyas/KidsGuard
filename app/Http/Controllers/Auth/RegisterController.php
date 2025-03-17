@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
+use App\Models\Role;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -24,16 +25,20 @@ class RegisterController extends Controller
             'password' => 'required|string|min:8|confirmed',
         ]);
 
-        User::create([
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
 
-        Auth::attempt($request->only('email', 'password'));
+        // Assign parent role to newly registered user
+        $parentRole = Role::where('slug', 'parent')->first();
+        if ($parentRole) {
+            $user->roles()->attach($parentRole->id);
+        }
 
+        Auth::attempt($request->only('email', 'password'));
+        
         return redirect()->route('parent.space');
     }
-
-
 }

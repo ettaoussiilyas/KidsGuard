@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\User;
 
 class CheckRole
 {
@@ -22,6 +23,7 @@ class CheckRole
 
         
         // Check if user has any of the required roles
+
         $hasRole = DB::table('role_user')
             ->join('roles', 'role_user.role_id', '=', 'roles.id')
             ->where('role_user.user_id', $userId)
