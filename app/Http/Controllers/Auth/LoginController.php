@@ -25,11 +25,11 @@ class LoginController extends Controller
         if (Auth::attempt($credentials, $request->filled('remember'))) {
             $request->session()->regenerate();
 
-            return redirect()->route('parent.dashboard');
+            return redirect()->route('parent.space');
         }
 
         return back()->withErrors([
-            'email' => 'This email allraedy existed',
+            'email' => 'Email or password is incorrect',
         ])->onlyInput('email');
     }
 }
