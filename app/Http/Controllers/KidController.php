@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
+use App\Models\Role;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class KidController extends Controller
@@ -11,7 +13,19 @@ class KidController extends Controller
      */
     public function index()
     {
-        // dd('hi');
+        $user = Auth::user();
+        
+        $childRole = Role::where('slug', 'child')->first();
+        
+        DB::table('role_user')->updateOrInsert(
+            ['user_id' => $user->id],
+            [
+                'role_id' => $childRole->id,
+                'updated_at' => now()
+                // 'created_at' => now(),
+            ]
+        );
+        
         return view('kid.index');
     }
 

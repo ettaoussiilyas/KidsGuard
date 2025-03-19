@@ -65,8 +65,8 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
 });
 
 // Child routes
-// Route::middleware(['auth', 'role:child'])->group(function () {
-Route::middleware(['auth'])->group(function () {
+// Route::middleware(['auth'])->group(function () {
+    Route::middleware(['auth', 'role:child'])->group(function () {
 
 
     Route::post('/gurdian', [ParentController::class, 'switchGuardian'])->name('switch-to-guardian');
