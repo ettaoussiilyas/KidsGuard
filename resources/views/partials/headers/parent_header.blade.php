@@ -5,7 +5,7 @@
         
         <!-- Toggle Switch -->
         <div class="flex flex-col items-center">
-            <form action="{{ route('kids.space') }}" method="POST" class="inline">
+            <form action="{{ route('switch-to-kid') }}" method="POST" class="inline">
                 @csrf
                 <button type="submit" id="mode-toggle" class="relative inline-flex items-center px-5 py-2 rounded-full bg-gradient-to-r from-[#9B59B6] to-[#4A90E2] text-white font-medium shadow-md hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none">
                     <span class="mr-2 text-base">Kid Mode</span>
