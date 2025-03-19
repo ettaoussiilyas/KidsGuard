@@ -31,8 +31,8 @@ class ParentController extends Controller
             // dd('true');
             return redirect()->route('parent.space');
         }else {
-
             return back()->with('error', 'Incorrect password. Access denied.');
+                        //  ->with('flash_duration', 2000);
         }
     }
 }

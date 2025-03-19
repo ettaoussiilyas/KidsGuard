@@ -21,7 +21,7 @@
 </head>
 <body class="font-['Baloo_2'] bg-[#9B59B6] min-h-screen">
 
-    {{-- @include('partials.sidebar.kid_sidebar') --}}
+    @include('partials.messages.flash-messages')
     
     @include('partials.headers.kid_header')
     
