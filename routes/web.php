@@ -66,11 +66,12 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
 
 // Child routes
 // Route::middleware(['auth'])->group(function () {
-    Route::middleware(['auth', 'role:child'])->group(function () {
+Route::middleware(['auth', 'role:child'])->group(function () {
 
 
     Route::post('/gurdian', [ParentController::class, 'switchGuardian'])->name('switch-to-guardian');
-    
+    Route::get('/kids', [KidController::class, 'index'])->name('switch-to-kid'); // for redirect
+
     // Route::post('/space', [KidController::class, 'index'])->name('space');
     
     // Content access

@@ -29,11 +29,13 @@ class CheckRole
             ->where('role_user.user_id', $userId)
             ->whereIn('roles.slug', $roles)
             ->exists();
+
             
         // Deny access if user doesn't have any required role
         if (!$hasRole) {
             abort(403, 'Unauthorized action. Not for This Role');
         }
+
 
         return $next($request);
     }
