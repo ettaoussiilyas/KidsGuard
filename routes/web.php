@@ -51,7 +51,6 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     Route::get('/guardian', [ParentController::class, 'index'])->name('parent.space');
     
     Route::post('/kids', [KidController::class, 'index'])->name('switch-to-kid'); //from dash prent header to kids
-    Route::get('/kids', [KidController::class, 'index'])->name('switch-to-kid'); // for redirect
     
     // Parent settings
     Route::get('/settings', function () {
@@ -70,9 +69,7 @@ Route::middleware(['auth', 'role:child'])->group(function () {
 
 
     Route::post('/gurdian', [ParentController::class, 'switchGuardian'])->name('switch-to-guardian');
-    Route::get('/kids', [KidController::class, 'index'])->name('switch-to-kid'); // for redirect
-
-    // Route::post('/space', [KidController::class, 'index'])->name('space');
+    Route::get('/kids', [KidController::class, 'index'])->name('switch-to-kid');
     
     // Content access
     Route::get('/content', function () {
