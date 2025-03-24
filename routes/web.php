@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\ParentController;
 use App\Http\Controllers\KidController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChildProfileController;
 
 // Public routes
 Route::get('/', function () {
@@ -48,10 +49,15 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
 
 // Parent routes
 Route::middleware(['auth', 'role:parent'])->group(function () {
+    // Parent dashboard
     Route::get('/guardian', [ParentController::class, 'index'])->name('parent.space');
-    
+    //Switch to kid
     Route::post('/kids', [KidController::class, 'index'])->name('switch-to-kid'); //from dash prent header to kids
-    
+    // Pereferences of Kids Profiles
+    Route::get('/kids/preferences', [KidController::class, 'preferences'])->name('kids.preferences');
+    Route::get('/kids/{kid}/preferences', [KidController::class, 'preferences'])->name('kids.preferences.show');
+    Route::post('/kids/{kid}/preferences', [KidController::class, 'updatePreferences'])->name('kids.preferences.update');
+
     // Parent settings
     Route::get('/settings', function () {
         return view('parent.settings');
@@ -61,6 +67,16 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     Route::get('/reports', function () {
         return view('parent.reports');
     })->name('reports');
+
+    // Profiles
+    Route::resource('child-profiles', ChildProfileController::class)->names([
+        'index' => 'parent.child-profiles.index',
+        'create' => 'parent.child-profiles.create',
+        'store' => 'parent.child-profiles.store',
+        'edit' => 'parent.child-profiles.edit',
+        'update' => 'parent.child-profiles.update',
+        'destroy' => 'parent.child-profiles.destroy',
+    ]);
 });
 
 // Child routes

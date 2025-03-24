@@ -113,4 +113,15 @@ class User extends Authenticatable
         $this->roles()->detach($role);
         return $this;
     }
+
+    // Add this method to your User model class
+
+    /**
+     * Get the child profiles for the user.
+     */
+    public function childProfiles()
+    {
+        return $this->hasMany(ChildProfile::class, 'parent_id');
+    }
+
 }
