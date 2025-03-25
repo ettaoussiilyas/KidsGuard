@@ -26,7 +26,7 @@ class ChildProfileController extends Controller
      */
     public function create()
     {
-        return view('parent.child_profiles.create');
+        return view('parent.child-profiles.create');
     }
 
     /**

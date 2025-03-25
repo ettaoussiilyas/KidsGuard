@@ -17,7 +17,7 @@
     
     @stack('styles')
 </head>
-<body class="font-['Quicksand'] bg-gray-50 min-h-screen">
+<body class="font-['Quicksand'] bg-gray-50 min-h-screen flex flex-col">
     <!-- Include the sidebar -->
     @include('partials.sidebar.parent_sidebar')
     
@@ -25,7 +25,7 @@
     @include('partials.headers.parent_header')
     
     <!-- Main content -->
-    <main class="pt-24 pb-8 px-4 md:px-8 ml-20 md:ml-64">
+    <main class="pt-24 pb-8 px-4 md:px-8 ml-20 md:ml-64 flex-grow">
         <div class="max-w-7xl mx-auto">
             @if (session('success'))
                 <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6 rounded-md" role="alert">
@@ -63,7 +63,7 @@
     </main>
     
     <!-- Footer -->
-    <footer class="bg-white py-4 px-6 ml-20 md:ml-64 border-t border-gray-200">
+    <footer class="bg-white py-4 px-6 ml-20 md:ml-64 border-t border-gray-200 mt-auto">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="text-sm text-gray-500 mb-2 md:mb-0">
                 &copy; {{ date('Y') }} KidsGuard. All rights reserved.
