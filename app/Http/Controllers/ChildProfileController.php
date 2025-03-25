@@ -26,7 +26,7 @@ class ChildProfileController extends Controller
      */
     public function create()
     {
-        return view('parent.child-profiles.create');
+        return view('parent.child_profiles.create');
     }
 
     /**
@@ -47,6 +47,9 @@ class ChildProfileController extends Controller
 
         if ($request->hasFile('avatar')) {
             $validated['avatar'] = $request->file('avatar')->store('avatars', 'public');
+        }else {
+            $defaultAvatar = $validated['gender'] == 'girl' ? 'avatars/girl-default.png' : 'avatars/boy-default.png';
+            $validated['avatar'] = $defaultAvatar;
         }
 
         $validated['parent_id'] = Auth::id();

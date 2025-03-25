@@ -1,40 +1,40 @@
-<div class="fixed left-0 top-0 h-full w-20 md:w-64 bg-[#9B59B6] text-white flex flex-col justify-between transition-all duration-300 shadow-lg z-20">
+<div class="fixed left-0 top-0 h-full w-16 sm:w-20 md:w-64 bg-[#9B59B6] text-white flex flex-col justify-between transition-all duration-300 shadow-lg z-20">
     <!-- Logo and Brand -->
-        <!-- Logo and Brand -->
-    <div class="p-4 flex flex-col items-center">
-        <div class="w-16 h-16 md:w-auto md:h-auto mb-2">
+    <div class="p-3 sm:p-4 flex flex-col items-center">
+        <div class="w-12 h-12 sm:w-16 sm:h-16 md:w-auto md:h-auto mb-2">
             <img src="{{ asset('images/logo.png') }}" alt="KidsGuard" class="w-full h-full">
         </div>
         <div class="hidden md:block w-full h-1 bg-[#FFD600] rounded-none mt-2 mb-6"></div>
     </div>
     
     <!-- Navigation Menu -->
-    <div class="flex-1 overflow-y-auto py-4">
-        <ul class="space-y-2 px-2">
+    <div class="flex-1 overflow-y-auto py-2 sm:py-4">
+        <ul class="space-y-1 sm:space-y-2 px-1 sm:px-2">
             <!-- Dashboard -->
             <li>
-                <a href="{{ route('parent.space') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('parent.space') ? 'bg-white/20' : '' }}">
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#4A90E2] rounded-full mb-1 md:mb-0 md:mr-3">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <a href="{{ route('parent.space') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-2 sm:p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('parent.space') ? 'bg-white/20' : '' }}">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#4A90E2] rounded-full mb-1 md:mb-0 md:mr-3">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
                         </svg>
                     </div>
-                    <span class="text-xs md:text-base font-medium">Dashboard</span>
+                    <span class="text-[10px] sm:text-xs md:text-base font-medium">Dashboard</span>
                 </a>
             </li>
             
             <!-- Kids Profiles -->
             <li>
-                <a href="{{ route('parent.child-profiles.index') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('kids.profiles') ? 'bg-white/20' : '' }}">
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#FFD600] rounded-full mb-1 md:mb-0 md:mr-3">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <a href="{{ route('parent.child-profiles.index') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-2 sm:p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('kids.profiles') ? 'bg-white/20' : '' }}">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#FFD600] rounded-full mb-1 md:mb-0 md:mr-3">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
                         </svg>
                     </div>
-                    <span class="text-xs md:text-base font-medium">Kids Profiles</span>
+                    <span class="text-[10px] sm:text-xs md:text-base font-medium">Kids</span>
                 </a>
             </li>
             
+            <!-- Other menu items with similar changes -->
             <!-- Preferences -->
             <li>
                 <a href="#" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('preferences') ? 'bg-white/20' : '' }}">
@@ -74,18 +74,16 @@
     </div>
     
     <!-- Logout Button -->
-    <div class="p-4">
+    <div class="p-2 sm:p-4">
         <form method="POST" action="{{ route('logout') }}">
             @csrf
-            <button type="submit" class="w-full flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 text-white">
-                <div class="w-10 h-10 flex items-center justify-center bg-[#FF6B6B] rounded-full mb-1 md:mb-0 md:mr-3">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
-                            <a href="{{ route('logout') }}"></a>
-                        </path>
+            <button type="submit" class="w-full flex flex-col md:flex-row items-center justify-center md:justify-start p-2 sm:p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 text-white">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#FF6B6B] rounded-full mb-1 md:mb-0 md:mr-3">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                     </svg>
                 </div>
-                <span class="text-xs md:text-base font-medium">Logout</span>
+                <span class="text-[10px] sm:text-xs md:text-base font-medium">Logout</span>
             </button>
         </form>
     </div>

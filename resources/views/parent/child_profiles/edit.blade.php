@@ -4,8 +4,8 @@
 
 @section('content')
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <div class="bg-indigo-600 px-6 py-4">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden" id="profile-card">
+        <div class="bg-indigo-600 px-6 py-4" id="profile-header">
             <h1 class="text-xl font-bold text-white">Edit Child Profile: {{ $childProfile->name }}</h1>
         </div>
         <div class="p-6">
@@ -14,13 +14,13 @@
                 @method('PUT')
                 
                 <div class="flex justify-center mb-6">
-                    <img src="{{ $childProfile->avatarUrl }}" alt="{{ $childProfile->name }}" class="w-32 h-32 rounded-full object-cover border-4 border-indigo-100 shadow-md">
+                    <img src="{{ $childProfile->avatarUrl }}" alt="{{ $childProfile->name }}" class="w-32 h-32 rounded-full object-cover border-4 border-indigo-100 shadow-md" id="profile-image">
                 </div>
                 
                 <div class="mb-6">
                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Child's Name</label>
                     <input type="text" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 @error('name') border-red-500 @enderror" 
-                        id="name" name="name" value="{{ old('name', $childProfile->name) }}" required>
+                        id="name" name="name" value="{{ old('name', $childProfile->name) }}" >
                     @error('name')
                         <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                     @enderror
@@ -28,7 +28,7 @@
                 
                 <div class="mb-6">
                     <label for="gender" class="block text-sm font-medium text-gray-700 mb-1">Gender</label>
-                    <select name="gender" id="gender" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 @error('gender') border-red-500 @enderror">
+                    <select name="gender" id="gender" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 @error('gender') border-red-500 @enderror" onchange="updateProfileColor()">
                         <option value="">Select gender</option>
                         <option value="boy" {{ old('gender', $childProfile->gender) == 'boy' ? 'selected' : '' }}>Boy</option>
                         <option value="girl" {{ old('gender', $childProfile->gender) == 'girl' ? 'selected' : '' }}>Girl</option>
@@ -102,7 +102,7 @@
                     <a href="{{ route('parent.child-profiles.index') }}" class="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         Cancel
                     </a>
-                    <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="submit-button">
                         Update Profile
                     </button>
                 </div>
@@ -110,4 +110,40 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Function to update the profile card color based on gender selection
+    function updateProfileColor() {
+        const genderSelect = document.getElementById('gender');
+        const profileHeader = document.getElementById('profile-header');
+        const profileCard = document.getElementById('profile-card');
+        const submitButton = document.getElementById('submit-button');
+        const profileImage = document.getElementById('profile-image');
+        
+        if (genderSelect.value === 'girl') {
+            // Pink theme for girls
+            profileHeader.className = 'bg-pink-500 px-6 py-4';
+            profileCard.className = 'bg-white shadow-md rounded-lg overflow-hidden bg-pink-50';
+            submitButton.className = 'inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-pink-500 hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500';
+            profileImage.className = 'w-32 h-32 rounded-full object-cover border-4 border-pink-100 shadow-md';
+        } else if (genderSelect.value === 'boy') {
+            // Blue theme for boys
+            profileHeader.className = 'bg-indigo-600 px-6 py-4';
+            profileCard.className = 'bg-white shadow-md rounded-lg overflow-hidden';
+            submitButton.className = 'inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500';
+            profileImage.className = 'w-32 h-32 rounded-full object-cover border-4 border-indigo-100 shadow-md';
+        } else {
+            // Default theme - purple gradient
+            profileHeader.className = 'bg-gradient-to-r from-indigo-500 to-pink-500 px-6 py-4';
+            profileCard.className = 'bg-white shadow-md rounded-lg overflow-hidden';
+            submitButton.className = 'inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gradient-to-r from-indigo-500 to-pink-500 hover:from-indigo-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500';
+            profileImage.className = 'w-32 h-32 rounded-full object-cover border-4 border-purple-100 shadow-md';
+        }
+    }
+    
+    // Run once on page load to handle pre-selected values
+    document.addEventListener('DOMContentLoaded', function() {
+        updateProfileColor();
+    });
+</script>
 @endsection
