@@ -1,4 +1,4 @@
-<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-10 ml-20 md:ml-64">
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-10 ml-16 sm:ml-20 md:ml-64">
     <div class="flex items-center justify-between px-3 sm:px-6 py-3 sm:py-4">
         <!-- Left side: Page title and breadcrumbs -->
 

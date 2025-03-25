@@ -1,9 +1,11 @@
 <div class="fixed left-0 top-0 h-full w-16 sm:w-20 md:w-64 bg-[#9B59B6] text-white flex flex-col justify-between transition-all duration-300 shadow-lg z-20">
     <!-- Logo and Brand -->
-    <div class="p-3 sm:p-4 flex flex-col items-center">
-        <div class="w-12 h-12 sm:w-16 sm:h-16 md:w-auto md:h-auto mb-2">
-            <img src="{{ asset('images/logo.png') }}" alt="KidsGuard" class="w-full h-full">
-        </div>
+    <div class="p-2 sm:p-3 md:p-4 flex flex-col items-center">
+        <a href="{{ route('parent.space') }}" class="flex items-center justify-center">
+            <div class="w-10 h-10 sm:w-14 sm:h-14 md:w-auto md:h-auto overflow-hidden">
+                <img src="{{ asset('images/logo.png') }}" alt="KidsGuard" class="w-full h-full object-contain">
+            </div>
+        </a>
         <div class="hidden md:block w-full h-1 bg-[#FFD600] rounded-none mt-2 mb-6"></div>
     </div>
     

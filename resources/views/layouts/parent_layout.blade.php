@@ -25,7 +25,7 @@
     @include('partials.headers.parent_header')
     
     <!-- Main content -->
-    <main class="pt-24 pb-8 px-4 md:px-8 ml-20 md:ml-64 flex-grow">
+    <main class="pt-24 pb-8 px-4 md:px-8 ml-16 sm:ml-20 md:ml-64 flex-grow">
         <div class="max-w-7xl mx-auto">
             <!-- Page content -->
             @yield('content')
@@ -33,7 +33,7 @@
     </main>
     
     <!-- Footer -->
-    <footer class="bg-white py-4 px-6 ml-20 md:ml-64 border-t border-gray-200 mt-auto">
+    <footer class="bg-white py-4 px-6 ml-16 sm:ml-20 md:ml-64 border-t border-gray-200 mt-auto">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="text-sm text-gray-500 text-center md:text-left">
                 &copy; {{ date('Y') }} KidsGuard. All rights reserved.
