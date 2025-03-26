@@ -39,6 +39,6 @@ class RegisterController extends Controller
 
         Auth::attempt($request->only('email', 'password'));
         
-        return redirect()->route('parent.dashboard');
+        return redirect()->route('parent.space');
     }
 }

@@ -36,8 +36,8 @@ class ChildProfileController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'gender' => 'required|in:boy,girl', // Fixed typo from 'gander' to 'gender'
-            'age' => 'nullable|integer|min:1|max:18',
+            'gender' => 'required|in:boy,girl',
+            'age' => 'nullable|integer|min:1|max:16',
             'avatar' => 'nullable|image|max:1024',
             'has_adhd' => 'nullable|boolean',
             'has_autism' => 'nullable|boolean',
@@ -79,8 +79,8 @@ class ChildProfileController extends Controller
         
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'gender' => 'required|in:boy,girl', // Added gender validation
-            'age' => 'nullable|integer|min:1|max:18',
+            'gender' => 'required|in:boy,girl', 
+            'age' => 'nullable|integer|min:1|max:16',
             'avatar' => 'nullable|image|max:1024',
             'has_adhd' => 'nullable|boolean',
             'has_autism' => 'nullable|boolean',

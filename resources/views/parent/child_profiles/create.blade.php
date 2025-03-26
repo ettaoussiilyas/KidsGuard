@@ -38,7 +38,7 @@
                 <div class="mt-4 sm:mt-6 mb-4 sm:mb-6">
                     <label for="age" class="block text-sm font-medium text-gray-700 mb-1">Age</label>
                     <input type="number" class="w-full sm:w-1/3 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 @error('age') border-red-500 @enderror" 
-                        id="age" name="age" value="{{ old('age') }}" min="1" max="18">
+                        id="age" name="age" value="{{ old('age') }}">
                     @error('age')
                         <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                     @enderror
