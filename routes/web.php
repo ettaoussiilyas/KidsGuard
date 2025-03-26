@@ -7,6 +7,7 @@ use App\Http\Controllers\ParentController;
 use App\Http\Controllers\KidController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChildProfileController;
+use App\Http\Controllers\Parent\ChildPreferenceController;
 
 // Public routes
 Route::get('/', function () {
@@ -53,11 +54,6 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     Route::get('/guardian', [ParentController::class, 'index'])->name('parent.space');
     //Switch to kid
     Route::post('/kids', [KidController::class, 'index'])->name('switch-to-kid'); //from dash prent header to kids
-    // Pereferences of Kids Profiles
-    Route::get('/kids/preferences', [KidController::class, 'preferences'])->name('kids.preferences');
-    Route::get('/kids/{kid}/preferences', [KidController::class, 'preferences'])->name('kids.preferences.show');
-    Route::post('/kids/{kid}/preferences', [KidController::class, 'updatePreferences'])->name('kids.preferences.update');
-
     // Parent settings
     Route::get('/settings', function () {
         return view('parent.settings');
@@ -77,10 +73,18 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
         'update' => 'parent.child-profiles.update',
         'destroy' => 'parent.child-profiles.destroy',
     ]);
+
+    // Pereferences of Kids Profiles
+    Route::get('/parent/preferences', [ChildPreferenceController::class, 'index'])
+    ->name('parent.preferences.index');
+    Route::get('/parent/preferences/{kid}', [ChildPreferenceController::class, 'show'])
+    ->name('parent.preferences.show');
+    Route::post('/parent/preferences/{kid}', [ChildPreferenceController::class, 'update'])
+    ->name('parent.preferences.update');
+
 });
 
 // Child routes
-// Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth', 'role:child'])->group(function () {
 
 
@@ -93,4 +97,6 @@ Route::middleware(['auth', 'role:child'])->group(function () {
     })->name('content');
     
 });
+
+
 

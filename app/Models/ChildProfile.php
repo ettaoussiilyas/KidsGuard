@@ -43,10 +43,9 @@ class ChildProfile extends Model
         return asset('images/child_avatr.png');
     }
 
-    // Add this method to your existing ChildProfile model
     public function learningValues()
     {
         return $this->belongsToMany(LearningValue::class, 'child_profile_preferences')
-                    ->withTimestamps();
+                ->withTimestamps();
     }
 }
