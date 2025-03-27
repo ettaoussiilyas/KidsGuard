@@ -94,22 +94,37 @@ class ChildPreferenceController extends Controller
             ]);
         }
         
-        // Otherwise return view
-        return view('parent.preferences.show', compact('kid', 'categories', 'selectedValues'));
+        // Instead of using a separate show view, get all child profiles and use the index view
+        $childProfiles = ChildProfile::where('parent_id', Auth::id())->get();
+        return view('parent.preferences.index', compact('childProfiles', 'kid', 'categories', 'selectedValues'));
     }
     
     public function update(Request $request, ChildProfile $kid)
     {
-        $validatedData = $request->validate([
-            'learning_values' => 'nullable|array',
-            'learning_values.*' => 'exists:learning_values,id',
-        ]);
-        
-        // Sync the learning values
-        $kid->learningValues()->sync($validatedData['learning_values'] ?? []);
-        
-        return redirect()
-            ->route('parent.preferences.show', $kid)
-            ->with('success', 'Preferences updated successfully');
+        try {
+            $validatedData = $request->validate([
+                'learning_values' => 'nullable|array',
+                'learning_values.*' => 'exists:learning_values,id',
+            ]);
+            
+            // Sync the learning values
+            $kid->learningValues()->sync($validatedData['learning_values'] ?? []);
+            
+            // Redirect back to the same kid's preferences page with success message
+            return redirect()
+                ->route('parent.preferences.show', ['kid' => $kid->id])
+                ->with([
+                    'message' => 'Preferences updated successfully!',
+                    'message_type' => 'success'
+                ]);
+        } catch (\Exception $e) {
+            // Redirect back with error message
+            return redirect()
+                ->route('parent.preferences.show', ['kid' => $kid->id])
+                ->with([
+                    'message' => 'Error updating preferences. Please try again.',
+                    'message_type' => 'error'
+                ]);
+        }
     }
 }
