@@ -122,6 +122,11 @@
         const formButtons = document.getElementById('form-buttons');
         const cancelButton = document.getElementById('cancel-button');
         
+        // Check if we have a kid ID in the URL
+        const currentUrl = window.location.pathname;
+        const urlParts = currentUrl.split('/');
+        const kidIdFromUrl = urlParts[urlParts.length - 1];
+        
         function getImageUrl(path) {
             if (!path) return '{{ asset("images/placeholder.png") }}';
             
@@ -132,139 +137,156 @@
             return '{{ asset("") }}' + path;
         }
         
-        if (childSelect) {
-            childSelect.addEventListener('change', function() {
-                const childId = this.value;
-                
-                if (!childId) {
-                    preferencesContainer.classList.add('hidden');
-                    return;
-                }
-                
-                // Update form action with selected child ID
-                preferencesForm.action = "{{ url('/parent/preferences') }}/" + childId;
-                
-                // Show loading state
-                preferencesContainer.classList.remove('hidden');
-                loadingIndicator.classList.remove('hidden');
-                preferencesContent.classList.add('hidden');
-                formButtons.classList.add('hidden');
-                
-                // Fetch preferences data for the selected child using the correct route
-                fetch("{{ url('/parent/preferences') }}/" + childId + "?ajax=true")
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok');
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        // Hide loading indicator
-                        loadingIndicator.classList.add('hidden');
+        function loadChildPreferences(childId) {
+            if (!childId) {
+                preferencesContainer.classList.add('hidden');
+                return;
+            }
+            
+            // Update form action with selected child ID
+            preferencesForm.action = "{{ url('/parent/preferences') }}/" + childId;
+            
+            // Show loading state
+            preferencesContainer.classList.remove('hidden');
+            loadingIndicator.classList.remove('hidden');
+            preferencesContent.classList.add('hidden');
+            formButtons.classList.add('hidden');
+            
+            // Fetch preferences data for the selected child using the correct route
+            fetch("{{ url('/parent/preferences') }}/" + childId + "?ajax=true")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Hide loading indicator
+                    loadingIndicator.classList.add('hidden');
+                    
+                    // Populate preferences content
+                    preferencesContent.innerHTML = '';
+                    
+                    // Add categories and learning values
+                    data.categories.forEach(category => {
+                        const categorySection = document.createElement('div');
+                        categorySection.className = 'mb-8 bg-gray-50 p-6 rounded-xl shadow-sm';
                         
-                        // Populate preferences content
-                        preferencesContent.innerHTML = '';
+                        // Category header with fixed image path
+                        const categoryHeader = document.createElement('div');
+                        categoryHeader.className = 'flex items-center mb-5';
+                        categoryHeader.innerHTML = `
+                            <div class="w-10 h-10 mr-4 bg-white p-2 rounded-full shadow-sm">
+                                <img src="${getImageUrl(category.icon)}" alt="${category.name}" class="w-full h-full object-contain">
+                            </div>
+                            <h2 class="text-xl font-semibold" style="color: ${category.color}">${category.name}</h2>
+                        `;
                         
-                        // Add categories and learning values
-                        data.categories.forEach(category => {
-                            const categorySection = document.createElement('div');
-                            categorySection.className = 'mb-8 bg-gray-50 p-6 rounded-xl shadow-sm';
+                        // Learning values grid
+                        const valuesGrid = document.createElement('div');
+                        valuesGrid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4';
+                        
+                        category.learning_values.forEach(value => {
+                            const isSelected = data.selected_values.includes(value.id);
                             
-                            // Category header with fixed image path
-                            const categoryHeader = document.createElement('div');
-                            categoryHeader.className = 'flex items-center mb-5';
-                            categoryHeader.innerHTML = `
-                                <div class="w-10 h-10 mr-4 bg-white p-2 rounded-full shadow-sm">
-                                    <img src="${getImageUrl(category.icon)}" alt="${category.name}" class="w-full h-full object-contain">
-                                </div>
-                                <h2 class="text-xl font-semibold" style="color: ${category.color}">${category.name}</h2>
+                            const valueItem = document.createElement('div');
+                            valueItem.className = 'relative';
+                            valueItem.innerHTML = `
+                                <input type="checkbox" 
+                                    id="value_${value.id}" 
+                                    name="learning_values[]" 
+                                    value="${value.id}" 
+                                    class="hidden"
+                                    ${isSelected ? 'checked' : ''}>
+                                <label for="value_${value.id}" 
+                                    class="flex flex-col items-center p-4 rounded-lg cursor-pointer transition-all duration-200 hover:shadow-md bg-white"
+                                    style="border-color: ${value.color}; background-color: ${isSelected ? value.background_color : 'white'};">
+                                    <div class="w-12 h-12 mb-3 flex items-center justify-center">
+                                        <img src="${getImageUrl(value.icon)}" alt="${value.name}" class="w-full h-full object-contain">
+                                    </div>
+                                    <span class="text-sm font-medium text-center" style="color: ${value.color}">${value.name}</span>
+                                </label>
                             `;
                             
-                            // Learning values grid
-                            const valuesGrid = document.createElement('div');
-                            valuesGrid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4';
-                            
-                            category.learning_values.forEach(value => {
-                                const isSelected = data.selected_values.includes(value.id);
-                                
-                                const valueItem = document.createElement('div');
-                                valueItem.className = 'relative';
-                                valueItem.innerHTML = `
-                                    <input type="checkbox" 
-                                        id="value_${value.id}" 
-                                        name="learning_values[]" 
-                                        value="${value.id}" 
-                                        class="hidden"
-                                        ${isSelected ? 'checked' : ''}>
-                                    <label for="value_${value.id}" 
-                                        class="flex flex-col items-center p-4 rounded-lg cursor-pointer transition-all duration-200 hover:shadow-md bg-white"
-                                        style="border-color: ${value.color}; background-color: ${isSelected ? value.background_color : 'white'};">
-                                        <div class="w-12 h-12 mb-3 flex items-center justify-center">
-                                            <img src="${getImageUrl(value.icon)}" alt="${value.name}" class="w-full h-full object-contain">
-                                        </div>
-                                        <span class="text-sm font-medium text-center" style="color: ${value.color}">${value.name}</span>
-                                    </label>
-                                `;
-                                
-                                valuesGrid.appendChild(valueItem);
-                            });
-                            
-                            categorySection.appendChild(categoryHeader);
-                            categorySection.appendChild(valuesGrid);
-                            preferencesContent.appendChild(categorySection);
+                            valuesGrid.appendChild(valueItem);
                         });
                         
-                        // Show preferences content and buttons
-                        preferencesContent.classList.remove('hidden');
-                        formButtons.classList.remove('hidden');
-                        
-                        // Add event listeners to checkboxes for styling
-                        document.querySelectorAll('input[name="learning_values[]"]').forEach(checkbox => {
-                            checkbox.addEventListener('change', function() {
-                                const label = this.nextElementSibling;
-                                const img = label.querySelector('img');
-                                
-                                if (this.checked) {
-                                    // Selected state
-                                    label.style.backgroundColor = this.nextElementSibling.style.borderColor.replace('rgb', 'rgba').replace(')', ', 0.1)');
-                                    label.classList.add('shadow-md');
-                                    label.classList.remove('shadow-sm');
-                                    img.classList.add('scale-110', 'transition-transform', 'duration-300');
-                                } else {
-                                    // Unselected state
-                                    label.style.backgroundColor = 'white';
-                                    label.classList.add('shadow-sm');
-                                    label.classList.remove('shadow-md');
-                                    img.classList.remove('scale-110', 'transition-transform', 'duration-300');
-                                }
-                                
-                                // Add a subtle animation effect
-                                label.classList.add('scale-105');
-                                setTimeout(() => {
-                                    label.classList.remove('scale-105');
-                                }, 200);
-                            });
+                        categorySection.appendChild(categoryHeader);
+                        categorySection.appendChild(valuesGrid);
+                        preferencesContent.appendChild(categorySection);
+                    });
+                    
+                    // Show preferences content and buttons
+                    preferencesContent.classList.remove('hidden');
+                    formButtons.classList.remove('hidden');
+                    
+                    // Add event listeners to checkboxes for styling
+                    document.querySelectorAll('input[name="learning_values[]"]').forEach(checkbox => {
+                        checkbox.addEventListener('change', function() {
+                            const label = this.nextElementSibling;
+                            const img = label.querySelector('img');
+                            
+                            if (this.checked) {
+                                // Selected state
+                                label.style.backgroundColor = this.nextElementSibling.style.borderColor.replace('rgb', 'rgba').replace(')', ', 0.1)');
+                                label.classList.add('shadow-md');
+                                label.classList.remove('shadow-sm');
+                                img.classList.add('scale-110', 'transition-transform', 'duration-300');
+                            } else {
+                                // Unselected state
+                                label.style.backgroundColor = 'white';
+                                label.classList.add('shadow-sm');
+                                label.classList.remove('shadow-md');
+                                img.classList.remove('scale-110', 'transition-transform', 'duration-300');
+                            }
+                            
+                            // Add a subtle animation effect
+                            label.classList.add('scale-105');
+                            setTimeout(() => {
+                                label.classList.remove('scale-105');
+                            }, 200);
                         });
-                    })
-                    .catch(error => {
-                        console.error('Error loading preferences:', error);
-                        loadingIndicator.classList.add('hidden');
-                        preferencesContent.classList.remove('hidden');
-                        preferencesContent.innerHTML = `
-                            <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-md">
-                                <div class="flex">
-                                    <div class="flex-shrink-0">
-                                        <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
-                                        </svg>
-                                    </div>
-                                    <div class="ml-3">
-                                        <p class="text-sm text-red-700">Error loading preferences. Please try again.</p>
-                                    </div>
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading preferences:', error);
+                    loadingIndicator.classList.add('hidden');
+                    preferencesContent.classList.remove('hidden');
+                    preferencesContent.innerHTML = `
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-md">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-red-700">Error loading preferences. Please try again.</p>
                                 </div>
                             </div>
-                        `;
-                    });
+                        </div>
+                    `;
+                });
+        }
+        
+        if (childSelect) {
+            // Auto-select child from URL if available
+            if (kidIdFromUrl && !isNaN(kidIdFromUrl)) {
+                // Find and select the option with the matching kid ID
+                for (let i = 0; i < childSelect.options.length; i++) {
+                    if (childSelect.options[i].value === kidIdFromUrl) {
+                        childSelect.selectedIndex = i;
+                        // Load the selected child's preferences
+                        loadChildPreferences(kidIdFromUrl);
+                        break;
+                    }
+                }
+            }
+            
+            // Handle dropdown change event
+            childSelect.addEventListener('change', function() {
+                const childId = this.value;
+                loadChildPreferences(childId);
             });
             
             // Cancel button resets the form
