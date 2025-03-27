@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             RolesAndPermissionsSeeder::class,
             ContentCategorySeeder::class,
             LearningValueSeeder::class,
+            AdditionalLearningValueSeeder::class,
         ]);
     }
 }

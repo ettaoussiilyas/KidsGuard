@@ -13,7 +13,7 @@
             
             @if(!$childProfiles->isEmpty())
             <div class="relative">
-                <select id="child_profile" class="appearance-none bg-white text-gray-700 py-2 pl-4 pr-10 rounded-lg border-0 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm font-medium">
+                <select id="child_profile" class="appearance-none bg-white/90 backdrop-blur-sm text-gray-800 py-2.5 pl-4 pr-10 rounded-lg border-0 shadow-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm font-medium transition-all duration-200 hover:shadow-lg">
                     <option value="">Select a child</option>
                     @foreach($childProfiles as $profile)
                         <option value="{{ $profile->id }}" 
@@ -24,6 +24,11 @@
                         </option>
                     @endforeach
                 </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </div>
             </div>
             @endif
         </div>
