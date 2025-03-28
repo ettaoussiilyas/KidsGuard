@@ -64,7 +64,7 @@
             <div class="p-4">
                 <h3 class="font-semibold text-gray-800 mb-1 line-clamp-2 text-lg">{{ $video['snippet']['title'] }}</h3>
                 <div class="flex items-center text-sm text-gray-500">
-                    <span>{{-- Views would be fetched from video details API --}}0 views</span>
+                    <!-- <span>{{-- Views would be fetched from video details API --}}0 views</span> -->
                     <span class="mx-2">•</span>
                     <span>{{ \Carbon\Carbon::parse($video['snippet']['publishedAt'])->format('M d, Y') }}</span>
                 </div>
@@ -106,18 +106,23 @@
 </div>
 
 <!-- Video Modal -->
-<div id="video-modal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4">
-    <div class="w-full max-w-6xl relative">
-        <button id="close-modal" class="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors duration-200">
-            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<div id="video-modal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+    <div class="w-full max-w-4xl relative mx-4"> <!-- Changed from max-w-6xl to max-w-4xl -->
+        <button id="close-modal" class="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors duration-200 z-50">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
         
-        <div class="aspect-w-16 aspect-h-9 bg-black rounded-t-xl overflow-hidden">
-            <iframe id="video-player" class="w-full h-full" src="" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
+        <!-- Video container -->
+        <div class="relative w-full" style="padding-bottom: 56.25%">
+            <iframe id="video-player" 
+                    class="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="background-color: #000;"></iframe>
         </div>
         
         <div class="bg-gray-900 p-6 rounded-b-xl">
@@ -125,7 +130,7 @@
                 <div>
                     <h3 id="video-title" class="text-xl font-bold text-white"></h3>
                     <div class="flex items-center mt-2 space-x-4">
-                        <p id="video-views" class="text-gray-400">0 views</p>
+                        <!-- <p id="video-views" class="text-gray-400">0 views</p> -->
                         <span class="text-gray-600">•</span>
                         <p id="video-date" class="text-gray-400"></p>
                     </div>
