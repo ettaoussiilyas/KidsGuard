@@ -8,6 +8,8 @@ use App\Http\Controllers\KidController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChildProfileController;
 use App\Http\Controllers\Parent\ChildPreferenceController;
+use App\Http\Controllers\Youtube\YouTubeController;
+use Google\Service\YouTube;
 
 // Public routes
 Route::get('/', function () {
@@ -81,6 +83,10 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     ->name('parent.preferences.show');
     Route::post('/parent/preferences/{kid}', [ChildPreferenceController::class, 'update'])
     ->name('parent.preferences.update');
+
+    // Parent Games
+
+    Route::get('/parent/games', [YouTubeController::class, 'showParentGames'])->name('parent.parent-games');
 
 });
 
