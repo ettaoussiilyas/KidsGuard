@@ -107,22 +107,21 @@
 
 <!-- Video Modal -->
 <div id="video-modal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
-    <div class="w-full max-w-4xl relative mx-4"> <!-- Changed from max-w-6xl to max-w-4xl -->
+    <div class="w-full max-w-4xl relative mx-4">
         <button id="close-modal" class="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors duration-200 z-50">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
         </button>
         
-        <!-- Video container -->
+        <!-- Video container - fixing the iframe visibility issue -->
         <div class="relative w-full" style="padding-bottom: 56.25%">
             <iframe id="video-player" 
-                    class="absolute top-0 left-0 w-full h-full rounded-lg"
+                    class="absolute top-0 left-0 w-full h-full rounded-lg z-10"
                     src=""
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    style="background-color: #000;"></iframe>
+                    allowfullscreen></iframe>
         </div>
         
         <div class="bg-gray-900 p-6 rounded-b-xl">
@@ -130,7 +129,6 @@
                 <div>
                     <h3 id="video-title" class="text-xl font-bold text-white"></h3>
                     <div class="flex items-center mt-2 space-x-4">
-                        <!-- <p id="video-views" class="text-gray-400">0 views</p> -->
                         <span class="text-gray-600">•</span>
                         <p id="video-date" class="text-gray-400"></p>
                     </div>
@@ -161,14 +159,22 @@
                 videoPlayer.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
                 
                 modal.classList.remove('hidden');
+                // Fix for modal display - ensure it's visible
+                setTimeout(() => {
+                    modal.classList.add('opacity-100');
+                    modal.style.display = 'flex';
+                }, 10);
                 document.body.style.overflow = 'hidden';
             });
         });
         
         // Close modal
         closeModal.addEventListener('click', function() {
-            modal.classList.add('hidden');
-            videoPlayer.src = '';
+            modal.classList.remove('opacity-100');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                videoPlayer.src = '';
+            }, 300);
             document.body.style.overflow = '';
         });
         
