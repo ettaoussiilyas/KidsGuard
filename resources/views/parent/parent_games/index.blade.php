@@ -174,8 +174,13 @@
             setTimeout(() => {
                 modal.classList.add('hidden');
                 videoPlayer.src = '';
+                // Ensure modal is completely removed from the DOM flow
+                modal.style.display = 'none';
+                // Make sure body overflow is reset
+                document.body.style.overflow = '';
+                // Remove any pointer-events restrictions
+                document.body.style.pointerEvents = 'auto';
             }, 300);
-            document.body.style.overflow = '';
         });
         
         // Close modal when clicking outside or pressing escape
