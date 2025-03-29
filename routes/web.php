@@ -85,8 +85,13 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     ->name('parent.preferences.update');
 
     // Parent Games
-
     Route::get('/parent/games', [YouTubeController::class, 'showParentGames'])->name('parent.parent-games');
+
+    // Parent Settings
+    Route::get('/parent/settings', [App\Http\Controllers\ParentController::class, 'settings'])->name('parent.settings');
+    Route::put('/parent/profile/update', [App\Http\Controllers\ParentController::class, 'updateProfile'])->name('parent.profile.update');
+    Route::put('/parent/password/update', [App\Http\Controllers\ParentController::class, 'updatePassword'])->name('parent.password.update');
+    Route::delete('/parent/profile/destroy', [App\Http\Controllers\ParentController::class, 'deleteAccount'])->name('parent.profile.destroy');
 
 });
 

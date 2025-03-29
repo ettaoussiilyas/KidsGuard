@@ -24,6 +24,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'bio',
+        'avatar',
     ];
 
     /**
@@ -122,6 +124,20 @@ class User extends Authenticatable
     public function childProfiles()
     {
         return $this->hasMany(ChildProfile::class, 'parent_id');
+    }
+
+    /**
+     * Get the user's avatar URL.
+     *
+     * @return string
+     */
+    public function getAvatarUrlAttribute()
+    {
+        if ($this->avatar) {
+            return asset('storage/avatars/' . $this->avatar);
+        }
+        
+        return asset('images/default-avatar.png');
     }
 
 }
