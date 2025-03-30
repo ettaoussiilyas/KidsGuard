@@ -84,6 +84,7 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     Route::post('/parent/preferences/{kid}', [ChildPreferenceController::class, 'update'])
     ->name('parent.preferences.update');
 
+
     // Parent Games
     Route::get('/parent/games', [YouTubeController::class, 'showParentGames'])->name('parent.parent-games');
 
@@ -106,6 +107,9 @@ Route::middleware(['auth', 'role:child'])->group(function () {
     Route::get('/content', function () {
         return view('child.content');
     })->name('content');
+
+     //Kid Profile Switching
+     Route::get('/kid/switch-profile/{id}', [KidController::class, 'switchProfile'])->name('kid.switch-profile');
     
 });
 

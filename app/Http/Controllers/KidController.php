@@ -26,7 +26,32 @@ class KidController extends Controller
             ]
         );
         
+        // Get the first child profile if none is selected yet
+        if (!session('current_kid_id') && $user->childProfiles->count() > 0) {
+            $firstProfile = $user->childProfiles->first();
+            session(['current_kid_id' => $firstProfile->id]);
+            session(['current_kid_name' => $firstProfile->name]);
+        }
+        
         return view('kid.index');
+    }
+    
+    /**
+     * Switch to a different child profile
+     */
+    public function switchProfile($id)
+    {
+        $user = Auth::user();
+        // Use the correct relationship method name
+        $childProfile = $user->childProfiles()->findOrFail($id);
+        // Or if the relationship is named differently, use:
+        // $childProfile = $user->kidProfiles()->findOrFail($id);
+        
+        // Store the selected profile in session
+        session(['current_kid_id' => $childProfile->id]);
+        session(['current_kid_name' => $childProfile->name]);
+        
+        return redirect()->back();
     }
 
     /**

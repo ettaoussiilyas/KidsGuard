@@ -1,8 +1,8 @@
 <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-10">
-    <div class="flex items-center justify-between px-6 py-4">
-        <!-- Left side: Page title and breadcrumbs -->
+    <div class="flex items-center justify-between px-3 sm:px-6 py-3 sm:py-4">
+        <!-- Left side: Logo - made responsive -->
         <div class="flex items-center">
-            <img src="{{ asset('images/logo.png') }}" alt="KidsGuard Logo" class="h-10 w-auto ml-10">
+            <img src="{{ asset('images/logo.png') }}" alt="KidsGuard Logo" class="h-8 sm:h-10 w-auto ml-2 sm:ml-10">
         </div>
         
         <!-- Middle: Toggle Switch for Parent Mode -->
@@ -24,9 +24,15 @@
         <!-- Right side: Kid Profile Selector -->
         <div class="relative" x-data="{ open: false }">
             <button @click="open = !open" class="flex items-center space-x-3 focus:outline-none">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-[#FFD600] to-[#FF6B6B] flex items-center justify-center text-white font-bold">
-                    {{ substr(session('current_kid_name', 'Kid'), 0, 1) }}
-                </div>
+                @if(session('current_kid_id') && Auth::user()->childProfiles->where('id', session('current_kid_id'))->first()?->avatar)
+                    <img src="{{ asset('storage/' . Auth::user()->childProfiles->where('id', session('current_kid_id'))->first()->avatar) }}" 
+                         alt="{{ session('current_kid_name', 'Kid') }}" 
+                         class="w-10 h-10 rounded-full object-cover border-2 border-gray-100">
+                @else
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-[#FFD600] to-[#FF6B6B] flex items-center justify-center text-white font-bold">
+                        {{ substr(session('current_kid_name', 'Kid'), 0, 1) }}
+                    </div>
+                @endif
                 <div class="hidden md:block text-left">
                     <div class="text-sm font-semibold text-gray-800">{{ session('current_kid_name', 'Kid Profile') }}</div>
                     <div class="text-xs text-gray-500">Kid Account</div>
@@ -37,21 +43,30 @@
             </button>
             
             <!-- Kid Profile Dropdown menu -->
-            <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50">
+            <div x-show="open" @click.away="open = false" class="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 z-50">
                 <!-- Loop through available kid profiles -->
-                @foreach(Auth::user()->kidProfiles ?? [] as $kidProfile)
-                    <a href=" route('kid.switch-profile', $kidProfile->id) " class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+                @foreach(Auth::user()->childProfiles ?? [] as $kidProfile)
+                    <a href="{{ route('kid.switch-profile', $kidProfile->id) }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
                         <div class="flex items-center {{ session('current_kid_id') == $kidProfile->id ? 'text-[#9B59B6] font-medium' : '' }}">
-                            <div class="w-6 h-6 rounded-full bg-gradient-to-r from-[#FFD600] to-[#FF6B6B] flex items-center justify-center text-white text-xs font-bold mr-2">
-                                {{ substr($kidProfile->name, 0, 1) }}
-                            </div>
-                            {{ $kidProfile->name }}
+                            @if($kidProfile->avatar)
+                                <img src="{{ asset('storage/' . $kidProfile->avatar) }}" alt="{{ $kidProfile->name }}" class="w-8 h-8 rounded-full object-cover border-2 border-gray-100 mr-2">
+                            @else
+                                <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#FFD600] to-[#FF6B6B] flex items-center justify-center text-white text-xs font-bold mr-2">
+                                    {{ substr($kidProfile->name, 0, 1) }}
+                                </div>
+                            @endif
+                            <span>{{ $kidProfile->name }}</span>
+                            @if(session('current_kid_id') == $kidProfile->id)
+                                <svg class="w-4 h-4 ml-auto text-[#9B59B6]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            @endif
                         </div>
                     </a>
                 @endforeach
                 
-                <!-- <div class="border-t border-gray-200 my-1"></div> -->
-                <a href=" " class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+                <div class="border-t border-gray-200 my-1"></div>
+                <a href="{{ route('switch-to-kid') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
                     <div class="flex items-center text-[#4A90E2]">
                         <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
@@ -103,6 +118,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Parent mode toggle functionality
         const parentModeToggle = document.getElementById('parent-mode-toggle');
+        const mobileParentToggle = document.getElementById('mobile-parent-toggle');
         const parentAuthModal = document.getElementById('parent-auth-modal');
         const cancelAuth = document.getElementById('cancel-auth');
         const parentAuthForm = document.getElementById('parent-auth-form');
@@ -111,6 +127,13 @@
         parentModeToggle.addEventListener('click', function() {
             parentAuthModal.classList.remove('hidden');
         });
+        
+        // Mobile parent toggle
+        if (mobileParentToggle) {
+            mobileParentToggle.addEventListener('click', function() {
+                parentAuthModal.classList.remove('hidden');
+            });
+        }
         
         // Cancel authentication
         cancelAuth.addEventListener('click', function() {

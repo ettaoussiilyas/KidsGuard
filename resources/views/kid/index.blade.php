@@ -6,9 +6,7 @@
     <div class="text-center">
         <h1 class="text-3xl font-bold text-[#9B59B6] mb-8">Welcome!</h1>
         
-        <!-- Simple Icon Navigation -->
         <div class="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <!-- Videos -->
             <a href=" route('kid.videos') " class="flex flex-col items-center">
                 <div class="w-24 h-24 rounded-full bg-[#FF6B6B] flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                     <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -18,7 +16,6 @@
                 <span class="mt-2 text-xl font-bold">Videos</span>
             </a>
             
-            <!-- Games -->
             <a href=" route('kid.games') " class="flex flex-col items-center">
                 <div class="w-24 h-24 rounded-full bg-[#4A90E2] flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                     <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -28,7 +25,6 @@
                 <span class="mt-2 text-xl font-bold">Games</span>
             </a>
             
-            <!-- Stories -->
             <a href=" route('kid.stories') " class="flex flex-col items-center">
                 <div class="w-24 h-24 rounded-full bg-[#48C9B0] flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                     <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -38,7 +34,6 @@
                 <span class="mt-2 text-xl font-bold">Stories</span>
             </a>
             
-            <!-- Music -->
             <a href=" route('kid.music') " class="flex flex-col items-center">
                 <div class="w-24 h-24 rounded-full bg-[#9B59B6] flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                     <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -48,7 +43,6 @@
                 <span class="mt-2 text-xl font-bold">Music</span>
             </a>
             
-            <!-- Learn -->
             <a href=" route('kid.learn') " class="flex flex-col items-center">
                 <div class="w-24 h-24 rounded-full bg-[#FFD600] flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                     <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -59,7 +53,6 @@
                 <span class="mt-2 text-xl font-bold">Learn</span>
             </a>
             
-            <!-- Favorites -->
             <a href=" route('kid.favorites') " class="flex flex-col items-center">
                 <div class="w-24 h-24 rounded-full bg-[#E74C3C] flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300">
                     <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
