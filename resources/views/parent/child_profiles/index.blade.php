@@ -23,11 +23,11 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         @if(count($childProfiles) > 0)
             @foreach($childProfiles as $profile)
-                <div class="bg-white overflow-hidden shadow-sm rounded-lg transition-all duration-200 hover:shadow-md">
+                <div class="bg-white overflow-hidden shadow-sm rounded-lg transition-all duration-200 hover:shadow-md flex flex-col h-full">
                     <div class="{{ $profile->gender == 'girl' ? 'bg-pink-500' : 'bg-indigo-600' }} px-4 py-3">
                         <h2 class="text-lg font-semibold text-white truncate">{{ $profile->name }} <span class="text-{{ $profile->gender == 'girl' ? 'pink' : 'indigo' }}-100 text-sm">({{ $profile->age ?? 'Age not set' }})</span></h2>
                     </div>
-                    <div class="p-4 sm:p-6 flex flex-col items-center {{ $profile->gender == 'girl' ? 'bg-pink-50' : '' }}">
+                    <div class="p-4 sm:p-6 flex flex-col items-center {{ $profile->gender == 'girl' ? 'bg-pink-50' : '' }} flex-grow">
                         <img src="{{ $profile->avatarUrl }}" alt="{{ $profile->name }}" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 {{ $profile->gender == 'girl' ? 'border-pink-100' : 'border-white' }} shadow-md mb-4">
                         
                         <div class="flex flex-wrap justify-center gap-2 mb-4">
@@ -39,21 +39,23 @@
                             @endif
                         </div>
                         
-                        @if($profile->special_needs)
-                            <div class="w-full mb-3">
-                                <h3 class="text-sm font-medium text-gray-500 mb-1">Special Needs</h3>
-                                <p class="text-gray-700 text-sm">{{ $profile->special_needs }}</p>
-                            </div>
-                        @endif
+                        <div class="w-full space-y-3 flex-grow">
+                            @if($profile->special_needs)
+                                <div class="w-full">
+                                    <h3 class="text-sm font-medium text-gray-500 mb-1">Special Needs</h3>
+                                    <p class="text-gray-700 text-sm">{{ $profile->special_needs }}</p>
+                                </div>
+                            @endif
+                            
+                            @if($profile->interests)
+                                <div class="w-full">
+                                    <h3 class="text-sm font-medium text-gray-500 mb-1">Interests</h3>
+                                    <p class="text-gray-700 text-sm">{{ $profile->interests }}</p>
+                                </div>
+                            @endif
+                        </div>
                         
-                        @if($profile->interests)
-                            <div class="w-full mb-4">
-                                <h3 class="text-sm font-medium text-gray-500 mb-1">Interests</h3>
-                                <p class="text-gray-700 text-sm">{{ $profile->interests }}</p>
-                            </div>
-                        @endif
-                        
-                        <div class="flex w-full justify-center space-x-3 mt-2">
+                        <div class="flex w-full justify-center space-x-3 mt-4 pt-3 border-t border-gray-100">
                             <a href="{{ route('parent.child-profiles.edit', $profile) }}" class="flex-1 inline-flex justify-center items-center px-3 py-1.5 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-{{ $profile->gender == 'girl' ? 'pink' : 'indigo' }}-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
