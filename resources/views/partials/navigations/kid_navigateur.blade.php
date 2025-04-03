@@ -1,7 +1,7 @@
 
 <div class="pt-16 pb-8 px-4 mt-16 bg-gradient-to-b from-[#9B59B6] to-[#8E44AD]">
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 md:gap-10 max-w-6xl mx-auto">
-        <a href="  route('kid.videos') }}" class="flex flex-col items-center group">
+        <a href="{{ route('kid.videos.index') }}" class="flex flex-col items-center group">
             <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-[#FF6B6B] flex items-center justify-center shadow-lg group-hover:shadow-xl transform transition-all duration-300 group-hover:scale-110 relative overflow-hidden">
                 <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-full"></div>
                 <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="currentColor" viewBox="0 0 20 20">

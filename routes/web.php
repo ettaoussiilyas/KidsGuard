@@ -7,6 +7,7 @@ use App\Http\Controllers\ParentController;
 use App\Http\Controllers\KidController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChildProfileController;
+use App\Http\Controllers\Kid\VideoController;
 use App\Http\Controllers\Parent\ChildPreferenceController;
 use App\Http\Controllers\Youtube\YouTubeController;
 use Google\Service\YouTube;
@@ -110,6 +111,14 @@ Route::middleware(['auth', 'role:child'])->group(function () {
 
      //Kid Profile Switching
      Route::get('/kid/switch-profile/{id}', [KidController::class, 'switchProfile'])->name('kid.switch-profile');
+
+     //Kid Content Routes
+     Route::get('/kid/videos', [VideoController::class, 'index'])->name('kid.videos.index');
+     Route::get('/kid/videos/{id}', [VideoController::class, 'show'])->name('kid.videos.show');
+
+    //  Route::get('/kid/videos', [VideosController::class,'showVideos'])->name('kid.videos');
+    //  Route::get('/kid/games', [YouTubeController::class,'showGames'])->name('kid.games');
+    //  Route::get('/kid/books', [YouTubeController::class,'showBooks'])->name('kid.books');
     
 });
 

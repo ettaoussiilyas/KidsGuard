@@ -48,4 +48,12 @@ class ChildProfile extends Model
         return $this->belongsToMany(LearningValue::class, 'child_profile_preferences')
                 ->withTimestamps();
     }
+
+    /**
+     * Get the preferences for the child profile.
+     */
+    public function preferences()
+    {
+        return $this->hasMany(ChildProfilePreference::class, 'child_profile_id');
+    }
 }

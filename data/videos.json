@@ -5,635 +5,135 @@
             "url": "https://www.sesamestreet.org/videos?vid=27894",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Say hello with Elmo, Abby, and Cookie Monster",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [20, 22]
         },
         {
             "title": "Kacey Musgraves All The Colors",
             "url": "https://www.sesamestreet.org/videos?vid=27734",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Kacey Musgraves All The Colors",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 19, 20, 22]
         },
         {
             "title": "This is My Street With Thomas Rhett",
             "url": "https://www.sesamestreet.org/videos?vid=26912",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: This is My Street With Thomas Rhett",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [19, 20, 22]
         },
         {
             "title": "Counting to 50 By 10s with Abby & Elmo",
             "url": "",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Counting to 50 By 10s with Abby & Elmo",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 22]
         },
         {
             "title": "The Number of the Day: 16",
             "url": "https://www.sesamestreet.org/videos?vid=27588",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: The Number of the Day: 16",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 22]
         },
         {
             "title": "P is for Pretend",
             "url": "https://www.sesamestreet.org/videos?vid=27737",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: P is for Pretend",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 19, 20, 22]
         },
         {
             "title": "Julia and Rosita Celebrate Families",
             "url": "https://www.sesamestreet.org/videos?vid=27498",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Julia and Rosita Celebrate Families",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 20, 22]
         },
         {
             "title": "Belly Breathe",
             "url": "https://www.sesamestreet.org/videos?vid=1799",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Belly Breathe",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 19, 20, 22]
         },
         {
             "title": "Patty Cake With Elmo and Ernie",
             "url": "https://www.sesamestreet.org/videos?vid=1774",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Patty Cake With Elmo and Ernie",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 22]
         },
         {
             "title": "Elmo Sings ABC Song with HAIM and Friends!",
             "url": "https://www.sesamestreet.org/videos?vid=27843",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Elmo Sings ABC Song with HAIM and Friends!",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18]
         },
         {
             "title": "Starfish Art Show with Julia and Sam",
             "url": "https://www.sesamestreet.org/videos?vid=27503",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Starfish Art Show with Julia and Sam",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 19, 20, 21, 22]
         },
         {
             "title": "Heroes In Your Neighborhood With Jon Batiste",
             "url": "https://www.sesamestreet.org/videos?vid=27733",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Heroes In Your Neighborhood With Jon Batiste",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 19, 20, 21, 22]
         },
         {
             "title": "Grover Sings Monster at the End Song!",
             "url": "https://www.sesamestreet.org/videos?vid=27650",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Grover Sings Monster at the End Song!",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [19, 20, 5, 22]
         },
         {
             "title": "Bebe Rexha sings \"Morning Routine\"",
             "url": "https://www.sesamestreet.org/videos?vid=27941",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Bebe Rexha sings \"Morning Routine\"",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 19, 20, 21, 22]
         },
         {
             "title": "Nighttime with Maggie Rogers",
             "url": "https://www.sesamestreet.org/videos?vid=27585",
             "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmY5ODAwO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6IzA3Yzk3NDt9LmR7ZmlsbDojZTJlMmUyO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTI2LDBBMjYsMjYsMCwxLDEsMCwyNiwyNiwyNiwwLDAsMSwyNiwwWiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyIDE1LjUpIj48cmVjdCBjbGFzcz0iYiIgd2lkdGg9IjI4LjQ3NyIgaGVpZ2h0PSIyMS41OTUiIHJ4PSIzIi8+PHJlY3QgY2xhc3M9ImMiIHdpZHRoPSIyNC45MTciIGhlaWdodD0iMTUuMTg4IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS43OCAxLjY2MSkiLz48cmVjdCBjbGFzcz0iZCIgd2lkdGg9IjEyLjgxNCIgaGVpZ2h0PSIxLjc4IiByeD0iMC44OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy44MzEgMTguMzEyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTg5LjU5LDExOC4yMzJsLTUuMjYyLDMuNDE4YS45MTQuOTE0LDAsMCwxLTEuNDMyLS42OTR2LTYuODQ0YS45MTQuOTE0LDAsMCwxLDEuNDMyLS42OTRsNS4yNjIsMy40MThBLjgxOC44MTgsMCwwLDEsMTg5LjU5LDExOC4yMzJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjE5OSAtMTA4LjI3OSkiLz48L2c+PC9zdmc+",
             "description": "Sesame Street video: Nighttime with Maggie Rogers",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "PBS KIDS Settings",
-            "url": "https://www.pbs.org/parents/printables/the-nutcracker-color-and-activity-guide",
-            "image": null,
-            "description": "Print and color 'The Nutcracker Activity Guide' featuring Elmo and Tango.Print and color 'The Nutcracker Activity Guide' featuring Elmo and Tango.Download",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "PBS Kids"
-        },
-        {
-            "title": "Watch Full Episodes",
-            "url": "https://pbskids.org/sesame/videos/watch-full-episodes",
-            "image": "https://cms-tc.pbskids.org/sesamewebsite/resources/img/tiles/PBS_WatchFullEpisodes2021_Small_NEW.png?fhash=8d0a12c",
-            "description": "PBS Kids video: Watch Full Episodes",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Smart Cookies: Relaxing on Pecan Sandy Beach",
-            "url": "https://pbskids.org/sesame/videos/smart-cookies-relaxing-on-pecan-sandy-beach-2",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-SmartCookies-PecanSandyBeach-SM-NEW.png",
-            "description": "PBS Kids video: Smart Cookies: Relaxing on Pecan Sandy Beach",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "8 Octopus",
-            "url": "https://pbskids.org/sesame/videos/8-octopus",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-8Octopus-SM-NEW.png",
-            "description": "PBS Kids video: 8 Octopus",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Mia, Nina, and Rosita Sing Head Shoulders Knees and Toes",
-            "url": "https://pbskids.org/sesame/videos/mia-nina-and-rosita-sing-head-shoulders-knees-and-toes",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-MiaNinaRositaSingHeadShoulders-SM-NEW.png",
-            "description": "PBS Kids video: Mia, Nina, and Rosita Sing Head Shoulders Knees and Toes",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Cookie Monster Foodie Truck: Arepas",
-            "url": "https://pbskids.org/sesame/videos/cookie-monster-foodie-truck-arepas",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-CMFT-Arepas-SM-NEW.png",
-            "description": "PBS Kids video: Cookie Monster Foodie Truck: Arepas",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "B is for Birds",
-            "url": "https://pbskids.org/sesame/videos/b-is-for-birds-3",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-BisforBirds-SM.png",
-            "description": "PBS Kids video: B is for Birds",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Elmo Learns about Flamingos",
-            "url": "https://pbskids.org/sesame/videos/elmo-learns-about-flamingos",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-ElmoLearnsAboutFlamingos-SM.png",
-            "description": "PBS Kids video: Elmo Learns about Flamingos",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "6 Cats",
-            "url": "https://pbskids.org/sesame/videos/6-cats",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-6Cats-SM.png",
-            "description": "PBS Kids video: 6 Cats",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "A is for Animals",
-            "url": "https://pbskids.org/sesame/videos/a-is-for-animals",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-AisforAnimals-SM.png",
-            "description": "PBS Kids video: A is for Animals",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "11 Books",
-            "url": "https://pbskids.org/sesame/videos/11-books",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-11Books-SM.png",
-            "description": "PBS Kids video: 11 Books",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Rosita, Zoe, and Gabrielle Build and Test a Bridge",
-            "url": "https://pbskids.org/sesame/videos/rosita-zoe-and-gabrielle-build-and-test-a-bridge",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-RositaandZoeBuildaBridge-SM.png",
-            "description": "PBS Kids video: Rosita, Zoe, and Gabrielle Build and Test a Bridge",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Elmo's World Building Things",
-            "url": "https://pbskids.org/sesame/videos/elmos-world-building-things",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-EW-BuildingThings-SM.png",
-            "description": "PBS Kids video: Elmo's World Building Things",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "The Best Me Song",
-            "url": "https://pbskids.org/sesame/videos/the-best-me-song",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-TheBestMeSong-SM.png",
-            "description": "PBS Kids video: The Best Me Song",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "A Is for Arts and Crafts",
-            "url": "https://pbskids.org/sesame/videos/a-is-for-arts-and-crafts",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-AisforArtsandCrafts-SM.png",
-            "description": "PBS Kids video: A Is for Arts and Crafts",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Elmo's World: Arts & Crafts",
-            "url": "https://pbskids.org/sesame/videos/elmos-world-arts-crafts",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-EW-ArtsandCrafts-SM.png",
-            "description": "PBS Kids video: Elmo's World: Arts & Crafts",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Elmo Learns about Lunar New Year",
-            "url": "https://pbskids.org/sesame/videos/elmo-learns-about-lunar-new-year",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-ElmoLearnsAboutLunarNewYear-SM.png",
-            "description": "PBS Kids video: Elmo Learns about Lunar New Year",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Five Kleicha",
-            "url": "https://pbskids.org/sesame/videos/five-kleicha",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-5Kleicha-SM.png",
-            "description": "PBS Kids video: Five Kleicha",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Chris' Feeling Face Game",
-            "url": "https://pbskids.org/sesame/videos/chris-feeling-face-game",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-ChrisFeelingsFaceGame-SM.png",
-            "description": "PBS Kids video: Chris' Feeling Face Game",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "S is for Supermarket",
-            "url": "https://pbskids.org/sesame/videos/s-is-for-supermarket",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-SisforSupermarket-SM.png",
-            "description": "PBS Kids video: S is for Supermarket",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Sesame Street Cook-off: Use that Rice",
-            "url": "https://pbskids.org/sesame/videos/sesame-street-cook-off-use-that-rice",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-UseThatRice-SM.png",
-            "description": "PBS Kids video: Sesame Street Cook-off: Use that Rice",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "4 Drums",
-            "url": "https://pbskids.org/sesame/videos/4-drums",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-4Drums-SM.png",
-            "description": "PBS Kids video: 4 Drums",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Letter of the Day: M",
-            "url": "https://pbskids.org/sesame/videos/letter-of-the-day-m-2",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-LOTD-M-SM.png",
-            "description": "PBS Kids video: Letter of the Day: M",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Abby Searches for an item that starts with C",
-            "url": "https://pbskids.org/sesame/videos/abby-searches-for-an-item-that-starts-with-c",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-AbbySearchesforC-SM.png",
-            "description": "PBS Kids video: Abby Searches for an item that starts with C",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "The Alphabet song with ASL",
-            "url": "https://pbskids.org/sesame/videos/the-alphabet-song-with-asl",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-TheAlphabetSongASL-SM.png",
-            "description": "PBS Kids video: The Alphabet song with ASL",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "The Alphabet Rap",
-            "url": "https://pbskids.org/sesame/videos/the-alphabet-rap",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-TheAlphabetRap-SM.png",
-            "description": "PBS Kids video: The Alphabet Rap",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "S is for Shapes",
-            "url": "https://pbskids.org/sesame/videos/s-is-for-shapes-2",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-SisforShapes-SM.png",
-            "description": "PBS Kids video: S is for Shapes",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Prairie Dawn Sings about Octagons",
-            "url": "https://pbskids.org/sesame/videos/prairie-dawn-sings-about-octagons",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-PrairieDawnOctogons-SM.png",
-            "description": "PBS Kids video: Prairie Dawn Sings about Octagons",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Abby's Amazing Adventures: Toy Shop",
-            "url": "https://pbskids.org/sesame/videos/abbys-amazing-adventures-toy-shop",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-AbbysAmazingAdventures-ToyShop-SM.png",
-            "description": "PBS Kids video: Abby's Amazing Adventures: Toy Shop",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Letter of the Day: J",
-            "url": "https://pbskids.org/sesame/videos/letter-of-the-day-j",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-LOTD-J-SM.png",
-            "description": "PBS Kids video: Letter of the Day: J",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "T is for Toys",
-            "url": "https://pbskids.org/sesame/videos/t-is-for-toys",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-TisforToys-SM.png",
-            "description": "PBS Kids video: T is for Toys",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Elmo and Tango's Mysterious Mysteries: Grover's Missing Hat",
-            "url": "https://pbskids.org/sesame/videos/elmo-and-tangos-mysterious-mysteries-grovers-missing-hat",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-MysteriousMysteries-MissingHat-SM.png",
-            "description": "PBS Kids video: Elmo and Tango's Mysterious Mysteries: Grover's Missing Hat",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Brandi Carlile, Big Bird, and Snuffy sing \"That's Why We Love Nature\"",
-            "url": "https://pbskids.org/sesame/videos/brandi-carlile-big-bird-and-snuffy-sing-thats-why-we-love-nature",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-Brandi-Carlile-ThatsWhyWeLoveNature-SM.png",
-            "description": "PBS Kids video: Brandi Carlile, Big Bird, and Snuffy sing \"That's Why We Love Nature\"",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Elmo Helps Zoe Keep Trying (Scooter)",
-            "url": "https://pbskids.org/sesame/videos/elmo-helps-zoe-keep-trying-scooter",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-ElmoHelpsZoeKeepTrying-SM.png",
-            "description": "PBS Kids video: Elmo Helps Zoe Keep Trying (Scooter)",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Sesame Street Nature Explorers: Salad",
-            "url": "https://pbskids.org/sesame/videos/sesame-street-nature-explorers-salad",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-SS-NatureExplorers-Salad-SM.png",
-            "description": "PBS Kids video: Sesame Street Nature Explorers: Salad",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Sesame Street Nature Explorers: Nightime Critters",
-            "url": "https://pbskids.org/sesame/videos/sesame-street-nature-explorers-nightime-critters",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-SS-NatureExplorers-NightimeCritters-SM.png",
-            "description": "PBS Kids video: Sesame Street Nature Explorers: Nightime Critters",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Guess That Healthy Food",
-            "url": "https://pbskids.org/sesame/videos/guess-that-healthy-food",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-GuessThatHealthyFood-SM.png",
-            "description": "PBS Kids video: Guess That Healthy Food",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Yasmine Explains what khubz is",
-            "url": "https://pbskids.org/sesame/videos/yasmine-explains-what-khubz-is",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-YasmineExplainsKhubz-SM.png",
-            "description": "PBS Kids video: Yasmine Explains what khubz is",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "F is for Family",
-            "url": "https://pbskids.org/sesame/videos/f-is-for-family-2",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-FisforFamily-SM.png",
-            "description": "PBS Kids video: F is for Family",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Mia sings about Traditions",
-            "url": "https://pbskids.org/sesame/videos/mia-sings-about-traditions",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-MiaSingsAboutTraditions-SM.png",
-            "description": "PBS Kids video: Mia sings about Traditions",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "17 squirrels",
-            "url": "https://pbskids.org/sesame/videos/17-squirrels",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-17Squirrels-SM.png",
-            "description": "PBS Kids video: 17 squirrels",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Cookie Monster Plays the Grover Game",
-            "url": "https://pbskids.org/sesame/videos/cookie-monster-plays-the-grover-game",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-CookieMonsterPlaysGroverGame-SM.png",
-            "description": "PBS Kids video: Cookie Monster Plays the Grover Game",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Cookie Monster Foodie Truck: Pickles",
-            "url": "https://pbskids.org/sesame/videos/cookie-monster-foodie-truck-pickles",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-CMFT-Pickles-SM_2024-11-07-161120_aoua.png",
-            "description": "PBS Kids video: Cookie Monster Foodie Truck: Pickles",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Morning Routine with 4 Sisters",
-            "url": "https://pbskids.org/sesame/videos/morning-routine-with-4-sisters",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-MorningRoutine4Sisters-SM_2024-11-07-162450_lpcb.png",
-            "description": "PBS Kids video: Morning Routine with 4 Sisters",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Bebe Rexha sings \"Morning Routine\"",
-            "url": "https://pbskids.org/sesame/videos/bebe-rexha-sings-morning-routine",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-BebeRexha-MorningRoutine-SM.png",
-            "description": "PBS Kids video: Bebe Rexha sings \"Morning Routine\"",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Elmo's Morning Routine Song",
-            "url": "https://pbskids.org/sesame/videos/elmos-morning-routine-song",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-ElmosMorningRoutineSong-SM.png",
-            "description": "PBS Kids video: Elmo's Morning Routine Song",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "What Friends are For with Ariana DeBose",
-            "url": "https://pbskids.org/sesame/videos/what-friends-are-for-with-ariana-debose",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-WhatFriendsForArianaDeBose-SM.png",
-            "description": "PBS Kids video: What Friends are For with Ariana DeBose",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "S is for Sports",
-            "url": "https://pbskids.org/sesame/videos/s-is-for-sports",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-SisforSports-SM.png",
-            "description": "PBS Kids video: S is for Sports",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Sesame Street Nature Explorers: Butterfly",
-            "url": "https://pbskids.org/sesame/videos/sesame-street-nature-explorers-butterfly",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-SS-NatureExplorers-Butterfly-SM.png",
-            "description": "PBS Kids video: Sesame Street Nature Explorers: Butterfly",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Abby, Charlie, and Gabrielle's Bedtime Routines",
-            "url": "https://pbskids.org/sesame/videos/abby-charlie-and-gabrielles-bedtime-routines",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS-AbCharlieGab-BedtimeRoutines-SM.png",
-            "description": "PBS Kids video: Abby, Charlie, and Gabrielle's Bedtime Routines",
-            "category": "Educational Video",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
+            "category_id": 4,
+            "age_range_id": "3-8",
+            "educational_value_id": [18, 19, 20]
         }
     ]
 }
