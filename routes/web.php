@@ -113,8 +113,13 @@ Route::middleware(['auth', 'role:child'])->group(function () {
      Route::get('/kid/switch-profile/{id}', [KidController::class, 'switchProfile'])->name('kid.switch-profile');
 
      //Kid Content Routes
+     //Vidos
      Route::get('/kid/videos', [VideoController::class, 'index'])->name('kid.videos.index');
      Route::get('/kid/videos/{id}', [VideoController::class, 'show'])->name('kid.videos.show');
+
+     //Games
+     Route::get('/kid/games', [App\Http\Controllers\Kid\GameController::class, 'index'])->name('kid.games.index');
+     Route::get('/kid/games/{id}', [App\Http\Controllers\Kid\GameController::class, 'show'])->name('kid.games.show');
 
     //  Route::get('/kid/videos', [VideosController::class,'showVideos'])->name('kid.videos');
     //  Route::get('/kid/games', [YouTubeController::class,'showGames'])->name('kid.games');
