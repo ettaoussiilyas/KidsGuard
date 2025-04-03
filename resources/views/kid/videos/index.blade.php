@@ -38,10 +38,10 @@
                         </div>
                     </button>
                 </div>
-                <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
+                <!-- <div class="absolute bottom-2 right-2 bg-black/80 text-white text-xs px-2 py-1 rounded">
                     {{-- Duration would be fetched from video details API --}}
                     00:00
-                </div>
+                </div> -->
             </div>
             <div class="p-4">
                 <h3 class="font-semibold text-gray-800 mb-1 line-clamp-2 text-lg">{{ $video['title'] }}</h3>
