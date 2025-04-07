@@ -3,337 +3,1002 @@
         {
             "title": "Sesame Street Connect the Dots: Birthday Bash",
             "url": "https://www.sesamestreet.org/games?id=27974",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2025-01/800x600_ConnecttheDots_Birthday_STATIC.jpg",
             "description": "Sesame Street game: Sesame Street Connect the Dots: Birthday Bash",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
             "title": "Sesame Street Nature Explorers",
             "url": "https://www.sesamestreet.org/games?id=27966",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2025-01/thumbnail.gif",
             "description": "Sesame Street game: Sesame Street Nature Explorers",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "Super Salad Diner",
-            "url": "https://www.sesamestreet.org/games?id=20585",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Super Salad Diner",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "Field Day Fun",
-            "url": "https://www.sesamestreet.org/games?id=27923",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Field Day Fun",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "Potty Plan",
-            "url": "https://www.sesamestreet.org/games?id=25985",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Potty Plan",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "The Nutcracker Search and Find",
-            "url": "https://www.sesamestreet.org/games?id=27958",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: The Nutcracker Search and Find",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "Dress Up Time!",
-            "url": "https://www.sesamestreet.org/games?id=304",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Dress Up Time!",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "Show Me the Cookies",
-            "url": "https://www.sesamestreet.org/games?id=25744",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Show Me the Cookies",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High"
-        },
-        {
-            "title": "Cooking With Cookie",
-            "url": "https://www.sesamestreet.org/games?id=169",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Cooking With Cookie",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
             "title": "Sesame Street Pop-Up: Halloween!",
             "url": "https://www.sesamestreet.org/games?id=27951",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2024-10/800x600_Halloween%20Pop-up%20Black%20Cat.jpg",
             "description": "Sesame Street game: Sesame Street Pop-Up: Halloween!",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Field Day Fun",
+            "url": "https://www.sesamestreet.org/games?id=27923",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2024-07/800x600-FieldDayFun-Wheel%20copy.gif",
+            "description": "Sesame Street game: Field Day Fun",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Backyard Bug Hunt",
+            "url": "https://www.sesamestreet.org/games?id=27854",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2023-12/800x600-BackYardBugHunt-winter-anim.gif",
+            "description": "Sesame Street game: Backyard Bug Hunt",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Elmo and Grover's Farm Time Fun",
+            "url": "https://www.sesamestreet.org/games?id=27790",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Elmo and Grover's Farm Time Fun",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Sesame Street Puppy Pet Care",
+            "url": "https://www.sesamestreet.org/games?id=27763",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Sesame Street Puppy Pet Care",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
             "title": "Elmo's World Games",
             "url": "https://www.sesamestreet.org/games?id=25193",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
             "description": "Sesame Street game: Elmo's World Games",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
-            "title": "The Monster at the End of This Game",
-            "url": "https://www.sesamestreet.org/games?id=27621",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: The Monster at the End of This Game",
+            "title": "Jigsaw Puzzle: Mecha Builders",
+            "url": "https://www.sesamestreet.org/games?id=27666",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Jigsaw Puzzle: Mecha Builders",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
-            "title": "Cookie Monster's Foodie Truck",
-            "url": "https://www.sesamestreet.org/games?id=26139",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Cookie Monster's Foodie Truck",
+            "title": "Ramp Racers",
+            "url": "https://www.sesamestreet.org/games?id=27571",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Ramp Racers",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
-            "title": "Sesame Street Memory Match: Words From A to Z",
-            "url": "https://www.sesamestreet.org/games?id=27937",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
-            "description": "Sesame Street game: Sesame Street Memory Match: Words From A to Z",
+            "title": "Spot the Difference: Furry Friends Forever",
+            "url": "https://www.sesamestreet.org/games?id=27528",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Spot the Difference: Furry Friends Forever",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Connect the Dots: Mecha Builders",
+            "url": "https://www.sesamestreet.org/games?id=27719",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Connect the Dots: Mecha Builders",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "A Job for Me",
+            "url": "https://www.sesamestreet.org/games?id=26550",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: A Job for Me",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Elmo and Rosita's Playdate",
+            "url": "https://www.sesamestreet.org/games?id=26835",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1605882693/800x600_ElmoRositaVirtualPlaydate_Anim%20%281%29.gif",
+            "description": "Sesame Street game: Elmo and Rosita's Playdate",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Jigsaw Puzzle: Furry Friends Forever",
+            "url": "https://www.sesamestreet.org/games?id=27529",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/images/game/Jigsaw-Puzzle-Furry-Friends-Forever-thumbnail-small.jpg",
+            "description": "Sesame Street game: Jigsaw Puzzle: Furry Friends Forever",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Connect the Dots: Furry Friends Forever",
+            "url": "https://www.sesamestreet.org/games?id=27530",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2021-08/800x600_FFF-CTD_2_Anim.gif",
+            "description": "Sesame Street game: Connect the Dots: Furry Friends Forever",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Potty Plan",
+            "url": "https://www.sesamestreet.org/games?id=25985",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1572634653/PottyPlan_AbbyElmo_Static_v2.jpg",
+            "description": "Sesame Street game: Potty Plan",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Go Green",
+            "url": "https://www.sesamestreet.org/games?id=27033",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2021-07/800x600_GoGreen_ANIM%20%282%29.gif",
+            "description": "Sesame Street game: Go Green",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Ready, Set, Grow!",
+            "url": "https://www.sesamestreet.org/games?id=22022",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1522171209/800x600_ReadySetGrow.gif",
+            "description": "Sesame Street game: Ready, Set, Grow!",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Detective Elmo: The Cookie Case",
+            "url": "https://www.sesamestreet.org/games?id=208",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497546025/DetectiveElmo.gif",
+            "description": "Sesame Street game: Detective Elmo: The Cookie Case",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Spot the Difference: Mecha Builders",
+            "url": "https://www.sesamestreet.org/games?id=27720",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2022-08/800x600_MechaBuilders-SpottheDifference-ANIM-v2%20%281%29.gif",
+            "description": "Sesame Street game: Spot the Difference: Mecha Builders",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Monster Music",
+            "url": "https://www.sesamestreet.org/games?id=24349",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1519011917/MonsterMusic_small.gif",
+            "description": "Sesame Street game: Monster Music",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Grover's Story Circle",
+            "url": "https://www.sesamestreet.org/games?id=25564",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1523277546/Thumb800x600_GroverStoryCircle.gif",
+            "description": "Sesame Street game: Grover's Story Circle",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Search and Find: Elmo",
+            "url": "https://www.sesamestreet.org/games?id=25785",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1563217405/800x600_SearchAndFindElmo_Anim.gif",
+            "description": "Sesame Street game: Search and Find: Elmo",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
             "title": "Super Elmo's ABC Jump",
             "url": "https://www.sesamestreet.org/games?id=1248",
-            "image": "https://www.sesamestreet.orgdata:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MiIgaGVpZ2h0PSI1MiIgdmlld0JveD0iMCAwIDUyIDUyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojMjFjZmZmO30uYntmaWxsOiNmZmY7fS5je2ZpbGw6I2E3ZDYwMDt9LmR7ZmlsbDojMDBjYmU4O30uZXtmaWxsOiNmZjM3N2U7fS5me2ZpbGw6I2Y3ZDUwMjt9Lmd7ZmlsbDojYWFhOWE5O30uaHtmaWxsOiMwN2FiNWM7fTwvc3R5bGU+PC9kZWZzPjxjaXJjbGUgY2xhc3M9ImEiIGN4PSIyNiIgY3k9IjI2IiByPSIyNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuMzg1IDE0LjEwOSkiPjxwYXRoIGNsYXNzPSJiIiBkPSJNMTY3LjY0OSwxMjguODQxYTIzLjU5MSwyMy41OTEsMCwwLDAtMTguNzksMCw4LjMsOC4zLDAsMCwxLTEwLjQ5MS0zLjI0N2gwYy0yLjMyNS0zLjU5NC0uMjY4LTEwLjMsNi4wNTctMTMuMjFhMzIuNTQ4LDMyLjU0OCwwLDAsMSwyNy42NjIsMGM2LjMyNiwyLjkxNCw3LjgxMSwxMC4yMjIsNS40ODEsMTMuODE2aDBDMTc1LjI0OCwxMjkuODY3LDE3MS42NTgsMTMwLjQ1MiwxNjcuNjQ5LDEyOC44NDFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3LjQ0MSAtMTA5LjI5OSkiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNy4zODEgNi40NikiPjxjaXJjbGUgY2xhc3M9ImMiIGN4PSIxLjYxMSIgY3k9IjEuNjExIiByPSIxLjYxMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNi40NyAzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJkIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMy4yMzUpIi8+PGNpcmNsZSBjbGFzcz0iZSIgY3g9IjEuNjExIiBjeT0iMS42MTEiIHI9IjEuNjExIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjIzNSkiLz48Y2lyY2xlIGNsYXNzPSJmIiBjeD0iMS42MTEiIGN5PSIxLjYxMSIgcj0iMS42MTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuMjM1IDYuNDcpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4LjIxMSA3LjYwNikiPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIvPjxyZWN0IGNsYXNzPSJnIiB3aWR0aD0iNC43NDUiIGhlaWdodD0iMS42MzYiIHJ4PSIwLjE4OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAyLjcpIi8+PC9nPjxwYXRoIGNsYXNzPSJoIiBkPSJNMTQyLjksMTExLjUzNGwtMS4xOTEsMS4xOTEtMS4xOTUtMS4xOTFhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQsMS40MmwxLjE5NSwxLjE5NS0xLjE5NSwxLjE5MWExLjAwNywxLjAwNywwLDAsMCwxLjQyNCwxLjQyNGwxLjE5NS0xLjE5MSwxLjE5MSwxLjE5MWExLjAwNywxLjAwNywwLDEsMCwxLjQyNC0xLjQyNGwtMS4xOTEtMS4xOTEsMS4xOTEtMS4xOTVhMS4wMDYsMS4wMDYsMCwxLDAtMS40MjQtMS40MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMzIuOTM3IC0xMDIuODQzKSIvPjwvZz48L3N2Zz4=",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497545952/ElmoABCJump.gif",
             "description": "Sesame Street game: Super Elmo's ABC Jump",
             "category": "Educational Game",
             "age_range": "3-8",
-            "educational_value": "High"
+            "educational_value": "High",
+            "character": "Elmo"
         },
         {
-            "title": "Nature Explorers",
-            "url": "https://pbskids.org/sesame/games/nature-explorers",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_NatureExplorers_Small-NEW.png",
-            "description": "PBS Kids game: Nature Explorers",
+            "title": "Elmo\u2019s School Friends",
+            "url": "https://www.sesamestreet.org/games?id=18007",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1505093844/800x600_ElmosSchoolFriends_Anim.gif",
+            "description": "Sesame Street game: Elmo\u2019s School Friends",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Field Day Fun",
-            "url": "https://pbskids.org/sesame/games/field-day-fun",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_FieldDayFun_Small-NEW.png",
-            "description": "PBS Kids game: Field Day Fun",
+            "title": "Story Book Builder",
+            "url": "https://www.sesamestreet.org/games?id=12139",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497463111/StoryBuilder.png",
+            "description": "Sesame Street game: Story Book Builder",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Backyard Bug Hunt",
-            "url": "https://pbskids.org/sesame/games/backyard-bug-hunt",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_BackYardBugHunt-Base_Small-NEW_2024-04-03-150223_vejz.png",
-            "description": "PBS Kids game: Backyard Bug Hunt",
+            "title": "Elmo's Brain Games",
+            "url": "https://www.sesamestreet.org/games?id=25927",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1564955729/800x600_ElmosBrainGames_Anim.gif",
+            "description": "Sesame Street game: Elmo's Brain Games",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Elmo and Grover's Farm Time Fun",
-            "url": "https://pbskids.org/sesame/games/elmo-at-the-farm",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_FarmTimeFun_Small.png",
-            "description": "PBS Kids game: Elmo and Grover's Farm Time Fun",
+            "title": "Bouncy Elmo's Castle",
+            "url": "https://www.sesamestreet.org/games?id=241",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497463111/BounceCastleElmo.png",
+            "description": "Sesame Street game: Bouncy Elmo's Castle",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Puppy Pet Care",
-            "url": "https://pbskids.org/sesame/games/puppy-pet-care",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_PuppyPetCare_Sm.png",
-            "description": "PBS Kids game: Puppy Pet Care",
+            "title": "Dress Up Time!",
+            "url": "https://www.sesamestreet.org/games?id=304",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Dress Up Time!",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Monster at the End of this Game",
-            "url": "https://pbskids.org/sesame/games/monster-at-the-end",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_MATEOTG_Small.png",
-            "description": "PBS Kids game: Monster at the End of this Game",
+            "title": "Elmo and the Beanstalk",
+            "url": "https://www.sesamestreet.org/games?id=224",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Elmo and the Beanstalk",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Ramp Racers",
-            "url": "https://pbskids.org/sesame/games/ramp-racers",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_RampRacers_Small.png",
-            "description": "PBS Kids game: Ramp Racers",
+            "title": "Train Track Engineers",
+            "url": "https://www.sesamestreet.org/games?id=230",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Train Track Engineers",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Go Green",
-            "url": "https://pbskids.org/sesame/games/go-green",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_GoGreen_Small.png",
-            "description": "PBS Kids game: Go Green",
+            "title": "Word Play",
+            "url": "https://www.sesamestreet.org/games?id=22215",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Word Play",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "Elmo & Rosita's Virtual Playdate",
-            "url": "https://pbskids.org/sesame/games/elmo-rositas-virtual-playdate",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_ElmoRositaVirtualPlaydate_Small.png",
-            "description": "PBS Kids game: Elmo & Rosita's Virtual Playdate",
+            "title": "Alphabet Hunt",
+            "url": "https://www.sesamestreet.org/games?id=281",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Alphabet Hunt",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
         },
         {
-            "title": "A Job For Me",
-            "url": "https://pbskids.org/sesame/games/a-job-for-me",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_AJobforMe_Small.png",
-            "description": "PBS Kids game: A Job For Me",
+            "title": "Elmo's World Puzzle",
+            "url": "https://www.sesamestreet.org/games?id=20584",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Elmo's World Puzzle",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Elmo"
+        },
+        {
+            "title": "Elmo's World: Baby Animals",
+            "url": "https://www.sesamestreet.org/games?id=20838",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Elmo's World: Baby Animals",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Egg-Counting Elmo",
+            "url": "https://www.sesamestreet.org/games?id=25578",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Egg-Counting Elmo",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Shape Voyage",
+            "url": "https://www.sesamestreet.org/games?id=267",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Shape Voyage",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Spot the Difference: Elmo",
+            "url": "https://www.sesamestreet.org/games?id=278",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Spot the Difference: Elmo",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Reading Adventures",
+            "url": "https://www.sesamestreet.org/games?id=1344",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Reading Adventures",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Oh Say, Can You See The Shapes?",
+            "url": "https://www.sesamestreet.org/games?id=18215",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Oh Say, Can You See The Shapes?",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Spot the Difference: Animals",
+            "url": "https://www.sesamestreet.org/games?id=301",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Spot the Difference: Animals",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Let's Build It",
+            "url": "https://www.sesamestreet.org/games?id=25622",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Let's Build It",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Winter Fun Puzzles",
+            "url": "https://www.sesamestreet.org/games?id=194",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Winter Fun Puzzles",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Party Time",
+            "url": "https://www.sesamestreet.org/games?id=199",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Party Time",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "ABC Puzzles",
+            "url": "https://www.sesamestreet.org/games?id=198",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: ABC Puzzles",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Elmo and Grover's Lemonade Stand",
+            "url": "https://www.sesamestreet.org/games?id=25536",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Elmo and Grover's Lemonade Stand",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Elmo"
+        },
+        {
+            "title": "Pop-Up! Cookies",
+            "url": "https://www.sesamestreet.org/games?id=27831",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/images/game/Pop-Up-Cookies-thumbnail.gif",
+            "description": "Sesame Street game: Pop-Up! Cookies",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
         },
         {
             "title": "Cookie Monster's Foodie Truck",
-            "url": "https://pbskids.org/sesame/games/cookie-monsters-foodie-truck",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_MonsterFoodieTruck_Small.png",
-            "description": "PBS Kids game: Cookie Monster's Foodie Truck",
+            "url": "https://www.sesamestreet.org/games?id=26139",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1581883634/800x600_MonsterFoodieTruck_Anim.gif",
+            "description": "Sesame Street game: Cookie Monster's Foodie Truck",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Cookie-Monster"
         },
         {
-            "title": "Abby and Elmo's Potty Plan!",
-            "url": "https://pbskids.org/sesame/games/abby-and-elmos-potty-plan",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_PottyPlan_Small.png",
-            "description": "PBS Kids game: Abby and Elmo's Potty Plan!",
+            "title": "Show Me the Cookies",
+            "url": "https://www.sesamestreet.org/games?id=25744",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1546620430/800x600_ShowMeTheCookiesANIM.gif",
+            "description": "Sesame Street game: Show Me the Cookies",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "The Cookie Games",
+            "url": "https://www.sesamestreet.org/games?id=11577",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497546025/CookieGames.gif",
+            "description": "Sesame Street game: The Cookie Games",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Cooking With Cookie",
+            "url": "https://www.sesamestreet.org/games?id=169",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Cooking With Cookie",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Cookie Kart Racing",
+            "url": "https://www.sesamestreet.org/games?id=207",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Cookie Kart Racing",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Cookie's Cookies",
+            "url": "https://www.sesamestreet.org/games?id=25871",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Cookie's Cookies",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Checkout Cookie",
+            "url": "https://www.sesamestreet.org/games?id=25577",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Checkout Cookie",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Cookie Monster Hop",
+            "url": "https://www.sesamestreet.org/games?id=18711",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Cookie Monster Hop",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Cookie Monster Chase",
+            "url": "https://www.sesamestreet.org/games?id=160",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Cookie Monster Chase",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Cookie Thief Puzzles",
+            "url": "https://www.sesamestreet.org/games?id=192",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Cookie Thief Puzzles",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "ABC Hungry",
+            "url": "https://www.sesamestreet.org/games?id=19046",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: ABC Hungry",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Alphabet Soup",
+            "url": "https://www.sesamestreet.org/games?id=25870",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Alphabet Soup",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Cookie-Monster"
+        },
+        {
+            "title": "Abby's Magical Letter Garden",
+            "url": "https://www.sesamestreet.org/games?id=27724",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2022-08/800x600_AbbysLetterGarden_ANIM.gif",
+            "description": "Sesame Street game: Abby's Magical Letter Garden",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Abby-Cadabby"
         },
         {
             "title": "Abby and Rosita's Wand Chase",
-            "url": "https://pbskids.org/sesame/games/abby-and-rositas-wand-chase",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_AbbyRositaWandChase_Small.png",
-            "description": "PBS Kids game: Abby and Rosita's Wand Chase",
+            "url": "https://www.sesamestreet.org/games?id=25767",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1552665024/Thumb800x600_MagicalWandChase.gif",
+            "description": "Sesame Street game: Abby and Rosita's Wand Chase",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
-        },
-        {
-            "title": "Letter Dance Party",
-            "url": "https://pbskids.org/sesame/games/letter-dance-party",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_LetterDanceParty_Small.png",
-            "description": "PBS Kids game: Letter Dance Party",
-            "category": "Educational Game",
-            "age_range": "3-8",
-            "educational_value": "High",
-            "character": "Sesame"
+            "character": "Abby-Cadabby"
         },
         {
             "title": "Seasons Spinner",
-            "url": "https://pbskids.org/sesame/games/seasons-spinner",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_SeasonsWinter_Small.png",
-            "description": "PBS Kids game: Seasons Spinner",
+            "url": "https://www.sesamestreet.org/games?id=25463",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Seasons Spinner",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Abby-Cadabby"
         },
         {
-            "title": "Show Me The Cookies",
-            "url": "https://pbskids.org/sesame/games/show-me-the-cookies",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_ShowMeTheCookies_Small.png",
-            "description": "PBS Kids game: Show Me The Cookies",
+            "title": "Abby's Smoothie Maker",
+            "url": "https://www.sesamestreet.org/games?id=253",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Abby's Smoothie Maker",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Abby-Cadabby"
         },
         {
-            "title": "Monster Music",
-            "url": "https://pbskids.org/sesame/games/monster-music",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_MonsterMusic_Small.png",
-            "description": "PBS Kids game: Monster Music",
+            "title": "Abby's Sandbox Search",
+            "url": "https://www.sesamestreet.org/games?id=18206",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Abby's Sandbox Search",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Abby-Cadabby"
         },
         {
-            "title": "Ready, Set, Grow!",
-            "url": "https://pbskids.org/sesame/games/ready-set-grow",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_ReadySetGrow_Small.png",
-            "description": "PBS Kids game: Ready, Set, Grow!",
+            "title": "Valentine's Day Puzzles",
+            "url": "https://www.sesamestreet.org/games?id=128",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Valentine's Day Puzzles",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Abby-Cadabby"
         },
         {
-            "title": "Elmo's World Games",
-            "url": "https://pbskids.org/sesame/games/elmos-world-games",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_ElmosWorldGames_WINTER_Small.png",
-            "description": "PBS Kids game: Elmo's World Games",
+            "title": "Words Are Everywhere",
+            "url": "https://www.sesamestreet.org/games?id=148",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Words Are Everywhere",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Abby-Cadabby"
+        },
+        {
+            "title": "Spot the Numbers",
+            "url": "https://www.sesamestreet.org/games?id=18233",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Spot the Numbers",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Abby-Cadabby"
+        },
+        {
+            "title": "The Monster at the End of This Game",
+            "url": "https://www.sesamestreet.org/games?id=27621",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2022-02/MATEOTG-Anim-v2%20%282%29.gif",
+            "description": "Sesame Street game: The Monster at the End of This Game",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Grover's Winter Games",
+            "url": "https://www.sesamestreet.org/games?id=256",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497545952/GroverWinterSPorts.gif",
+            "description": "Sesame Street game: Grover's Winter Games",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Grow Your Colors",
+            "url": "https://www.sesamestreet.org/games?id=269",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497545952/GrowColors.gif",
+            "description": "Sesame Street game: Grow Your Colors",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Rhyme Time!",
+            "url": "https://www.sesamestreet.org/games?id=302",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Rhyme Time!",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Grover's Motorcycle Mayhem",
+            "url": "https://www.sesamestreet.org/games?id=25743",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Grover's Motorcycle Mayhem",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Sesame Street Blockbuster",
+            "url": "https://www.sesamestreet.org/games?id=25661",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Sesame Street Blockbuster",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Underwater Sink or Float",
+            "url": "https://www.sesamestreet.org/games?id=291",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Underwater Sink or Float",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Grover's Diner Dash",
+            "url": "https://www.sesamestreet.org/games?id=18227",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Grover's Diner Dash",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Grover's Motorcycle Mayhem Holiday Edition",
+            "url": "https://www.sesamestreet.org/games?id=26150",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Grover's Motorcycle Mayhem Holiday Edition",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Grover"
+        },
+        {
+            "title": "Letter Dance Party",
+            "url": "https://www.sesamestreet.org/games?id=25654",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1533066254/800x600_LetterDanceParty_Anim.gif",
+            "description": "Sesame Street game: Letter Dance Party",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Big-Bird"
+        },
+        {
+            "title": "Big Bird's Basketball",
+            "url": "https://www.sesamestreet.org/games?id=168",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1527868922/800x600_BigBirdBasketball_Anim.gif",
+            "description": "Sesame Street game: Big Bird's Basketball",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Big-Bird"
+        },
+        {
+            "title": "Big Bird's Alphabet Track",
+            "url": "https://www.sesamestreet.org/games?id=18226",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497464909/BBirdAlphabetTrack.png",
+            "description": "Sesame Street game: Big Bird's Alphabet Track",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Big-Bird"
+        },
+        {
+            "title": "Inside, Outside with Bert & Ernie",
+            "url": "https://www.sesamestreet.org/games?id=27891",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2024-04/800x600-InsideOutside-BE%20%282%29%20%282%29.gif",
+            "description": "Sesame Street game: Inside, Outside with Bert & Ernie",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Bert-And-Ernie"
+        },
+        {
+            "title": "Reuse and Reinvent",
+            "url": "https://www.sesamestreet.org/games?id=27620",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2022-01/ReuseReinventGame-Anim-v1b.gif",
+            "description": "Sesame Street game: Reuse and Reinvent",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Bert-And-Ernie"
         },
         {
             "title": "Super Salad Diner",
-            "url": "https://pbskids.org/sesame/games/super-salad-diner",
-            "image": "https://cms-tc.pbskids.org/sesamestreet/_260x139_fit_center-center_70_none/PBS_Game_SuperSaladDiner_Small_170915_102501.png",
-            "description": "PBS Kids game: Super Salad Diner",
+            "url": "https://www.sesamestreet.org/games?id=20585",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1500487000/800x600_GIF_SuperSaladDiner_Game.gif",
+            "description": "Sesame Street game: Super Salad Diner",
             "category": "Educational Game",
             "age_range": "3-8",
             "educational_value": "High",
-            "character": "Sesame"
+            "character": "Bert-And-Ernie"
+        },
+        {
+            "title": "Ernie's Dinosaur Day Care",
+            "url": "https://www.sesamestreet.org/games?id=283",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497545952/ErnieDino.gif",
+            "description": "Sesame Street game: Ernie's Dinosaur Day Care",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Bert-And-Ernie"
+        },
+        {
+            "title": "Bert's Bottle Caps",
+            "url": "https://www.sesamestreet.org/games?id=25620",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
+            "description": "Sesame Street game: Bert's Bottle Caps",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Bert-And-Ernie"
+        },
+        {
+            "title": "Spot the Difference: Bert and Ernie",
+            "url": "https://www.sesamestreet.org/games?id=218",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Spot the Difference: Bert and Ernie",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Bert-And-Ernie"
+        },
+        {
+            "title": "Ernie's Bathtime Fun",
+            "url": "https://www.sesamestreet.org/games?id=18234",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Ernie's Bathtime Fun",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Bert-And-Ernie"
+        },
+        {
+            "title": "Bert's Pigeon Path",
+            "url": "https://www.sesamestreet.org/games?id=142",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Bert's Pigeon Path",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Bert-And-Ernie"
+        },
+        {
+            "title": "Oscar's Rotten Ride",
+            "url": "https://www.sesamestreet.org/games?id=303",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497545952/OscarRottenRide.gif",
+            "description": "Sesame Street game: Oscar's Rotten Ride",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Oscar"
+        },
+        {
+            "title": "Bumper Cars",
+            "url": "https://www.sesamestreet.org/games?id=25621",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1529929357/800x600_BumperCars_ANIM.gif",
+            "description": "Sesame Street game: Bumper Cars",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Oscar"
+        },
+        {
+            "title": "Oscar's Junk My Jacket",
+            "url": "https://www.sesamestreet.org/games?id=250",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497545952/OscarJunkJacket.gif",
+            "description": "Sesame Street game: Oscar's Junk My Jacket",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Oscar"
+        },
+        {
+            "title": "Oscar's Trash Launch",
+            "url": "https://www.sesamestreet.org/games?id=191",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Oscar's Trash Launch",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Oscar"
+        },
+        {
+            "title": "Find the Foods",
+            "url": "https://www.sesamestreet.org/games?id=18224",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Find the Foods",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Oscar"
+        },
+        {
+            "title": "I Spy Instruments",
+            "url": "https://www.sesamestreet.org/games?id=200",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1519011716/ISpyInstruments_small.png",
+            "description": "Sesame Street game: I Spy Instruments",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Rosita"
+        },
+        {
+            "title": "Memory Match: Friends",
+            "url": "https://www.sesamestreet.org/games?id=27792",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/2023-04/800x600-Match-ANIM-Julia%20%281%29.gif",
+            "description": "Sesame Street game: Memory Match: Friends",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Other-Muppets"
+        },
+        {
+            "title": "Zoe's Pet Shelter",
+            "url": "https://www.sesamestreet.org/games?id=25778",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1556887398/800x600_Game_ZoesPetShelter_ReVamp%20%281%29.jpg",
+            "description": "Sesame Street game: Zoe's Pet Shelter",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Other-Muppets"
+        },
+        {
+            "title": "Count Me to Sheep",
+            "url": "https://www.sesamestreet.org/games?id=25579",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497463111/CountMeToSheep.png",
+            "description": "Sesame Street game: Count Me to Sheep",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Other-Muppets"
+        },
+        {
+            "title": "Murray Cleans Up",
+            "url": "https://www.sesamestreet.org/games?id=25625",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1497464909/MurrayCleansUp.png",
+            "description": "Sesame Street game: Murray Cleans Up",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Other-Muppets"
+        },
+        {
+            "title": "Count's Number Ride",
+            "url": "https://www.sesamestreet.org/games?id=18230",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1505758792/800x600_CountsNumberRide_Game.png",
+            "description": "Sesame Street game: Count's Number Ride",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Other-Muppets"
+        },
+        {
+            "title": "Zoe's Sandbox Adventure",
+            "url": "https://www.sesamestreet.org/games?id=136",
+            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "description": "Sesame Street game: Zoe's Sandbox Adventure",
+            "category": "Educational Game",
+            "age_range": "3-8",
+            "educational_value": "High",
+            "character": "Other-Muppets"
         }
     ]
 }
