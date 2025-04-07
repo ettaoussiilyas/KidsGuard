@@ -31,7 +31,7 @@
             <span class="mt-2 text-base sm:text-lg md:text-xl font-bold text-white">Stories</span>
         </a>
             
-        <a href="  route('kid.music') }}" class="flex flex-col items-center group">
+        <a href="{{ route('kid.musics.index') }}" class="flex flex-col items-center group">
             <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-[#9B59B6] flex items-center justify-center shadow-lg group-hover:shadow-xl transform transition-all duration-300 group-hover:scale-110 relative overflow-hidden">
                 <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-full"></div>
                 <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -52,7 +52,7 @@
             <span class="mt-2 text-base sm:text-lg md:text-xl font-bold text-white">Learn</span>
         </a>
             
-        <a href="  route('kid.favorites') }}" class="flex flex-col items-center group">
+        <a href="{{ route('kid.videos.index') }}" class="flex flex-col items-center group">
             <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-[#E74C3C] flex items-center justify-center shadow-lg group-hover:shadow-xl transform transition-all duration-300 group-hover:scale-110 relative overflow-hidden">
                 <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-full"></div>
                 <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="currentColor" viewBox="0 0 20 20">

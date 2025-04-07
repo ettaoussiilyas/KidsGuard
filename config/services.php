@@ -37,7 +37,8 @@ return [
     
     'youtube' => [
         'api_key' => env('YOUTUBE_API_KEY'),
-        'playlist_id' => env('YOUTUBE_PLAYLIST_PARENT_GAMES_ID'),
+        'playlist_id' => env('YOUTUBE_PLAYLIST_PARENT_GAMES_ID'), // First Method
+        'music_playlist_id' => 'PLU1E9f2XmDpYV-VhesvHLOjOJ1uaaMBpz', // Second Method
     ], 
 
 ];
