@@ -43,6 +43,7 @@ return [
         'music_playlist_id' => env('YOUTUBE_PLAYLIST_MUSIC_ID', 'PLDuxenf8jCsRcvTwh0HHSUAWm_3y_m6q1'),
         'math_playlist_id' => env('YOUTUBE_PLAYLIST_MATH_ID', 'PLDuxenf8jCsTWON3HdC0E2dvPXPNy-lzP'),
         'science_playlist_id' => env('YOUTUBE_PLAYLIST_SCIENCE_ID', 'PLDuxenf8jCsRVC0Coqa8kY3L4Kl99aaZI'),
+        'featured_playlist_id' => env('YOUTUBE_PLAYLIST_FEATURED_ID', 'PLDuxenf8jCsQEXNcAa9QHOQwCpkgq6War'),
     ], 
 
 ];

@@ -5,13 +5,21 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Role;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Services\YouTubeService;
 
 class KidController extends Controller
 {
+    protected $youtubeService;
+
+    public function __construct(YouTubeService $youtubeService)
+    {
+        $this->youtubeService = $youtubeService;
+    }
+
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $user = Auth::user();
         
@@ -33,7 +41,23 @@ class KidController extends Controller
             session(['current_kid_name' => $firstProfile->name]);
         }
         
-        return view('kid.index');
+        // Fetch featured videos from the specified playlist
+        $pageToken = $request->input('page_token');
+        $featuredVideos = $this->getFeaturedVideos($pageToken);
+        
+        return view('kid.index', [
+            'featuredVideos' => $featuredVideos['items'],
+            'nextPageToken' => $featuredVideos['nextPageToken'],
+            'prevPageToken' => $featuredVideos['prevPageToken'],
+        ]);
+    }
+    
+    /**
+     * Fetch featured videos from the specified playlist
+     */
+    private function getFeaturedVideos($pageToken = null, $maxResults = 6)
+    {
+        return $this->youtubeService->getFeaturedPlaylistVideos($pageToken, $maxResults);
     }
     
     /**

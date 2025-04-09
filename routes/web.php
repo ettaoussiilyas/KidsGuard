@@ -103,7 +103,7 @@ Route::middleware(['auth', 'role:child'])->group(function () {
 
     Route::post('/gurdian', [ParentController::class, 'switchGuardian'])->name('switch-to-guardian');
     Route::get('/kids', [KidController::class, 'index'])->name('switch-to-kid');
-    
+    Route::get('/kids', [KidController::class, 'index'])->name('kid.index');
     // Content access
     Route::get('/content', function () {
         return view('child.content');

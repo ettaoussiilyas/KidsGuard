@@ -361,4 +361,47 @@ class YouTubeService
     });
     }
 
+
+
+
+    // Add this method to your YouTubeService class
+
+    /**
+     * Get videos from a featured playlist
+     */
+    public function getFeaturedPlaylistVideos($pageToken = null, $maxResults = 6)
+    {
+        $apiKey = config('services.youtube.api_key');
+        $playlistId = config('services.youtube.featured_playlist_id');
+    
+        $url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=$playlistId&maxResults=$maxResults&key=$apiKey";
+        
+        if ($pageToken) {
+            $url .= "&pageToken=$pageToken";
+        }
+        
+        $cacheKey = "youtube_featured_playlist_{$playlistId}_{$pageToken}_{$maxResults}";
+        
+        return Cache::remember($cacheKey, 60 * 5, function () use ($url) {
+            $response = Http::get($url);
+            
+            if ($response->successful()) {
+                $data = $response->json();
+                return [
+                    'items' => $data['items'],
+                    'nextPageToken' => $data['nextPageToken'] ?? null,
+                    'prevPageToken' => $data['prevPageToken'] ?? null,
+                    'pageInfo' => $data['pageInfo'] ?? null,
+                ];
+            }
+            
+            return [
+                'items' => [],
+                'nextPageToken' => null,
+                'prevPageToken' => null,
+                'pageInfo' => null,
+            ];
+        });
+    }
+
 }
