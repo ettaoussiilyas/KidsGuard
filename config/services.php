@@ -38,8 +38,9 @@ return [
     // Add these to your existing services config
     'youtube' => [
         'api_key' => env('YOUTUBE_API_KEY'),
-        'playlist_id' => env('YOUTUBE_PLAYLIST_PARENT_GAMES_ID'),
-        'music_playlist_id' => env('YOUTUBE_PLAYLIST_MUSIC_ID', 'PLU1E9f2XmDpYV-VhesvHLOjOJ1uaaMBpz'),
+        'playlist_id' => env('YOUTUBE_PLAYLIST_PARENT_GAMES_ID', 'PLAZ_7tdhbxkE94Fk22PNGilqsdPSJ0m4K'),
+        // 'music_playlist_id' => env('YOUTUBE_PLAYLIST_MUSIC_ID', 'PLU1E9f2XmDpYV-VhesvHLOjOJ1uaaMBpz'),
+        'music_playlist_id' => env('YOUTUBE_PLAYLIST_MUSIC_ID', 'PLDuxenf8jCsRcvTwh0HHSUAWm_3y_m6q1'),
         'math_playlist_id' => env('YOUTUBE_PLAYLIST_MATH_ID', 'PLDuxenf8jCsTWON3HdC0E2dvPXPNy-lzP'),
         'science_playlist_id' => env('YOUTUBE_PLAYLIST_SCIENCE_ID', 'PLDuxenf8jCsRVC0Coqa8kY3L4Kl99aaZI'),
     ], 

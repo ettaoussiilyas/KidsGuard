@@ -38,10 +38,10 @@
                     <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path>
                 </svg>
             </div>
-            <span class="mt-2 text-base sm:text-lg md:text-xl font-bold text-white">Music</span>
+            <span class="mt-2 text-base sm:text-lg md:text-xl font-bold text-white">Songs</span>
         </a>
             
-        <a href="  route('kid.learn') }}" class="flex flex-col items-center group">
+        <a href="{{ route('kid.learning.index') }}" class="flex flex-col items-center group">
             <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-[#FFD600] flex items-center justify-center shadow-lg group-hover:shadow-xl transform transition-all duration-300 group-hover:scale-110 relative overflow-hidden">
                 <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-full"></div>
                 <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
