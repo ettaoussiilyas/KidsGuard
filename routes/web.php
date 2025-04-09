@@ -125,6 +125,11 @@ Route::middleware(['auth', 'role:child'])->group(function () {
      Route::get('/kid/musics', [App\Http\Controllers\Kid\MusicController::class, 'index'])->name('kid.musics.index');
      Route::get('/kid/musics/{id}', [App\Http\Controllers\Kid\MusicController::class, 'show'])->name('kid.musics.show');
 
+     //Learning
+     Route::get('/kid/learning', [App\Http\Controllers\Kid\LearningController::class, 'index'])->name('kid.learning.index');
+     Route::get('/kid/learning/{id}', [App\Http\Controllers\Kid\LearningController::class, 'show'])->name('kid.learning.show');
+
+
     //  Route::get('/kid/videos', [VideosController::class,'showVideos'])->name('kid.videos');
     //  Route::get('/kid/games', [YouTubeController::class,'showGames'])->name('kid.games');
     //  Route::get('/kid/books', [YouTubeController::class,'showBooks'])->name('kid.books');

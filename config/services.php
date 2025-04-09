@@ -35,10 +35,13 @@ return [
         ],
     ],
     
+    // Add these to your existing services config
     'youtube' => [
         'api_key' => env('YOUTUBE_API_KEY'),
-        'playlist_id' => env('YOUTUBE_PLAYLIST_PARENT_GAMES_ID'), // First Method
-        'music_playlist_id' => 'PLU1E9f2XmDpYV-VhesvHLOjOJ1uaaMBpz', // Second Method
+        'playlist_id' => env('YOUTUBE_PLAYLIST_PARENT_GAMES_ID'),
+        'music_playlist_id' => env('YOUTUBE_PLAYLIST_MUSIC_ID', 'PLU1E9f2XmDpYV-VhesvHLOjOJ1uaaMBpz'),
+        'math_playlist_id' => env('YOUTUBE_PLAYLIST_MATH_ID', 'PLDuxenf8jCsTWON3HdC0E2dvPXPNy-lzP'),
+        'science_playlist_id' => env('YOUTUBE_PLAYLIST_SCIENCE_ID', 'PLDuxenf8jCsRVC0Coqa8kY3L4Kl99aaZI'),
     ], 
 
 ];
