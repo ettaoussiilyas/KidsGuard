@@ -15,7 +15,7 @@
             <span class="mt-2 text-base sm:text-lg md:text-xl font-bold text-white">Games</span>
         </a>
         
-        <a href=" route('kid.stories.index') }}" class="flex flex-col items-center group">
+        <a href="{{ route('kid.stories.index') }}" class="flex flex-col items-center group">
             <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-white/20 flex items-center justify-center shadow-lg group-hover:shadow-xl transform transition-all duration-300 group-hover:scale-110 relative overflow-hidden p-1">
                 <img src="{{ asset('images/icons/quick_access/stories_monster.png') }}" alt="Stories Icon" class="w-full h-full object-contain">
             </div>

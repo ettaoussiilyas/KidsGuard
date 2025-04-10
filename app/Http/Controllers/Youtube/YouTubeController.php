@@ -43,4 +43,28 @@ class YouTubeController extends Controller
             'playlistId'
         ));
     }
+
+     public function showKidStories(Request $request){
+        $search = $request->input('search');
+        $pageToken = $request->input('page_token');
+        
+        if ($search) {
+            $result = $this->youtubeService->getStoriesPlaylistVideos($pageToken, 9, $search);
+        } else {
+            $result = $this->youtubeService->getStoriesPlaylistVideos($pageToken);
+        }
+        
+        $videos = $result['items'];
+        $nextPageToken = $result['nextPageToken'];
+        $prevPageToken = $result['prevPageToken'];
+        $pageInfo = $result['pageInfo'];
+        
+        return view('kid.stories.index', compact(
+            'videos', 
+            'nextPageToken', 
+            'prevPageToken', 
+            'pageInfo', 
+            'search'
+        ));
+    }
 }

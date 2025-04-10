@@ -404,4 +404,147 @@ class YouTubeService
         });
     }
 
+    //Stories Page
+
+        // This For Stories Playlist
+    public function getStoriesPlaylistVideos($pageToken = null, $maxResults = 9, $query = null)
+    {
+        $apiKey = config('services.youtube.api_key');
+        $playlistId = config('services.youtube.stories_playlist_id');
+        
+        // If query is empty, return regular playlist videos
+        if (empty($query)) {
+            return $this->getStoriesPlaylist($playlistId, $pageToken, $maxResults);
+        }
+        
+        // First get all videos from the playlist
+        $allVideos = $this->getAllStoriesVideosFromPlaylist($playlistId);
+        
+        // Filter videos by search query
+        $filteredVideos = collect($allVideos)->filter(function ($video) use ($query) {
+            $title = $video['snippet']['title'] ?? '';
+            $description = $video['snippet']['description'] ?? '';
+            
+            return stripos($title, $query) !== false || 
+                   stripos($description, $query) !== false;
+        })->values()->all();
+        
+        // Manual pagination
+        $total = count($filteredVideos);
+        $offset = 0;
+        
+        if ($pageToken && is_numeric($pageToken)) {
+            $offset = (int)$pageToken * $maxResults;
+        }
+        
+        $items = array_slice($filteredVideos, $offset, $maxResults);
+        $nextPageToken = ($offset + $maxResults < $total) ? (int)($pageToken ?? 0) + 1 : null;
+        $prevPageToken = ($offset > 0) ? (int)($pageToken ?? 1) - 1 : null;
+        
+        return [
+            'items' => $items,
+            'nextPageToken' => $nextPageToken,
+            'prevPageToken' => $prevPageToken,
+            'pageInfo' => [
+                'totalResults' => $total,
+                'resultsPerPage' => $maxResults,
+            ],
+        ];
+    }
+    
+    private function getStoriesPlaylist($playlistId, $pageToken = null, $maxResults = 9)
+    {
+        $apiKey = config('services.youtube.api_key');
+
+        $url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=$playlistId&maxResults=$maxResults&key=$apiKey";
+        
+        if ($pageToken) {
+            $url .= "&pageToken=$pageToken";
+        }
+        
+        $cacheKey = "youtube_stories_playlist_{$playlistId}_{$pageToken}_{$maxResults}";
+        
+        return Cache::remember($cacheKey, 60 * 5, function () use ($url) {
+            $response = Http::get($url);
+            
+            if ($response->successful()) {
+                $data = $response->json();
+                return [
+                    'items' => $data['items'],
+                    'nextPageToken' => $data['nextPageToken'] ?? null,
+                    'prevPageToken' => $data['prevPageToken'] ?? null,
+                    'pageInfo' => $data['pageInfo'] ?? null,
+                ];
+            }
+            
+            return [
+                'items' => [],
+                'nextPageToken' => null,
+                'prevPageToken' => null,
+                'pageInfo' => null,
+            ];
+        });
+    }
+    
+    private function getAllStoriesVideosFromPlaylist($playlistId)
+    {
+        $apiKey = config('services.youtube.api_key');
+        
+        $cacheKey = "youtube_all_stories_playlist_{$playlistId}";
+        
+        return Cache::remember($cacheKey, 60 * 30, function () use ($apiKey, $playlistId) {
+            $url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=$playlistId&maxResults=50&key=$apiKey";
+            $allVideos = [];
+            $nextPageToken = null;
+            
+            do {
+                $pageUrl = $nextPageToken ? "$url&pageToken=$nextPageToken" : $url;
+                $response = Http::get($pageUrl);
+                
+                if (!$response->successful()) {
+                    break;
+                }
+                
+                $data = $response->json();
+                $allVideos = array_merge($allVideos, $data['items']);
+                $nextPageToken = $data['nextPageToken'] ?? null;
+                
+            } while ($nextPageToken);
+            
+            return $allVideos;
+        });
+    }
+
+        /**
+     * Get related videos for a specific video
+     * 
+     * @param string $videoId
+     * @param int $maxResults
+     * @return array
+     */
+    public function getRelatedVideos($videoId, $maxResults = 6)
+    {
+        $apiKey = config('services.youtube.api_key');
+        $playlistId = config('services.youtube.stories_playlist_id');
+        
+        $cacheKey = "youtube_related_videos_{$videoId}_{$maxResults}";
+        
+        return Cache::remember($cacheKey, 60 * 12, function () use ($apiKey, $videoId, $maxResults, $playlistId) {
+            // Get all videos from the playlist
+            $allVideos = $this->getAllStoriesVideosFromPlaylist($playlistId);
+            
+            // Filter out the current video and get random related videos
+            $filteredVideos = collect($allVideos)
+                ->filter(function ($video) use ($videoId) {
+                    return $video['contentDetails']['videoId'] !== $videoId;
+                })
+                ->shuffle()
+                ->take($maxResults)
+                ->values()
+                ->all();
+            
+            return $filteredVideos;
+        });
+    }
+
 }

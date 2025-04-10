@@ -129,6 +129,10 @@ Route::middleware(['auth', 'role:child'])->group(function () {
      Route::get('/kid/learning', [App\Http\Controllers\Kid\LearningController::class, 'index'])->name('kid.learning.index');
      Route::get('/kid/learning/{id}', [App\Http\Controllers\Kid\LearningController::class, 'show'])->name('kid.learning.show');
 
+     //Stories
+     Route::get('/kid/stories', [App\Http\Controllers\Kid\StoriesController::class, 'index'])->name('kid.stories.index');
+     Route::get('/kid/stories/{id}', [App\Http\Controllers\Kid\StoriesController::class, 'show'])->name('kid.stories.show');
+
 
     //  Route::get('/kid/videos', [VideosController::class,'showVideos'])->name('kid.videos');
     //  Route::get('/kid/games', [YouTubeController::class,'showGames'])->name('kid.games');
