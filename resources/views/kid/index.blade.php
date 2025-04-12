@@ -14,15 +14,9 @@
     <div class="mb-12">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-2xl font-bold text-indigo-600">Featured Videos</h2>
-            <!-- <a href="{{ route('kid.videos.index') }}" class="text-indigo-500 hover:text-indigo-700 font-medium flex items-center">
-                See all videos
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
-                </svg>
-            </a> -->
         </div>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach($featuredVideos as $video)
             <div class="video-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                 <div class="relative aspect-video cursor-pointer" 
@@ -31,8 +25,19 @@
                     <img src="{{ $video['snippet']['thumbnails']['high']['url'] ?? asset('images/video-thumbnails/default-thumbnail.jpg') }}" 
                          alt="{{ $video['snippet']['title'] ?? 'Video' }}" 
                          class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <!-- No play icon, just hover effect -->
+                    <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="bg-white/80 rounded-full p-3 transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-indigo-600/80 text-white text-xs px-2 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Watch
                     </div>
                 </div>
                 <div class="p-4">
@@ -102,7 +107,7 @@
                 <div class="bg-white/20 rounded-full w-20 h-20 mx-auto mb-3 flex items-center justify-center p-1">
                     <img src="{{ asset('images/icons/quick_access/learning_littel_monsters.png') }}" alt="Games Icon" class="w-full h-full object-contain">
                 </div>
-                <h3 class="font-bold text-lg">Learning</h3>
+                <h3 class="font-bold text-lg">Learn</h3>
             </a>
             
         </div>

@@ -55,7 +55,7 @@ class KidController extends Controller
     /**
      * Fetch featured videos from the specified playlist
      */
-    private function getFeaturedVideos($pageToken = null, $maxResults = 6)
+    private function getFeaturedVideos($pageToken = null, $maxResults = 12)
     {
         return $this->youtubeService->getFeaturedPlaylistVideos($pageToken, $maxResults);
     }
