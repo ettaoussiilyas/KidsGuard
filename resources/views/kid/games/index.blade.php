@@ -115,6 +115,10 @@
             @endif
         </div>
     </div>
+
+    <!-- Quick Access Section -->
+    @include('partials.navigations.quick_navigateur')
+
 </div>
 
 <script>

@@ -95,6 +95,10 @@
         </div>
     </div>
 
+    <!-- Quick Access Section -->
+    @include('partials.navigations.quick_navigateur')
+
+
     <!-- Music Player Modal -->
     <div id="music-modal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
         <div class="w-full max-w-4xl relative mx-4">
