@@ -14,7 +14,43 @@ class ParentController extends Controller
 {
     public function index()
     {
-        return view('parent.index');
+        $user = Auth::user();
+        
+        // Get child profiles count
+        $childrenCount = DB::table('child_profiles')
+            ->where('parent_id', $user->id)
+            ->whereNull('deleted_at')
+            ->count();
+        
+        // Get content categories count
+        $categoriesCount = DB::table('content_categories')
+            ->where('is_active', true)
+            ->count();
+        
+        // Get learning values count
+        $learningValuesCount = DB::table('learning_values')
+            ->where('is_active', true)
+            ->count();
+        
+        // Get special needs categories count
+        $specialNeedsCount = DB::table('content_categories')
+            ->where('is_active', true)
+            ->where('is_special_needs', true)
+            ->count();
+        
+        // Get average age of children
+        $averageAge = DB::table('child_profiles')
+            ->where('parent_id', $user->id)
+            ->whereNull('deleted_at')
+            ->avg('age');
+        
+        return view('parent.index', [
+            'childrenCount' => $childrenCount,
+            'categoriesCount' => $categoriesCount,
+            'learningValuesCount' => $learningValuesCount,
+            'specialNeedsCount' => $specialNeedsCount,
+            'averageAge' => round($averageAge, 1)
+        ]);
     }
 
     public function switchGuardian(Request $request)

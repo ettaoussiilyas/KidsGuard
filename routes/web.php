@@ -65,7 +65,7 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     // Reports
     Route::get('/reports', function () {
         return view('parent.reports');
-    })->name('reports');
+    })->name('parent.reports');
 
     // Profiles
     Route::resource('child-profiles', ChildProfileController::class)->names([
