@@ -9,6 +9,8 @@ class ContentCategory extends Model
 {
     use HasFactory;
 
+    protected $table = 'content_categories';
+    
     protected $fillable = [
         'name',
         'slug',
@@ -17,12 +19,7 @@ class ContentCategory extends Model
         'description',
         'is_special_needs',
         'display_order',
-        'is_active',
-    ];
-
-    protected $casts = [
-        'is_special_needs' => 'boolean',
-        'is_active' => 'boolean',
+        'is_active'
     ];
 
     public function learningValues()

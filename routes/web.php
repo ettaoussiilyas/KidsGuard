@@ -10,6 +10,7 @@ use App\Http\Controllers\ChildProfileController;
 use App\Http\Controllers\Kid\VideoController;
 use App\Http\Controllers\Parent\ChildPreferenceController;
 use App\Http\Controllers\Youtube\YouTubeController;
+use App\Http\Controllers\Admin\AdminController;
 use Google\Service\YouTube;
 
 // Public routes
@@ -34,21 +35,32 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 });
 
-// Admin routes
-Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('dashboard');
+// Admin Routes
+Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->group(function () {
+    // Dashboard
+    Route::get('/', [AdminController::class, 'dashboard'])->name('dashboard');
     
-    // Admin user management
-    Route::get('/users', function () {
-        return view('admin.users.index');
-    })->name('users.index');
+    // Users Management
+    Route::get('users', [AdminController::class, 'users'])->name('users.index');
+    Route::get('users/parents', [AdminController::class, 'parents'])->name('users.parents');
     
-    // Admin settings
-    Route::get('/settings', function () {
-        return view('admin.settings');
-    })->name('settings');
+    // Child Profiles
+    Route::get('child-profiles', [AdminController::class, 'childProfiles'])->name('child-profiles.index');
+    
+    // Categories
+    Route::get('categories', [AdminController::class, 'categories'])->name('categories.index');
+    
+    // Analytics
+    Route::get('analytics', [AdminController::class, 'analytics'])->name('analytics');
+    
+    // System Status
+    Route::get('system/status', [AdminController::class, 'systemStatus'])->name('system.status');
+    
+    // Settings
+    Route::get('settings', [AdminController::class, 'settings'])->name('settings');
+    
+    // Activity Log
+    Route::get('activity-log', [AdminController::class, 'activityLog'])->name('activity-log');
 });
 
 // Parent routes
