@@ -105,11 +105,11 @@ class AdminController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function parents()
-    {
-        $parents = User::where('is_admin', false)->paginate(10);
-        return view('admin.users.parents', compact('parents'));
-    }
+    // public function parents()
+    // {
+    //     $parents = User::where('is_admin', false)->paginate(10);
+    //     return view('admin.users.parents', compact('parents'));
+    // }
 
     /**
      * Display the child profiles.
@@ -129,7 +129,7 @@ class AdminController extends Controller
      */
     public function categories()
     {
-        $categories = Category::paginate(10);
+        $categories = ContentCategory::paginate(10);
         return view('admin.categories.index', compact('categories'));
     }
 

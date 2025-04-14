@@ -42,7 +42,6 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     
     // Users Management
     Route::get('users', [AdminController::class, 'users'])->name('users.index');
-    Route::get('users/parents', [AdminController::class, 'parents'])->name('users.parents');
     
     // Child Profiles
     Route::get('child-profiles', [AdminController::class, 'childProfiles'])->name('child-profiles.index');
