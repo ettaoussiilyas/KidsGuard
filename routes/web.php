@@ -43,8 +43,14 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     // Users Management
     Route::get('users', [AdminController::class, 'users'])->name('users.index');
     
-    // Child Profiles
+    // Child Profiles Management
     Route::get('child-profiles', [AdminController::class, 'childProfiles'])->name('child-profiles.index');
+    Route::get('child-profiles/{id}', [AdminController::class, 'showChildProfile'])->name('child-profiles.show');
+    Route::get('child-profiles/{id}/edit', [AdminController::class, 'editChildProfile'])->name('child-profiles.edit');
+    Route::put('child-profiles/{id}', [AdminController::class, 'updateChildProfile'])->name('child-profiles.update');
+    Route::delete('child-profiles/{id}', [AdminController::class, 'destroyChildProfile'])->name('child-profiles.destroy');
+    Route::get('child-profiles/create', [AdminController::class, 'createChildProfile'])->name('child-profiles.create');
+    Route::post('child-profiles', [AdminController::class, 'storeChildProfile'])->name('child-profiles.store');
     
     // Categories
     Route::get('categories', [AdminController::class, 'categories'])->name('categories.index');

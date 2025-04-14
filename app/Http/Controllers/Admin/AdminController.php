@@ -114,12 +114,140 @@ class AdminController extends Controller
     /**
      * Display the child profiles.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\View\View
      */
-    public function childProfiles()
+    public function childProfiles(Request $request)
     {
-        $childProfiles = ChildProfile::with('user')->paginate(10);
+        $query = ChildProfile::with('parent');
+
+        // Apply search filter
+        if ($request->has('search') && !empty($request->search)) {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                  ->orWhere('interests', 'like', "%{$search}%")
+                  ->orWhere('hobbies', 'like', "%{$search}%")
+                  ->orWhere('skills', 'like', "%{$search}%");
+            });
+        }
+
+        // Apply age filter
+        if ($request->has('age') && !empty($request->age)) {
+            switch ($request->age) {
+                case '0-5':
+                    $query->whereBetween('age', [0, 5]);
+                    break;
+                case '6-9':
+                    $query->whereBetween('age', [6, 9]);
+                    break;
+                case '10-12':
+                    $query->whereBetween('age', [10, 12]);
+                    break;
+                case '13+':
+                    $query->where('age', '>=', 13);
+                    break;
+            }
+        }
+
+        // Apply special needs filter
+        if ($request->has('special_needs') && !empty($request->special_needs)) {
+            switch ($request->special_needs) {
+                case 'adhd':
+                    $query->where('has_adhd', true);
+                    break;
+                case 'autism':
+                    $query->where('has_autism', true);
+                    break;
+                case 'other':
+                    $query->whereNotNull('special_needs')->where('special_needs', '!=', '');
+                    break;
+                case 'none':
+                    $query->where('has_adhd', false)
+                          ->where('has_autism', false)
+                          ->where(function($q) {
+                              $q->whereNull('special_needs')->orWhere('special_needs', '');
+                          });
+                    break;
+            }
+        }
+
+        $childProfiles = $query->paginate(10)->withQueryString();
+        
         return view('admin.child-profiles.index', compact('childProfiles'));
+    }
+
+    /**
+     * Display the specified child profile.
+     *
+     * @param  int  $id
+     * @return \Illuminate\View\View
+     */
+    public function showChildProfile($id)
+    {
+        $childProfile = ChildProfile::with('parent', 'preferences.learningValue')->findOrFail($id);
+        return view('admin.child-profiles.show', compact('childProfile'));
+    }
+
+    /**
+     * Show the form for editing the specified child profile.
+     *
+     * @param  int  $id
+     * @return \Illuminate\View\View
+     */
+    public function editChildProfile($id)
+    {
+        $childProfile = ChildProfile::findOrFail($id);
+        $parents = User::whereHas('roles', function($query) {
+            $query->where('slug', 'parent');
+        })->get();
+        
+        return view('admin.child-profiles.edit', compact('childProfile', 'parents'));
+    }
+
+    /**
+     * Update the specified child profile in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updateChildProfile(Request $request, $id)
+    {
+        $childProfile = ChildProfile::findOrFail($id);
+        
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'age' => 'required|integer|min:0|max:18',
+            'gender' => 'required|in:boy,girl',
+            'parent_id' => 'required|exists:users,id',
+            'has_adhd' => 'boolean',
+            'has_autism' => 'boolean',
+            'special_needs' => 'nullable|string',
+            'interests' => 'nullable|string',
+            'hobbies' => 'nullable|string',
+            'skills' => 'nullable|string',
+        ]);
+        
+        $childProfile->update($validated);
+        
+        return redirect()->route('admin.child-profiles.index')
+            ->with('success', 'Child profile updated successfully.');
+    }
+
+    /**
+     * Remove the specified child profile from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function destroyChildProfile($id)
+    {
+        $childProfile = ChildProfile::findOrFail($id);
+        $childProfile->delete();
+        
+        return redirect()->route('admin.child-profiles.index')
+            ->with('success', 'Child profile deleted successfully.');
     }
 
     /**

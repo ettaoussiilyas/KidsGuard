@@ -10,6 +10,11 @@ class ChildProfile extends Model
 {
     use HasFactory, SoftDeletes;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'parent_id',
         'name',
@@ -24,29 +29,22 @@ class ChildProfile extends Model
         'skills',   
     ];
 
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
     protected $casts = [
         'has_adhd' => 'boolean',
         'has_autism' => 'boolean',
     ];
 
+    /**
+     * Get the parent user that owns the child profile.
+     */
     public function parent()
     {
         return $this->belongsTo(User::class, 'parent_id');
-    }
-
-    public function getAvatarUrlAttribute()
-    {
-        if ($this->avatar) {
-            return asset('storage/' . $this->avatar);
-        }
-        
-        return asset('images/child_avatr.png');
-    }
-
-    public function learningValues()
-    {
-        return $this->belongsToMany(LearningValue::class, 'child_profile_preferences')
-                ->withTimestamps();
     }
 
     /**
