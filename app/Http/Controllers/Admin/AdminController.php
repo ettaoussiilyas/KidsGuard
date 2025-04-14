@@ -303,4 +303,49 @@ class AdminController extends Controller
         // Activity log data would be gathered here
         return view('admin.activity-log.index');
     }
+
+    /**
+     * Show the form for creating a new child profile.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function createChildProfile()
+    {
+        $parents = User::whereHas('roles', function($query) {
+            $query->where('slug', 'parent');
+        })->get();
+        
+        return view('admin.child-profiles.create', compact('parents'));
+    }
+
+    /**
+     * Store a newly created child profile in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function storeChildProfile(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'age' => 'required|integer|min:0|max:18',
+            'gender' => 'required|in:boy,girl',
+            'parent_id' => 'required|exists:users,id',
+            'has_adhd' => 'boolean',
+            'has_autism' => 'boolean',
+            'special_needs' => 'nullable|string',
+            'interests' => 'nullable|string',
+            'hobbies' => 'nullable|string',
+            'skills' => 'nullable|string',
+        ]);
+        
+        // Set checkbox values to false if not present in the request
+        $validated['has_adhd'] = $request->has('has_adhd') ? true : false;
+        $validated['has_autism'] = $request->has('has_autism') ? true : false;
+        
+        $childProfile = ChildProfile::create($validated);
+        
+        return redirect()->route('admin.child-profiles.show', $childProfile->id)
+            ->with('success', 'Child profile created successfully.');
+    }
 }
