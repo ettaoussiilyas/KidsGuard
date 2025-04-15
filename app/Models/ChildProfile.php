@@ -56,6 +56,14 @@ class ChildProfile extends Model
     }
     
     /**
+     * Get the learning values associated with this child profile.
+     */
+    public function learningValues()
+    {
+        return $this->belongsToMany(LearningValue::class, 'child_profile_preferences', 'child_profile_id', 'learning_value_id');
+    }
+    
+    /**
      * Get the avatar URL for the child profile.
      */
     public function getAvatarUrlAttribute()
