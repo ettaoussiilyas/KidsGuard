@@ -11,6 +11,7 @@ use App\Http\Controllers\Kid\VideoController;
 use App\Http\Controllers\Parent\ChildPreferenceController;
 use App\Http\Controllers\Youtube\YouTubeController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\CategoryController;
 use Google\Service\YouTube;
 
 // Public routes
@@ -52,14 +53,14 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     Route::get('child-profiles/create', [AdminController::class, 'createChildProfile'])->name('child-profiles.create');
     Route::post('child-profiles', [AdminController::class, 'storeChildProfile'])->name('child-profiles.store');
     
-    // Categories
-    Route::get('categories', [AdminController::class, 'categories'])->name('categories.index');
+    // Categories Management
+    Route::resource('categories', CategoryController::class);
     
     // Analytics
     Route::get('analytics', [AdminController::class, 'analytics'])->name('analytics');
     
     // System Status
-    Route::get('system/status', [AdminController::class, 'systemStatus'])->name('system.status');
+    Route::get('system-status', [AdminController::class, 'systemStatus'])->name('system-status');
     
     // Settings
     Route::get('settings', [AdminController::class, 'settings'])->name('settings');
