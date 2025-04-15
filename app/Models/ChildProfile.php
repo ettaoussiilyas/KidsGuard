@@ -54,4 +54,17 @@ class ChildProfile extends Model
     {
         return $this->hasMany(ChildProfilePreference::class, 'child_profile_id');
     }
+    
+    /**
+     * Get the avatar URL for the child profile.
+     */
+    public function getAvatarUrlAttribute()
+    {
+        if (!$this->avatar) {
+            return asset($this->gender == 'girl' ? 'images/avatars/girl-default.png' : 'images/avatars/boy-default.png');
+        }
+        
+        return asset('storage/' . $this->avatar);
+    }
+    
 }
