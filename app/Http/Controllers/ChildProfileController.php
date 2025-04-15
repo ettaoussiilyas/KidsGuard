@@ -45,6 +45,10 @@ class ChildProfileController extends Controller
             'interests' => 'nullable|string',
         ]);
 
+        // Set checkbox values explicitly based on presence in request
+        $validated['has_adhd'] = $request->has('has_adhd') ? true : false;
+        $validated['has_autism'] = $request->has('has_autism') ? true : false;
+
         if ($request->hasFile('avatar')) {
             $validated['avatar'] = $request->file('avatar')->store('avatars', 'public');
         }else {
@@ -87,6 +91,10 @@ class ChildProfileController extends Controller
             'special_needs' => 'nullable|string',
             'interests' => 'nullable|string',
         ]);
+
+        // Set checkbox values explicitly based on presence in request
+        $validated['has_adhd'] = $request->has('has_adhd') ? true : false;
+        $validated['has_autism'] = $request->has('has_autism') ? true : false;
 
         if ($request->hasFile('avatar')) {
             if ($childProfile->avatar) {

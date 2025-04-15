@@ -229,6 +229,10 @@ class AdminController extends Controller
             'skills' => 'nullable|string',
         ]);
         
+        // Set checkbox values to false if not present in the request
+        $validated['has_adhd'] = $request->has('has_adhd') ? true : false;
+        $validated['has_autism'] = $request->has('has_autism') ? true : false;
+        
         $childProfile->update($validated);
         
         return redirect()->route('admin.child-profiles.index')
