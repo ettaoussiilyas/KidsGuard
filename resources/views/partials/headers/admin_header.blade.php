@@ -41,7 +41,11 @@
             <!-- User dropdown -->
             <div class="relative" x-data="{ open: false }">
                 <button @click="open = !open" class="flex items-center space-x-2 focus:outline-none">
-                    <img class="h-8 w-8 rounded-full object-cover" src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}&background=4A90E2&color=fff" alt="{{ Auth::user()->name }}">
+                    @if(Auth::user()->avatar)
+                        <img class="h-8 w-8 rounded-full object-cover" src="{{ asset('storage/avatars/' . Auth::user()->avatar) }}" alt="{{ Auth::user()->name }}">
+                    @else
+                        <img class="h-8 w-8 rounded-full object-cover" src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}&background=4A90E2&color=fff" alt="{{ Auth::user()->name }}">
+                    @endif
                     <span class="hidden md:block text-sm font-medium text-gray-700">{{ Auth::user()->name }}</span>
                     <svg class="hidden md:block h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
