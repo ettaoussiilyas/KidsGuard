@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\ChildProfile;
+use App\Models\ChildProfilePreference;
 use App\Models\ContentCategory;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -270,10 +271,58 @@ class AdminController extends Controller
      *
      * @return \Illuminate\View\View
      */
+    /**
+     * Display the analytics dashboard.
+     */
     public function analytics()
     {
-        // Analytics data would be gathered here
-        return view('admin.analytics.index');
+        // Get total users count
+        $totalUsers = User::count();
+        
+        // Get users with parent role
+        $totalParents = \App\Models\User::whereHas('roles', function($query) {
+            $query->where('slug', 'parent');
+        })->count();
+        
+        // Get total child profiles
+        $totalChildProfiles = ChildProfile::count();
+        
+        // Get profiles with special needs
+        $specialNeedsProfiles = ChildProfile::where('has_adhd', true)
+            ->orWhere('has_autism', true)
+            ->count();
+        
+        // Get gender distribution
+        $genderDistribution = [
+            'boy' => ChildProfile::where('gender', 'boy')->count(),
+            'girl' => ChildProfile::where('gender', 'girl')->count(),
+        ];
+        
+        // Get age distribution
+        $ageDistribution = ChildProfile::selectRaw('age, COUNT(*) as count')
+            ->groupBy('age')
+            ->orderBy('age')
+            ->get()
+            ->pluck('count', 'age')
+            ->toArray();
+        
+        // Get most popular learning values
+        $popularValues = ChildProfilePreference::selectRaw('learning_value_id, COUNT(*) as count')
+            ->with('learningValue')
+            ->groupBy('learning_value_id')
+            ->orderByDesc('count')
+            ->limit(5)
+            ->get();
+        
+        return view('admin.analytics', compact(
+            'totalUsers',
+            'totalParents',
+            'totalChildProfiles',
+            'specialNeedsProfiles',
+            'genderDistribution',
+            'ageDistribution',
+            'popularValues'
+        ));
     }
 
     /**
