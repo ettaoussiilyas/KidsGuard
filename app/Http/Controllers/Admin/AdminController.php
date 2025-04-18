@@ -332,8 +332,144 @@ class AdminController extends Controller
      */
     public function systemStatus()
     {
-        // System status data would be gathered here
-        return view('admin.system.status');
+        // Get PHP version
+        $phpVersion = phpversion();
+        
+        // Get Laravel version
+        $laravelVersion = app()->version();
+        
+        // Get database type
+        $databaseType = config('database.default');
+        
+        // Get server software
+        $serverSoftware = $_SERVER['SERVER_SOFTWARE'] ?? 'Unknown';
+        
+        // Get disk usage
+        $diskTotal = $this->formatBytes(disk_total_space(base_path()));
+        $diskFree = $this->formatBytes(disk_free_space(base_path()));
+        $diskUsed = $this->formatBytes(disk_total_space(base_path()) - disk_free_space(base_path()));
+        $diskUsagePercent = round((disk_total_space(base_path()) - disk_free_space(base_path())) / disk_total_space(base_path()) * 100);
+        
+        // Get directory sizes
+        $directorySize = [
+            'storage' => $this->formatBytes($this->getDirSize(storage_path())),
+            'public' => $this->formatBytes($this->getDirSize(public_path())),
+            'database' => $this->formatBytes($this->getDirSize(database_path())),
+        ];
+        
+        // Get database tables
+        $tables = [];
+        $databaseType = config('database.default');
+        
+        if ($databaseType === 'mysql') {
+            // MySQL specific table information
+            $dbTables = DB::select('SHOW TABLES');
+            $dbName = 'Tables_in_' . config('database.connections.mysql.database');
+            
+            foreach ($dbTables as $table) {
+                $tableName = $table->$dbName;
+                $rowCount = DB::table($tableName)->count();
+                
+                // Get table size (MySQL specific)
+                $tableSize = DB::select("SELECT 
+                    round(((data_length + index_length) / 1024 / 1024), 2) as 'size' 
+                    FROM information_schema.TABLES 
+                    WHERE table_schema = '" . config('database.connections.mysql.database') . "' 
+                    AND table_name = '$tableName'");
+                
+                $tables[] = [
+                    'name' => $tableName,
+                    'rows' => $rowCount,
+                    'size' => isset($tableSize[0]->size) ? $tableSize[0]->size . ' MB' : 'N/A',
+                ];
+            }
+        } elseif ($databaseType === 'pgsql') {
+            // PostgreSQL specific table information
+            $dbTables = DB::select("SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname = 'public'");
+            
+            foreach ($dbTables as $table) {
+                $tableName = $table->tablename;
+                $rowCount = DB::table($tableName)->count();
+                
+                // Get table size (PostgreSQL specific)
+                $tableSize = DB::select("SELECT pg_size_pretty(pg_total_relation_size('$tableName')) as size");
+                
+                $tables[] = [
+                    'name' => $tableName,
+                    'rows' => $rowCount,
+                    'size' => isset($tableSize[0]->size) ? $tableSize[0]->size : 'N/A',
+                ];
+            }
+        } else {
+            // Generic approach for other database types
+            $tables[] = [
+                'name' => 'Database type not supported for detailed stats',
+                'rows' => 'N/A',
+                'size' => 'N/A',
+            ];
+        }
+        
+        // Get PHP info
+        $phpInfo = [
+            'memory_limit' => ini_get('memory_limit'),
+            'max_execution_time' => ini_get('max_execution_time') . ' seconds',
+            'upload_max_filesize' => ini_get('upload_max_filesize'),
+            'post_max_size' => ini_get('post_max_size'),
+            'display_errors' => ini_get('display_errors') ? 'On' : 'Off',
+            'max_input_vars' => ini_get('max_input_vars'),
+            'default_charset' => ini_get('default_charset'),
+        ];
+        
+        return view('admin.system.status', compact(
+            'phpVersion',
+            'laravelVersion',
+            'databaseType',
+            'serverSoftware',
+            'diskTotal',
+            'diskFree',
+            'diskUsed',
+            'diskUsagePercent',
+            'directorySize',
+            'tables',
+            'phpInfo'
+        ));
+    }
+    
+    /**
+     * Format bytes to human readable format
+     *
+     * @param int $bytes
+     * @param int $precision
+     * @return string
+     */
+    private function formatBytes($bytes, $precision = 2)
+    {
+        $units = ['B', 'KB', 'MB', 'GB', 'TB'];
+        
+        $bytes = max($bytes, 0);
+        $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+        $pow = min($pow, count($units) - 1);
+        
+        $bytes /= pow(1024, $pow);
+        
+        return round($bytes, $precision) . ' ' . $units[$pow];
+    }
+    
+    /**
+     * Get directory size
+     *
+     * @param string $dir
+     * @return int
+     */
+    private function getDirSize($dir)
+    {
+        $size = 0;
+        
+        foreach (new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir, \FilesystemIterator::SKIP_DOTS)) as $file) {
+            $size += $file->getSize();
+        }
+        
+        return $size;
     }
 
     /**

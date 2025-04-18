@@ -60,7 +60,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     Route::get('analytics', [AdminController::class, 'analytics'])->name('analytics');
     
     // System Status
-    Route::get('system-status', [AdminController::class, 'systemStatus'])->name('system-status');
+    Route::get('system-status', [AdminController::class, 'systemStatus'])->name('system.status');
     
     // Settings
     Route::get('settings', [AdminController::class, 'settings'])->name('settings');
