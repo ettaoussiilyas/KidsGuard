@@ -43,6 +43,11 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     
     // Users Management
     Route::get('users', [AdminController::class, 'users'])->name('users.index');
+    Route::get('users/create', [AdminController::class, 'createUser'])->name('users.create');
+    Route::post('users', [AdminController::class, 'storeUser'])->name('users.store');
+    Route::get('users/{id}/edit', [AdminController::class, 'editUser'])->name('users.edit');
+    Route::put('users/{id}', [AdminController::class, 'updateUser'])->name('users.update');
+    Route::delete('users/{id}', [AdminController::class, 'destroyUser'])->name('users.destroy');
     
     // Child Profiles Management
     Route::get('child-profiles', [AdminController::class, 'childProfiles'])->name('child-profiles.index');

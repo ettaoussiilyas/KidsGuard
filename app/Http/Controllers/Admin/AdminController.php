@@ -8,8 +8,10 @@ use App\Models\User;
 use App\Models\ChildProfile;
 use App\Models\ChildProfilePreference;
 use App\Models\ContentCategory;
+use App\Models\Role;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -97,8 +99,135 @@ class AdminController extends Controller
      */
     public function users()
     {
-        $users = User::paginate(10);
-        return view('admin.users.index', compact('users'));
+        $users = User::with('roles')->paginate(10);
+        $roles = Role::all();
+        
+        return view('admin.users.index', compact('users', 'roles'));
+    }
+
+    /**
+     * Show the form for creating a new user.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function createUser()
+    {
+        $roles = Role::all();
+        return view('admin.users.create', compact('roles'));
+    }
+
+    /**
+     * Store a newly created user in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function storeUser(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+            'roles' => 'required|array',
+        ]);
+        
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'email_verified_at' => now(),
+        ]);
+        
+        $user->roles()->attach($request->roles);
+        
+        return redirect()->route('admin.users.index')
+            ->with('success', 'User created successfully.');
+    }
+
+    /**
+     * Show the form for editing the specified user.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function editUser($id)
+    {
+        $user = User::with('roles')->findOrFail($id);
+        
+        return response()->json([
+            'user' => $user
+        ]);
+    }
+
+    /**
+     * Update the specified user in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updateUser(Request $request, $id)
+    {
+        $user = User::findOrFail($id);
+        
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users,email,' . $id,
+            'role_id' => 'required|exists:roles,id',
+        ]);
+        
+        // Check if we're removing admin role from the last admin
+        $isLastAdmin = User::whereHas('roles', function($query) {
+            $query->where('slug', 'admin');
+        })->count() <= 1;
+        
+        $roleId = $request->role_id;
+        $role = Role::find($roleId);
+        $isAdminRole = $role && $role->slug === 'admin';
+        
+        if ($user->hasRole('admin') && !$isAdminRole && $isLastAdmin) {
+            return redirect()->back()
+                ->with('error', 'Cannot remove admin role from the last admin user.');
+        }
+        
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+        ]);
+        
+        // Sync roles (just one role now)
+        $user->roles()->sync([$roleId]);
+        
+        return redirect()->route('admin.users.index')
+            ->with('success', 'User updated successfully.');
+    }
+
+    /**
+     * Remove the specified user from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function destroyUser($id)
+    {
+        $user = User::findOrFail($id);
+        
+        // Check if this is the last admin
+        if ($user->hasRole('admin')) {
+            $adminCount = User::whereHas('roles', function($query) {
+                $query->where('slug', 'admin');
+            })->count();
+            
+            if ($adminCount <= 1) {
+                return redirect()->route('admin.users.index')
+                    ->with('error', 'Cannot delete the last admin user.');
+            }
+        }
+        
+        $user->delete(); // This will soft delete
+        
+        return redirect()->route('admin.users.index')
+            ->with('success', 'User deleted successfully.');
     }
 
     /**
