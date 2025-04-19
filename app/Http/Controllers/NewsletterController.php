@@ -51,6 +51,7 @@ class NewsletterController extends Controller
     /**
      * Send newsletter to all subscribed users
      */
+    // In your sendNewsletter method
     public function sendNewsletter(Request $request)
     {
         $request->validate([
@@ -64,15 +65,16 @@ class NewsletterController extends Controller
             ->get()
             ->pluck('user');
         
-        // Send email to each subscriber
+        // Send email to each subscriber using queue
         foreach ($subscribers as $subscriber) {
-            Mail::to($subscriber->email)->send(new \App\Mail\Newsletter(
-                $request->subject,
-                $request->content,
-                $subscriber->name
-            ));
+            Mail::to($subscriber->email)
+                ->queue(new \App\Mail\Newsletter(
+                    $request->subject,
+                    $request->content,
+                    $subscriber->name
+                ));
         }
         
-        return redirect()->back()->with('success', 'Newsletter sent successfully to ' . $subscribers->count() . ' subscribers.');
+        return redirect()->back()->with('success', 'Newsletter queued for delivery to ' . $subscribers->count() . ' subscribers.');
     }
 }
