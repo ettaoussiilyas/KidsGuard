@@ -159,4 +159,21 @@ class User extends Authenticatable
     //         // Additional cleanup for permanent deletion
     //     });
     // }
-}
+
+
+        /**
+         * Get the newsletter subscription for the user.
+         */
+        public function newsletterSubscription()
+        {
+            return $this->hasOne(NewsletterSubscription::class);
+        }
+
+        /**
+         * Check if the user is subscribed to the newsletter.
+         */
+        public function isSubscribedToNewsletter()
+        {
+            return $this->newsletterSubscription && $this->newsletterSubscription->is_subscribed;
+        }
+    }

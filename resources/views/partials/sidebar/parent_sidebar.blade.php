@@ -72,6 +72,18 @@
                     <span class="text-xs md:text-base font-medium">Settings</span>
                 </a>
             </li>
+            
+            <!-- Newsletter Subscription -->
+            <li>
+                <a href="{{ route('newsletter.subscription') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('newsletter.*') ? 'bg-white/20' : '' }}">
+                    <div class="w-10 h-10 flex items-center justify-center bg-[#3498DB] rounded-full mb-1 md:mb-0 md:mr-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xs md:text-base font-medium">Newsletter</span>
+                </a>
+            </li>
         </ul>
     </div>
     

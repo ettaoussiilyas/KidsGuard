@@ -12,6 +12,7 @@ use App\Http\Controllers\Parent\ChildPreferenceController;
 use App\Http\Controllers\Youtube\YouTubeController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\NewsletterController;
 use Google\Service\YouTube;
 
 // Public routes
@@ -75,6 +76,10 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     
     // Activity Log
     Route::get('activity-log', [AdminController::class, 'activityLog'])->name('activity-log');
+
+    // NewsLetter
+    Route::get('/newsletter', [NewsletterController::class, 'showNewsletterForm'])->name('newsletter.create');
+    Route::post('/newsletter/send', [NewsletterController::class, 'sendNewsletter'])->name('newsletter.send');
 });
 
 // Parent routes
@@ -121,6 +126,11 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     Route::put('/parent/password/update', [App\Http\Controllers\ParentController::class, 'updatePassword'])->name('parent.password.update');
     Route::delete('/parent/profile/destroy', [App\Http\Controllers\ParentController::class, 'deleteAccount'])->name('parent.profile.destroy');
 
+    // NewsLetter - Fix the routes
+    Route::get('/newsletter', [NewsletterController::class, 'showSubscriptionForm'])->name('newsletter.subscription');
+    Route::post('/newsletter/toggle', [NewsletterController::class, 'toggleSubscription'])->name('newsletter.toggle');
+    
+
 });
 
 // Child routes
@@ -165,6 +175,7 @@ Route::middleware(['auth', 'role:child'])->group(function () {
     //  Route::get('/kid/books', [YouTubeController::class,'showBooks'])->name('kid.books');
     
 });
+
 
 
 
