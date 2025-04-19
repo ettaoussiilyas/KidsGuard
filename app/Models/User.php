@@ -140,4 +140,23 @@ class User extends Authenticatable
         return asset('images/default-avatar.png');
     }
 
+    // /**
+    //  * The "booted" method of the model.
+    //  *
+    //  * @return void
+    //  */
+    // protected static function booted()
+    // {
+    //     static::deleting(function ($user) {
+    //         // This will run for both soft deletes and force deletes
+    //         if ($user->avatar) {
+    //             Storage::delete('public/avatars/' . $user->avatar);
+    //         }
+    //     });
+        
+    //     // If you want to handle force delete differently
+    //     static::forceDeleting(function ($user) {
+    //         // Additional cleanup for permanent deletion
+    //     });
+    // }
 }

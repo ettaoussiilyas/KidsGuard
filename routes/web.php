@@ -69,6 +69,9 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     
     // Settings
     Route::get('settings', [AdminController::class, 'settings'])->name('settings');
+    Route::put('profile/update', [AdminController::class, 'updateProfile'])->name('profile.update');
+    Route::put('password/update', [AdminController::class, 'updatePassword'])->name('password.update');
+    Route::delete('profile/destroy', [AdminController::class, 'deleteAccount'])->name('profile.destroy');
     
     // Activity Log
     Route::get('activity-log', [AdminController::class, 'activityLog'])->name('activity-log');

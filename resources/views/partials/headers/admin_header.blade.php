@@ -42,9 +42,13 @@
             <div class="relative" x-data="{ open: false }">
                 <button @click="open = !open" class="flex items-center space-x-2 focus:outline-none">
                     @if(Auth::user()->avatar)
-                        <img class="h-8 w-8 rounded-full object-cover" src="{{ asset('storage/avatars/' . Auth::user()->avatar) }}" alt="{{ Auth::user()->name }}">
+                        <img class="h-8 w-8 rounded-full object-cover border-2 border-gray-200" 
+                             src="{{ asset('storage/avatars/' . Auth::user()->avatar) }}" 
+                             alt="{{ Auth::user()->name }}">
                     @else
-                        <img class="h-8 w-8 rounded-full object-cover" src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}&background=4A90E2&color=fff" alt="{{ Auth::user()->name }}">
+                        <img class="h-8 w-8 rounded-full object-cover" 
+                             src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}&background=4A90E2&color=fff" 
+                             alt="{{ Auth::user()->name }}">
                     @endif
                     <span class="hidden md:block text-sm font-medium text-gray-700">{{ Auth::user()->name }}</span>
                     <svg class="hidden md:block h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">

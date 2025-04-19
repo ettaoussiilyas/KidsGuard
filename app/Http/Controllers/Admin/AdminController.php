@@ -11,7 +11,11 @@ use App\Models\ContentCategory;
 use App\Models\Role;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+// use Google\Service\Storage;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rules\Password;
 
 class AdminController extends Controller
 {
@@ -602,13 +606,120 @@ class AdminController extends Controller
     }
 
     /**
-     * Display the settings page.
+     * Display the admin settings page.
      *
      * @return \Illuminate\View\View
      */
     public function settings()
     {
-        return view('admin.settings.index');
+        $user = auth()->user();
+        return view('admin.settings.index', compact('user'));
+    }
+
+    /**
+     * Update the admin's profile information.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updateProfile(Request $request)
+    {
+        $user = auth()->user();
+        
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users,email,' . $user->id,
+            'profile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+        
+        $data = $request->only(['name', 'email']);
+        
+        // Handle avatar upload
+        if ($request->hasFile('profile_image')) {
+            // Delete old avatar if exists
+            if ($user->avatar) {
+                if (Storage::exists('public/avatars/' . $user->avatar)) {
+                    Storage::delete('public/avatars/' . $user->avatar);
+                }
+            }
+            
+            $avatarName = 'admin_' . $user->id . '_' . time() . '.' . $request->profile_image->extension();
+            $request->file('profile_image')->storeAs('avatars', $avatarName, 'public');
+            $data['avatar'] = $avatarName;
+        }
+        
+        $user->update($data);
+        
+        return redirect()->route('admin.settings')
+            ->with('success', 'Profile updated successfully.');
+    }
+
+    /**
+     * Update the admin's password.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updatePassword(Request $request)
+    {
+
+        $request->validate([
+            'current_password' => 'required|string',
+            'password' => ['required', 'string', 'confirmed', Password::min(8)
+                ->mixedCase()
+                ->letters()
+                ->numbers()
+                ->symbols()],
+        ]);
+        
+        $user = auth()->user();
+        
+        // Check if current password matches
+        if (!Hash::check($request->current_password, $user->password)) {
+            return back()->withErrors(['current_password' => 'The current password is incorrect.']);
+        }
+        
+        $user->password = Hash::make($request->password);
+        $user->save();
+        
+        return redirect()->route('admin.settings')
+            ->with('success', 'Password updated successfully.');
+    }
+
+    /**
+     * Delete the admin's account.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function deleteAccount(Request $request)
+    {
+        $request->validate([
+            'password' => 'required|string',
+        ]);
+        
+        $user = auth()->user();
+        
+        // Check if password matches
+        if (!Hash::check($request->password, $user->password)) {
+            return back()->withErrors(['password' => 'The password is incorrect.']);
+        }
+        
+        // Check if this is the last admin
+        $adminCount = User::whereHas('roles', function($query) {
+            $query->where('slug', 'admin');
+        })->count();
+        
+        if ($adminCount <= 1) {
+            return back()->withErrors(['password' => 'Cannot delete the last admin account.']);
+        }
+        
+        
+        Auth::logout();
+        $user->delete(); // This is a soft delete since the User model uses SoftDeletes trait
+        
+        return redirect()->route('login.show')
+            ->with('success', 'Your account has been deleted.');
     }
 
     /**
