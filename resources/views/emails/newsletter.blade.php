@@ -16,9 +16,15 @@
         .header {
             text-align: center;
             margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
         .logo {
             max-width: 150px;
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-bottom: 30px;
         }
         .footer {
             margin-top: 30px;
@@ -26,6 +32,16 @@
             border-top: 1px solid #eee;
             font-size: 12px;
             color: #666;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            background-color: #9B59B6;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -45,7 +61,7 @@
         <p>© {{ date('Y') }} KidsGuard. All rights reserved.</p>
         <p>
             If you no longer wish to receive these emails, you can 
-            <a href="{{ route('parent.settings') }}">unsubscribe here</a>.
+            <a href="{{ route('newsletter.subscription') }}">unsubscribe here</a>.
         </p>
     </div>
 </body>

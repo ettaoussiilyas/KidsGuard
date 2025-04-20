@@ -80,6 +80,8 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     // NewsLetter
     Route::get('/newsletter', [NewsletterController::class, 'showNewsletterForm'])->name('newsletter.create');
     Route::post('/newsletter/send', [NewsletterController::class, 'sendNewsletter'])->name('newsletter.send');
+    Route::get('/test-email', [App\Http\Controllers\NewsletterController::class, 'testEmail']);
+
 });
 
 // Parent routes

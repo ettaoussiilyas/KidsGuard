@@ -6,6 +6,7 @@ use App\Models\NewsletterSubscription;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class NewsletterController extends Controller
 {
@@ -51,7 +52,6 @@ class NewsletterController extends Controller
     /**
      * Send newsletter to all subscribed users
      */
-    // In your sendNewsletter method
     public function sendNewsletter(Request $request)
     {
         $request->validate([
@@ -65,16 +65,43 @@ class NewsletterController extends Controller
             ->get()
             ->pluck('user');
         
-        // Send email to each subscriber using queue
-        foreach ($subscribers as $subscriber) {
-            Mail::to($subscriber->email)
-                ->queue(new \App\Mail\Newsletter(
-                    $request->subject,
-                    $request->content,
-                    $subscriber->name
-                ));
+        if ($subscribers->isEmpty()) {
+            return redirect()->back()->with('error', 'No subscribers found to send the newsletter to.');
         }
         
-        return redirect()->back()->with('success', 'Newsletter queued for delivery to ' . $subscribers->count() . ' subscribers.');
+        // Log the start of the process
+        Log::info('Starting newsletter delivery to ' . $subscribers->count() . ' subscribers');
+        
+        // Send email to each subscriber using queue
+        foreach ($subscribers as $subscriber) {
+            try {
+                Log::info('Queueing newsletter for: ' . $subscriber->email);
+                
+                Mail::to($subscriber->email)
+                    ->queue(new \App\Mail\Newsletter(
+                        $request->subject,
+                        $request->content,
+                        $subscriber->name
+                    ));
+            } catch (\Exception $e) {
+                Log::error('Failed to queue newsletter for ' . $subscriber->email . ': ' . $e->getMessage());
+            }
+        }
+        
+        return redirect()->back()->with('success', 'Newsletter queued for delivery to ' . $subscribers->count() . ' subscribers. Check the logs for details.');
+    }
+    
+    // Add this method to your controller for testing
+    public function testEmail()
+    {
+        try {
+            Mail::raw('Test email from KidsGuard', function($message) {
+                $message->to('your-email@example.com')
+                        ->subject('Test Email');
+            });
+            return 'Test email sent successfully! Check your Mailtrap inbox.';
+        } catch (\Exception $e) {
+            return 'Error sending test email: ' . $e->getMessage();
+        }
     }
 }
