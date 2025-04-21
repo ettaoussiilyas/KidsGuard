@@ -29,6 +29,10 @@ Route::middleware('guest')->group(function () {
     // Login Routes
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login.show');
     Route::post('/login', [LoginController::class, 'login'])->name('login');
+    
+    // Social Login Routes
+    Route::get('auth/{provider}', [App\Http\Controllers\Auth\SocialiteController::class, 'redirectToProvider'])->name('social.login');
+    Route::get('auth/{provider}/callback', [App\Http\Controllers\Auth\SocialiteController::class, 'handleProviderCallback']);
 });
 
 // Authenticated routes (accessible to any logged in user)
