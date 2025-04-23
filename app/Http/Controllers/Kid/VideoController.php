@@ -38,13 +38,23 @@ class VideoController extends Controller
         $allVideos = $videosData['videos'] ?? [];
         
         // Filter videos based on preferences if requested
-        // dd($allVideos);
         if (!empty($preferences)) {
-            $allVideos = array_filter($allVideos, function($video) use ($preferences) {
+            $filteredVideos = array_filter($allVideos, function($video) use ($preferences) {
                 // Check if any of the video's educational values match the child's preferences
                 $videoValues = (array) ($video['educational_value_id'] ?? []);
+                
+                // If the video has no educational values, include it anyway
+                if (empty($videoValues)) {
+                    return true;
+                }
+                
                 return count(array_intersect($videoValues, $preferences)) > 0;
             });
+            
+            // Only apply filtering if we have results, otherwise show all videos
+            if (!empty($filteredVideos)) {
+                $allVideos = array_values($filteredVideos);
+            }
         }
         
         // Pagination

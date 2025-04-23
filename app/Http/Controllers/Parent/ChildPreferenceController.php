@@ -31,11 +31,22 @@ class ChildPreferenceController extends Controller
             ->get();
             
         // Filter special needs categories based on child profile
+        // But always include all content-related categories
         $filteredCategories = $categories->filter(function($category) use ($kid) {
+            // // Always include all content-related categories
+            // if (in_array($category->slug, [
+            //     'videos', 'favorites', 'educational', 'entertainment',
+            //     'learning', 'stories', 'games', 'music'
+            // ])) {
+            //     return true;
+            // }
+            
+            // For non-special needs categories, always include
             if (!$category->is_special_needs) {
                 return true;
             }
             
+            // For special needs categories, check if the child has the condition
             if ($category->slug === 'adhd' && $kid->has_adhd) {
                 return true;
             }

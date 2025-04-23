@@ -4,16 +4,6 @@
 
 @section('content')
 <div class="container mx-auto px-4 py-8">
-    <!-- Debug information - remove after debugging -->
-    @if(empty($videos))
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-            No videos available to display.
-        </div>
-    @else
-        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-            Found {{ count($videos) }} videos to display.
-        </div>
-    @endif
     
     <div class="flex justify-between items-center mb-8">
         <h1 class="text-3xl font-bold text-indigo-600">My Videos</h1>
@@ -58,7 +48,7 @@
                 <h3 class="font-semibold text-gray-800 mb-1 line-clamp-2 text-lg">{{ $video['title'] }}</h3>
                 <p class="text-sm text-gray-600 mb-3 line-clamp-2">{{ $video['description'] }}</p>
                 
-                <div class="flex flex-wrap gap-2 mb-3">
+                <!-- <div class="flex flex-wrap gap-2 mb-3">
                     @if(isset($video['educational_value_id']))
                         @php
                             $valueId = is_array($video['educational_value_id']) ? $video['educational_value_id'][0] : $video['educational_value_id'];
@@ -67,16 +57,11 @@
                             {{ $learningValues[$valueId] ?? 'Value ' . $valueId }}
                         </span>
                     @endif
-                </div>
+                </div> -->
                 
-                <div class="flex justify-between items-center">
+                <!-- <div class="flex justify-between items-center">
                     <span class="text-xs text-gray-500">Age: {{ $video['age_range_id'] ?? '3-8' }}</span>
-                    <button class="favorite-button text-gray-400 hover:text-yellow-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                        </svg>
-                    </button>
-                </div>
+                </div> -->
             </div>
         </div>
         @endforeach
@@ -100,20 +85,6 @@
                 </svg>
             </div>
             @endif
-
-            <div class="flex space-x-2">
-                @for($i = 1; $i <= $totalPages; $i++)
-                    @if($i == $currentPage)
-                        <div class="bg-indigo-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold shadow-md">
-                            {{ $i }}
-                        </div>
-                    @else
-                        <a href="{{ route('kid.videos.index', ['page' => $i]) }}" class="bg-white hover:bg-indigo-100 text-indigo-600 rounded-full w-10 h-10 flex items-center justify-center font-bold shadow-md transform transition hover:scale-110">
-                            {{ $i }}
-                        </a>
-                    @endif
-                @endfor
-            </div>
 
             @if($currentPage < $totalPages)
             <a href="{{ route('kid.videos.index', ['page' => $currentPage + 1]) }}" class="pagination-button next-button">
@@ -240,15 +211,7 @@
             });
         });
         
-        // Favorite button functionality
-        const favoriteButtons = document.querySelectorAll('.favorite-button');
-        favoriteButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                this.classList.toggle('text-gray-400');
-                this.classList.toggle('text-yellow-500');
-                // In a real implementation, this would save the favorite status
-            });
-        });
+        // Removed favorite button functionality
     });
 </script>
 @endsection
