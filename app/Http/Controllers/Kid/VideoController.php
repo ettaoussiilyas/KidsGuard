@@ -38,6 +38,7 @@ class VideoController extends Controller
         $allVideos = $videosData['videos'] ?? [];
         
         // Filter videos based on preferences if requested
+        // dd($allVideos);
         if (!empty($preferences)) {
             $allVideos = array_filter($allVideos, function($video) use ($preferences) {
                 // Check if any of the video's educational values match the child's preferences
@@ -48,7 +49,7 @@ class VideoController extends Controller
         
         // Pagination
         $currentPage = $request->input('page', 1);
-        $perPage = 8; // Number of videos per page - small number for children
+        $perPage = 9; // Number of videos per page - small number for children
         $totalVideos = count($allVideos);
         $totalPages = ceil($totalVideos / $perPage);
         
@@ -65,7 +66,6 @@ class VideoController extends Controller
         
         // Get all learning values for display
         $learningValues = LearningValue::pluck('name', 'id')->toArray();
-        
         return view('kid.videos.index', [
             'videos' => $videos,
             'childProfile' => $childProfile,

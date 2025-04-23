@@ -4,6 +4,17 @@
 
 @section('content')
 <div class="container mx-auto px-4 py-8">
+    <!-- Debug information - remove after debugging -->
+    @if(empty($videos))
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            No videos available to display.
+        </div>
+    @else
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+            Found {{ count($videos) }} videos to display.
+        </div>
+    @endif
+    
     <div class="flex justify-between items-center mb-8">
         <h1 class="text-3xl font-bold text-indigo-600">My Videos</h1>
         

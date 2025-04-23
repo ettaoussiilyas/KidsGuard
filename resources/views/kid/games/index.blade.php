@@ -20,7 +20,22 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="games-container">
+    <!-- Game display iframe (initially hidden) -->
+    <div id="game-frame-container" class="hidden mb-8">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden p-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 id="current-game-title" class="text-2xl font-bold text-indigo-600">Game Title</h2>
+                <button id="close-game" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                    Close Game
+                </button>
+            </div>
+            <div class="relative aspect-video">
+                <iframe id="game-frame" src="" class="w-full h-full border-0 rounded-lg" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="games-container">
         @foreach($games as $game)
         <div class="game-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
             <div class="relative aspect-video">
@@ -28,38 +43,23 @@
                      alt="{{ $game['title'] }}" 
                      class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href="{{ $game['url'] }}" target="_blank" class="play-button transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                    <button class="play-game-button transform scale-90 group-hover:scale-100 transition-transform duration-300"
+                           data-game-url="{{ $game['url'] }}"
+                           data-game-title="{{ $game['title'] }}">
                         <div class="bg-white/20 backdrop-blur-sm rounded-full p-4">
                             <svg class="h-12 w-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                             </svg>
                         </div>
-                    </a>
+                    </button>
                 </div>
                 <div class="absolute top-2 right-2 bg-indigo-500 text-white text-xs px-2 py-1 rounded-full">
                     {{ $game['category'] ?? 'Game' }}
                 </div>
             </div>
-            <div class="p-4">
-                <h3 class="font-semibold text-gray-800 mb-1 line-clamp-2 text-lg">{{ $game['title'] }}</h3>
-                <p class="text-sm text-gray-600 mb-3 line-clamp-2">{{ $game['description'] }}</p>
-                
-                <div class="flex flex-wrap gap-2 mb-3">
-                    @if(isset($game['educational_value']))
-                        <span class="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs rounded-full">
-                            Educational Value: {{ $game['educational_value'] }}
-                        </span>
-                    @endif
-                </div>
-                
-                <div class="flex justify-between items-center">
-                    <span class="text-xs text-gray-500">Age: {{ $game['age_range'] ?? '3-8' }}</span>
-                    <button class="favorite-button text-gray-400 hover:text-yellow-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                        </svg>
-                    </button>
-                </div>
+            <div class="p-3">
+                <h3 class="font-semibold text-gray-800 mb-1 line-clamp-1 text-lg">{{ $game['title'] }}</h3>
+                <p class="text-sm text-gray-600 mb-2 line-clamp-2">{{ $game['description'] }}</p>
             </div>
         </div>
         @endforeach
@@ -84,19 +84,7 @@
             </div>
             @endif
 
-            <div class="flex space-x-2">
-                @for($i = 1; $i <= $totalPages; $i++)
-                    @if($i == $currentPage)
-                        <div class="bg-indigo-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold shadow-md">
-                            {{ $i }}
-                        </div>
-                    @else
-                        <a href="{{ route('kid.games.index', ['page' => $i]) }}" class="bg-white hover:bg-indigo-100 text-indigo-600 rounded-full w-10 h-10 flex items-center justify-center font-bold shadow-md transform transition hover:scale-110">
-                            {{ $i }}
-                        </a>
-                    @endif
-                @endfor
-            </div>
+            <!-- Remove the numbered pagination -->
 
             @if($currentPage < $totalPages)
             <a href="{{ route('kid.games.index', ['page' => $currentPage + 1]) }}" class="pagination-button next-button">
@@ -125,6 +113,35 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Game cards functionality
         const gameCards = document.querySelectorAll('.game-card');
+        const gameFrameContainer = document.getElementById('game-frame-container');
+        const gameFrame = document.getElementById('game-frame');
+        const currentGameTitle = document.getElementById('current-game-title');
+        const closeGameBtn = document.getElementById('close-game');
+        const gamesContainer = document.getElementById('games-container');
+        
+        // Play game buttons
+        const playGameButtons = document.querySelectorAll('.play-game-button');
+        playGameButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const gameUrl = this.getAttribute('data-game-url');
+                const gameTitle = this.getAttribute('data-game-title');
+                
+                // Set the iframe source and title
+                gameFrame.src = gameUrl;
+                currentGameTitle.textContent = gameTitle;
+                
+                // Show the game frame and scroll to it
+                gameFrameContainer.classList.remove('hidden');
+                gameFrameContainer.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        // Close game button
+        closeGameBtn.addEventListener('click', function() {
+            // Hide the game frame and clear the iframe source
+            gameFrameContainer.classList.add('hidden');
+            gameFrame.src = '';
+        });
         
         // Filter buttons functionality
         const allGamesBtn = document.getElementById('all-games');
@@ -148,16 +165,6 @@
             // For now, just show a different subset as an example
             gameCards.forEach((card, index) => {
                 card.style.display = index % 2 === 0 ? 'block' : 'none';
-            });
-        });
-        
-        // Favorite button functionality
-        const favoriteButtons = document.querySelectorAll('.favorite-button');
-        favoriteButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                this.classList.toggle('text-gray-400');
-                this.classList.toggle('text-yellow-500');
-                // In a real implementation, this would save the favorite status
             });
         });
     });
