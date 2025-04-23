@@ -53,7 +53,7 @@
         {
             "title": "Elmo and Grover's Farm Time Fun",
             "url": "https://www.sesamestreet.org/games?id=27790",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1605882693/800x600_ElmoRositaVirtualPlaydate_Anim%20%281%29.gif",
             "description": "Sesame Street game: Elmo and Grover's Farm Time Fun",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -63,7 +63,7 @@
         {
             "title": "Sesame Street Puppy Pet Care",
             "url": "https://www.sesamestreet.org/games?id=27763",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Sesame Street Puppy Pet Care",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -73,7 +73,7 @@
         {
             "title": "Elmo's World Games",
             "url": "https://www.sesamestreet.org/games?id=25193",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Elmo's World Games",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -83,7 +83,7 @@
         {
             "title": "Jigsaw Puzzle: Mecha Builders",
             "url": "https://www.sesamestreet.org/games?id=27666",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Jigsaw Puzzle: Mecha Builders",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -93,7 +93,7 @@
         {
             "title": "Ramp Racers",
             "url": "https://www.sesamestreet.org/games?id=27571",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Ramp Racers",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -103,7 +103,7 @@
         {
             "title": "Spot the Difference: Furry Friends Forever",
             "url": "https://www.sesamestreet.org/games?id=27528",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Spot the Difference: Furry Friends Forever",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -113,7 +113,7 @@
         {
             "title": "Connect the Dots: Mecha Builders",
             "url": "https://www.sesamestreet.org/games?id=27719",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Connect the Dots: Mecha Builders",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -123,7 +123,7 @@
         {
             "title": "A Job for Me",
             "url": "https://www.sesamestreet.org/games?id=26550",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: A Job for Me",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -293,7 +293,7 @@
         {
             "title": "Dress Up Time!",
             "url": "https://www.sesamestreet.org/games?id=304",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Dress Up Time!",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -303,7 +303,7 @@
         {
             "title": "Elmo and the Beanstalk",
             "url": "https://www.sesamestreet.org/games?id=224",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Elmo and the Beanstalk",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -313,7 +313,7 @@
         {
             "title": "Train Track Engineers",
             "url": "https://www.sesamestreet.org/games?id=230",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Train Track Engineers",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -323,7 +323,7 @@
         {
             "title": "Word Play",
             "url": "https://www.sesamestreet.org/games?id=22215",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Word Play",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -333,7 +333,7 @@
         {
             "title": "Alphabet Hunt",
             "url": "https://www.sesamestreet.org/games?id=281",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Alphabet Hunt",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -343,7 +343,7 @@
         {
             "title": "Elmo's World Puzzle",
             "url": "https://www.sesamestreet.org/games?id=20584",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Elmo's World Puzzle",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -353,7 +353,7 @@
         {
             "title": "Elmo's World: Baby Animals",
             "url": "https://www.sesamestreet.org/games?id=20838",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Elmo's World: Baby Animals",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -363,7 +363,7 @@
         {
             "title": "Egg-Counting Elmo",
             "url": "https://www.sesamestreet.org/games?id=25578",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Egg-Counting Elmo",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -373,7 +373,7 @@
         {
             "title": "Shape Voyage",
             "url": "https://www.sesamestreet.org/games?id=267",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Shape Voyage",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -383,7 +383,7 @@
         {
             "title": "Spot the Difference: Elmo",
             "url": "https://www.sesamestreet.org/games?id=278",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Spot the Difference: Elmo",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -393,7 +393,7 @@
         {
             "title": "Reading Adventures",
             "url": "https://www.sesamestreet.org/games?id=1344",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Reading Adventures",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -403,7 +403,7 @@
         {
             "title": "Oh Say, Can You See The Shapes?",
             "url": "https://www.sesamestreet.org/games?id=18215",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Oh Say, Can You See The Shapes?",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -413,7 +413,7 @@
         {
             "title": "Spot the Difference: Animals",
             "url": "https://www.sesamestreet.org/games?id=301",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Spot the Difference: Animals",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -423,7 +423,7 @@
         {
             "title": "Let's Build It",
             "url": "https://www.sesamestreet.org/games?id=25622",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Let's Build It",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -433,7 +433,7 @@
         {
             "title": "Winter Fun Puzzles",
             "url": "https://www.sesamestreet.org/games?id=194",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Winter Fun Puzzles",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -443,7 +443,7 @@
         {
             "title": "Party Time",
             "url": "https://www.sesamestreet.org/games?id=199",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Party Time",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -453,7 +453,7 @@
         {
             "title": "ABC Puzzles",
             "url": "https://www.sesamestreet.org/games?id=198",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: ABC Puzzles",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -463,7 +463,7 @@
         {
             "title": "Elmo and Grover's Lemonade Stand",
             "url": "https://www.sesamestreet.org/games?id=25536",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Elmo and Grover's Lemonade Stand",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -513,7 +513,7 @@
         {
             "title": "Cooking With Cookie",
             "url": "https://www.sesamestreet.org/games?id=169",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Cooking With Cookie",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -523,7 +523,7 @@
         {
             "title": "Cookie Kart Racing",
             "url": "https://www.sesamestreet.org/games?id=207",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Cookie Kart Racing",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -533,7 +533,7 @@
         {
             "title": "Cookie's Cookies",
             "url": "https://www.sesamestreet.org/games?id=25871",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Cookie's Cookies",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -543,7 +543,7 @@
         {
             "title": "Checkout Cookie",
             "url": "https://www.sesamestreet.org/games?id=25577",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Checkout Cookie",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -553,7 +553,7 @@
         {
             "title": "Cookie Monster Hop",
             "url": "https://www.sesamestreet.org/games?id=18711",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Cookie Monster Hop",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -563,7 +563,7 @@
         {
             "title": "Cookie Monster Chase",
             "url": "https://www.sesamestreet.org/games?id=160",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Cookie Monster Chase",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -573,7 +573,7 @@
         {
             "title": "Cookie Thief Puzzles",
             "url": "https://www.sesamestreet.org/games?id=192",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Cookie Thief Puzzles",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -583,7 +583,7 @@
         {
             "title": "ABC Hungry",
             "url": "https://www.sesamestreet.org/games?id=19046",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: ABC Hungry",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -593,7 +593,7 @@
         {
             "title": "Alphabet Soup",
             "url": "https://www.sesamestreet.org/games?id=25870",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Alphabet Soup",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -623,7 +623,7 @@
         {
             "title": "Seasons Spinner",
             "url": "https://www.sesamestreet.org/games?id=25463",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Seasons Spinner",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -633,7 +633,7 @@
         {
             "title": "Abby's Smoothie Maker",
             "url": "https://www.sesamestreet.org/games?id=253",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Abby's Smoothie Maker",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -643,7 +643,7 @@
         {
             "title": "Abby's Sandbox Search",
             "url": "https://www.sesamestreet.org/games?id=18206",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Abby's Sandbox Search",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -653,7 +653,7 @@
         {
             "title": "Valentine's Day Puzzles",
             "url": "https://www.sesamestreet.org/games?id=128",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Valentine's Day Puzzles",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -663,7 +663,7 @@
         {
             "title": "Words Are Everywhere",
             "url": "https://www.sesamestreet.org/games?id=148",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Words Are Everywhere",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -673,7 +673,7 @@
         {
             "title": "Spot the Numbers",
             "url": "https://www.sesamestreet.org/games?id=18233",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Spot the Numbers",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -713,7 +713,7 @@
         {
             "title": "Rhyme Time!",
             "url": "https://www.sesamestreet.org/games?id=302",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Rhyme Time!",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -723,7 +723,7 @@
         {
             "title": "Grover's Motorcycle Mayhem",
             "url": "https://www.sesamestreet.org/games?id=25743",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Grover's Motorcycle Mayhem",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -733,7 +733,7 @@
         {
             "title": "Sesame Street Blockbuster",
             "url": "https://www.sesamestreet.org/games?id=25661",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Sesame Street Blockbuster",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -743,7 +743,7 @@
         {
             "title": "Underwater Sink or Float",
             "url": "https://www.sesamestreet.org/games?id=291",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Underwater Sink or Float",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -753,7 +753,7 @@
         {
             "title": "Grover's Diner Dash",
             "url": "https://www.sesamestreet.org/games?id=18227",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Grover's Diner Dash",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -763,7 +763,7 @@
         {
             "title": "Grover's Motorcycle Mayhem Holiday Edition",
             "url": "https://www.sesamestreet.org/games?id=26150",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Grover's Motorcycle Mayhem Holiday Edition",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -853,7 +853,7 @@
         {
             "title": "Spot the Difference: Bert and Ernie",
             "url": "https://www.sesamestreet.org/games?id=218",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Spot the Difference: Bert and Ernie",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -863,7 +863,7 @@
         {
             "title": "Ernie's Bathtime Fun",
             "url": "https://www.sesamestreet.org/games?id=18234",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Ernie's Bathtime Fun",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -873,7 +873,7 @@
         {
             "title": "Bert's Pigeon Path",
             "url": "https://www.sesamestreet.org/games?id=142",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Bert's Pigeon Path",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -913,7 +913,7 @@
         {
             "title": "Oscar's Trash Launch",
             "url": "https://www.sesamestreet.org/games?id=191",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Oscar's Trash Launch",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -923,7 +923,7 @@
         {
             "title": "Find the Foods",
             "url": "https://www.sesamestreet.org/games?id=18224",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1531755371/800x600_BertsBottlecapsANIM.gif",
             "description": "Sesame Street game: Find the Foods",
             "category": "Educational Game",
             "age_range": "3-8",
@@ -993,7 +993,7 @@
         {
             "title": "Zoe's Sandbox Adventure",
             "url": "https://www.sesamestreet.org/games?id=136",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+game",
+            "image": "https://prod.drupal.aws.sesamestreet.org/sites/default/files/styles/original/public/1505758792/800x600_CountsNumberRide_Game.png",
             "description": "Sesame Street game: Zoe's Sandbox Adventure",
             "category": "Educational Game",
             "age_range": "3-8",
