@@ -36,52 +36,51 @@
                 </a>
             </li>
             
-            <!-- Other menu items with similar changes -->
-            <!-- Preferences -->
+            <!-- Preferences - Fix inconsistent padding -->
             <li>
-                <a href="{{ route('parent.preferences.index') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('preferences') ? 'bg-white/20' : '' }}">
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#48C9B0] rounded-full mb-1 md:mb-0 md:mr-3">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <a href="{{ route('parent.preferences.index') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-2 sm:p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('preferences') ? 'bg-white/20' : '' }}">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#48C9B0] rounded-full mb-1 md:mb-0 md:mr-3">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <span class="text-xs md:text-base font-medium">Preferences</span>
+                    <span class="text-[10px] sm:text-xs md:text-base font-medium">Preferences</span>
                 </a>
             </li>
             
-            <!-- Parent Games -->
+            <!-- Parent Games - Fix inconsistent padding -->
             <li>
-                <a href="{{ route('parent.parent-games') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('parent.games') ? 'bg-white/20' : '' }}">
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#E74C3C] rounded-full mb-1 md:mb-0 md:mr-3">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <a href="{{ route('parent.parent-games') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-2 sm:p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('parent.games') ? 'bg-white/20' : '' }}">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#E74C3C] rounded-full mb-1 md:mb-0 md:mr-3">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v1h8v-1zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-1a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v1h-3zM4.75 12.094A5.973 5.973 0 004 15v1H1v-1a3 3 0 013.75-2.906z"></path>
                         </svg>
                     </div>
-                    <span class="text-xs md:text-base font-medium">Parent Games</span>
+                    <span class="text-[10px] sm:text-xs md:text-base font-medium">Parent Games</span>
                 </a>
             </li>
             
-            <!-- Settings -->
+            <!-- Settings - Fix inconsistent padding -->
             <li>
-                <a href="{{ route('parent.settings') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('settings') ? 'bg-white/20' : '' }}">
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#95A5A6] rounded-full mb-1 md:mb-0 md:mr-3">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <a href="{{ route('parent.settings') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-2 sm:p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('settings') ? 'bg-white/20' : '' }}">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#95A5A6] rounded-full mb-1 md:mb-0 md:mr-3">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <span class="text-xs md:text-base font-medium">Settings</span>
+                    <span class="text-[10px] sm:text-xs md:text-base font-medium">Settings</span>
                 </a>
             </li>
             
-            <!-- Newsletter Subscription -->
+            <!-- Newsletter Subscription - Fix inconsistent padding -->
             <li>
-                <a href="{{ route('newsletter.subscription') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('newsletter.*') ? 'bg-white/20' : '' }}">
-                    <div class="w-10 h-10 flex items-center justify-center bg-[#3498DB] rounded-full mb-1 md:mb-0 md:mr-3">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <a href="{{ route('newsletter.subscription') }}" class="flex flex-col md:flex-row items-center justify-center md:justify-start p-2 sm:p-3 rounded-xl hover:bg-white/10 transition-colors duration-200 {{ request()->routeIs('newsletter.*') ? 'bg-white/20' : '' }}">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#3498DB] rounded-full mb-1 md:mb-0 md:mr-3">
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <span class="text-xs md:text-base font-medium">Newsletter</span>
+                    <span class="text-[10px] sm:text-xs md:text-base font-medium">Newsletter</span>
                 </a>
             </li>
         </ul>

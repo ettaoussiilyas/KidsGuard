@@ -5,19 +5,19 @@
             <img src="{{ asset('images/logo.png') }}" alt="KidsGuard Logo" class="h-8 sm:h-10 w-auto ml-2 sm:ml-10">
         </div>
         
-        <!-- Middle: Toggle Switch for Parent Mode -->
+        <!-- Middle: Toggle Switch for Parent Mode - improved for mobile -->
         <div class="flex flex-col items-center">
-            <button type="button" id="parent-mode-toggle" class="relative inline-flex items-center px-5 py-2.5 rounded-full bg-white border-2 border-[#9B59B6] text-gray-700 font-medium shadow-md hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none">
-                <span class="mr-3 text-base font-semibold">Parent Mode</span>
-                <div class="w-14 h-7 bg-gray-100 rounded-full p-1 flex items-center">
-                    <div class="toggle-circle w-5 h-5 bg-[#9B59B6] rounded-full shadow-md transform transition-transform duration-300"></div>
+            <button type="button" id="parent-mode-toggle" class="relative inline-flex items-center px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full bg-white border-2 border-[#9B59B6] text-gray-700 font-medium shadow-md hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none">
+                <span class="mr-1 sm:mr-3 text-sm sm:text-base font-semibold">Parent Mode</span>
+                <div class="w-10 sm:w-14 h-5 sm:h-7 bg-gray-100 rounded-full p-1 flex items-center">
+                    <div class="toggle-circle w-3 sm:w-5 h-3 sm:h-5 bg-[#9B59B6] rounded-full shadow-md transform transition-transform duration-300"></div>
                 </div>
             </button>
             <span class="text-xs mt-1.5 text-gray-600 flex items-center">
                 <svg class="w-4 h-4 inline-block text-[#FF6B6B] mr-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
                 </svg>
-                Requires parent password
+                <span class="text-xs">Requires parent password</span>
             </span>
         </div>
         
