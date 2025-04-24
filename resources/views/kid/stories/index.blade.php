@@ -5,7 +5,7 @@
 @section('content')
 <div class="container mx-auto px-4 py-8">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-        <h1 class="text-3xl font-bold text-indigo-600">Bedtime Stories</h1>
+        <h1 class="text-3xl font-bold text-indigo-600">Stories</h1>
         
         <form action="{{ route('kid.stories.index') }}" method="GET" class="flex">
             <input type="text" name="search" value="{{ $search ?? '' }}" placeholder="Search stories..." 
@@ -181,14 +181,14 @@
         });
         
         // Favorite button functionality
-        const favoriteButtons = document.querySelectorAll('.favorite-button');
-        favoriteButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                this.classList.toggle('text-gray-400');
-                this.classList.toggle('text-yellow-500');
-                // In a real implementation, this would save the favorite status
-            });
-        });
+        // const favoriteButtons = document.querySelectorAll('.favorite-button');
+        // favoriteButtons.forEach(button => {
+        //     button.addEventListener('click', function() {
+        //         this.classList.toggle('text-gray-400');
+        //         this.classList.toggle('text-yellow-500');
+        //         // In a real implementation, this would save the favorite status
+        //     });
+        // });
     });
 </script>
 @endsection
