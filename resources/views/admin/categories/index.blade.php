@@ -70,6 +70,9 @@
                                 <a href="{{ route('admin.categories.edit', $category->id) }}" class="inline-flex items-center px-3 py-1 border border-transparent rounded-md text-sm font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                     Edit
                                 </a>
+                                <a href="{{ route('admin.categories.edit_values', $category->id) }}" class="inline-flex items-center px-3 py-1 border border-transparent rounded-md text-sm font-medium text-green-600 bg-green-100 hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                                    Learning Values
+                                </a>
                                 <form action="{{ route('admin.categories.destroy', $category->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this category?');">
                                     @csrf
                                     @method('DELETE')

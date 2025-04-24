@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\ContentCategory;
+use App\Models\LearningValue;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -148,5 +149,55 @@ class CategoryController extends Controller
 
         return redirect()->route('admin.categories.index')
             ->with('success', 'Category deleted successfully.');
+    }
+
+    /**
+     * Show the form for editing the category's learning values.
+     *
+     * @param  int  $id
+     * @return \Illuminate\View\View
+     */
+    public function editValues($id)
+    {
+        $category = ContentCategory::findOrFail($id);
+        $allLearningValues = LearningValue::orderBy('name')->get();
+        $selectedValues = $category->learningValues->pluck('id')->toArray();
+        
+        return view('admin.categories.edit_values', compact('category', 'allLearningValues', 'selectedValues'));
+    }
+
+    /**
+     * Update the learning values for a category.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function updateValues(Request $request, $id)
+    {
+        $category = ContentCategory::findOrFail($id);
+        
+        $validated = $request->validate([
+            'learning_values' => 'nullable|array',
+            'learning_values.*' => 'exists:learning_values,id',
+        ]);
+        
+        // Sync learning values
+        $category->learningValues()->sync($validated['learning_values'] ?? []);
+        
+        return redirect()->route('admin.categories.edit_values', $category->id)
+            ->with('success', 'Learning values updated successfully.');
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $category = \App\Models\ContentCategory::findOrFail($id);
+        return view('admin.categories.edit', compact('category'));
     }
 }

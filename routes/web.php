@@ -65,7 +65,9 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     
     // Categories Management
     Route::resource('categories', CategoryController::class);
-    
+    Route::get('categories/{category}/values', [CategoryController::class, 'editValues'])->name('categories.edit_values');
+    Route::put('categories/{category}/values', [CategoryController::class, 'updateValues'])->name('categories.update_values');
+
     // Analytics
     Route::get('analytics', [AdminController::class, 'analytics'])->name('analytics');
     

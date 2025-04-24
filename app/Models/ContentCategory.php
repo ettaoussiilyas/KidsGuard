@@ -22,8 +22,11 @@ class ContentCategory extends Model
         'is_active'
     ];
 
+    /**
+     * Get the learning values associated with this category.
+     */
     public function learningValues()
     {
-        return $this->hasMany(LearningValue::class, 'category_id');
+        return $this->belongsToMany(LearningValue::class, 'category_learning_value', 'category_id', 'learning_value_id');
     }
 }
