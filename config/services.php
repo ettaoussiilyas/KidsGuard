@@ -44,7 +44,7 @@ return [
     
     // Add these to your existing services config
     'youtube' => [
-        'api_key' => env('YOUTUBE_API_KEY'),
+        'api_key' => env('YOUTUBE_API_KEY', 'AIzaSyBJAgTMYloSly7Bgo4RKJ9V2lhiWNx9a20'),
         'playlist_id' => env('YOUTUBE_PLAYLIST_PARENT_GAMES_ID', 'PLAZ_7tdhbxkE94Fk22PNGilqsdPSJ0m4K'),
         // 'music_playlist_id' => env('YOUTUBE_PLAYLIST_MUSIC_ID', 'PLU1E9f2XmDpYV-VhesvHLOjOJ1uaaMBpz'),
         'music_playlist_id' => env('YOUTUBE_PLAYLIST_MUSIC_ID', 'PLDuxenf8jCsRcvTwh0HHSUAWm_3y_m6q1'),
@@ -55,9 +55,9 @@ return [
     ], 
 
     'google' => [
-        'client_id' => env('GOOGLE_CLIENT_ID'),
-        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => env('GOOGLE_REDIRECT_URI', 'http://localhost/KidsGuard/auth/google/callback'),
+        'client_id' => env('GOOGLE_CLIENT_ID', '932114804395-qvoeqe4opcbdmd5klr7kq3hbrlsas4bo.apps.googleusercontent.com'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET', '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'),
+        'redirect' => env('GOOGLE_REDIRECT_URI', 'http://127.0.0.1:8000/auth/google/callback'),
     ],
 
     'facebook' => [
