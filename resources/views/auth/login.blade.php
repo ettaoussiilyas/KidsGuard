@@ -3,10 +3,9 @@
 @section('content')
 <div>
     <div class="text-center mb-6">
-        <div class="relative inline-block mb-6">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#4A90E2]/20 to-[#9B59B6]/20 rounded-2xl blur-md transform rotate-1"></div>
-            <img src="https://picsum.photos/600/300" alt="Welcome Back" class="rounded-2xl mx-auto shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl relative z-10">
-            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-6 py-2 rounded-full shadow-md">
+        <div class="relative inline-block">
+            <img src="https://picsum.photos/600/300" alt="Welcome Back" class="rounded-xl mx-auto mb-4 shadow-md hover:shadow-lg transition-all duration-300">
+            <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-white px-4 py-1 rounded-full shadow-md">
                 <span class="text-[#4A90E2] font-bold">Welcome Back!</span>
             </div>
         </div>
