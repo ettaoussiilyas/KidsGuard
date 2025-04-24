@@ -5,15 +5,15 @@
 @section('content')
 <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
     <div class="bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-5 rounded-t-xl">
-        <div class="flex justify-between items-center">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
             <div>
                 <h1 class="text-xl sm:text-2xl font-bold text-white">Content Preferences</h1>
                 <p class="text-indigo-100 text-sm mt-1">Customize learning content for your child</p>
             </div>
             
             @if(!$childProfiles->isEmpty())
-            <div class="relative">
-                <select id="child_profile" class="appearance-none bg-white/90 backdrop-blur-sm text-gray-800 py-2.5 pl-4 pr-10 rounded-lg border-0 shadow-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm font-medium transition-all duration-200 hover:shadow-lg">
+            <div class="relative w-full sm:w-auto">
+                <select id="child_profile" class="w-full appearance-none bg-white/90 backdrop-blur-sm text-gray-800 py-2.5 pl-4 pr-10 rounded-lg border-0 shadow-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm font-medium transition-all duration-200 hover:shadow-lg">
                     <option value="">Select a child</option>
                     @foreach($childProfiles as $profile)
                         <option value="{{ $profile->id }}" 
@@ -24,7 +24,7 @@
                         </option>
                     @endforeach
                 </select>
-                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-600">
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
@@ -187,7 +187,7 @@
                             <h2 class="text-xl font-semibold" style="color: ${category.color}">${category.name}</h2>
                         `;
                         
-                        // Learning values grid
+                        // Learning values grid - update grid classes
                         const valuesGrid = document.createElement('div');
                         valuesGrid.className = 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4';
                         
