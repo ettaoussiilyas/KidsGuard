@@ -4,12 +4,12 @@
 
 @section('content')
 <div class="container mx-auto px-4 py-8">
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
         <h1 class="text-3xl font-bold text-indigo-600">Stories</h1>
         
-        <form action="{{ route('kid.stories.index') }}" method="GET" class="flex">
+        <form action="{{ route('kid.stories.index') }}" method="GET" class="flex w-full sm:w-auto">
             <input type="text" name="search" value="{{ $search ?? '' }}" placeholder="Search stories..." 
-                   class="px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                   class="w-full px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-indigo-500">
             <button type="submit" class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-r-full">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
