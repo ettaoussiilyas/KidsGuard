@@ -12,11 +12,13 @@
             <button id="all-videos" class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium">
                 All Videos
             </button>
+            <!-- Must Be for Favorite -->
             <button id="favorites" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-                Favorites
+                Explore
             </button>
+            <!-- Must Be for Recommanded -->
             <button id="recommended" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-                Recommended
+                Random
             </button>
         </div>
     </div>
