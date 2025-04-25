@@ -40,42 +40,49 @@ class GameController extends Controller
         $gamesData = json_decode($gamesJson, true);
         $allGames = $gamesData['games'] ?? [];
         
-        // Filter games based on preferences and special needs
-        $filteredGames = array_filter($allGames, function($game) use ($preferences, $hasADHD, $hasAutism) {
-            $gameValues = (array) ($game['educational_value_id'] ?? []);
-            
+        // Create arrays to store special needs games and preference-matched games
+        $specialNeedsGames = [];
+        $preferenceGames = [];
+        
+        // Filter and categorize games
+        foreach ($allGames as $game) {
             // Handle both single category_id and array of category_ids
             $gameCategories = is_array($game['category_id']) 
                 ? $game['category_id'] 
                 : [$game['category_id']];
             
-            // If the game has no educational values, include it anyway
-            // if (empty($gameValues)) {
-            //     return true;
-            // }
-            
-            // Check for preference matches
-            $hasPreferenceMatch = !empty(array_intersect($gameValues, $preferences));
+            $gameValues = (array) ($game['educational_value_id'] ?? []);
             
             // Check for special needs matches
             $isADHDContent = in_array(6, $gameCategories); // ADHD category
             $isAutismContent = in_array(7, $gameCategories); // Autism category
             
-            // Include if it matches preferences OR matches the child's special needs
-            return $hasPreferenceMatch || 
-                   ($hasADHD && $isADHDContent) || 
-                   ($hasAutism && $isAutismContent);
-        });
+            // Check if this game matches the child's special needs
+            $matchesSpecialNeeds = ($hasADHD && $isADHDContent) || ($hasAutism && $isAutismContent);
+            
+            // Check for preference matches
+            $hasPreferenceMatch = !empty(array_intersect($gameValues, $preferences));
+            
+            // Add to appropriate array
+            if ($matchesSpecialNeeds) {
+                $specialNeedsGames[] = $game;
+            } elseif ($hasPreferenceMatch) {
+                $preferenceGames[] = $game;
+            }
+        }
         
-        // Only apply filtering if we have results, otherwise show all games
-        if (!empty($filteredGames)) {
-            $allGames = array_values($filteredGames);
+        // Combine arrays with special needs games first
+        $filteredGames = array_merge($specialNeedsGames, $preferenceGames);
+        
+        // If no games match, show all games
+        if (empty($filteredGames)) {
+            $filteredGames = $allGames;
         }
         
         // Pagination
         $currentPage = $request->input('page', 1);
         $perPage = 9; // Number of games per page
-        $totalGames = count($allGames);
+        $totalGames = count($filteredGames);
         $totalPages = ceil($totalGames / $perPage);
         
         // Ensure current page is valid
@@ -87,7 +94,7 @@ class GameController extends Controller
         
         // Get games for current page
         $offset = ($currentPage - 1) * $perPage;
-        $games = array_slice($allGames, $offset, $perPage);
+        $games = array_slice($filteredGames, $offset, $perPage);
         
         return view('kid.games.index', [
             'games' => $games,

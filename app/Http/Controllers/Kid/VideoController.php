@@ -41,37 +41,49 @@ class VideoController extends Controller
         $videosData = json_decode($videosJson, true);
         $allVideos = $videosData['videos'] ?? [];
         
-        // Filter videos based on preferences and special needs
-        $filteredVideos = array_filter($allVideos, function($video) use ($preferences, $hasADHD, $hasAutism) {
-            $videoValues = (array) ($video['educational_value_id'] ?? []);
-            
+        // Create arrays to store special needs videos and preference-matched videos
+        $specialNeedsVideos = [];
+        $preferenceVideos = [];
+        
+        // Filter and categorize videos
+        foreach ($allVideos as $video) {
             // Handle both single category_id and array of category_ids
             $videoCategories = is_array($video['category_id']) 
                 ? $video['category_id'] 
                 : [$video['category_id']];
             
-            // Check for preference matches
-            $hasPreferenceMatch = !empty(array_intersect($videoValues, $preferences));
+            $videoValues = (array) ($video['educational_value_id'] ?? []);
             
             // Check for special needs matches
             $isADHDContent = in_array(6, $videoCategories); // ADHD category
             $isAutismContent = in_array(7, $videoCategories); // Autism category
             
-            // Include if it matches preferences OR matches the child's special needs
-            return $hasPreferenceMatch || 
-                   ($hasADHD && $isADHDContent) || 
-                   ($hasAutism && $isAutismContent);
-        });
+            // Check if this video matches the child's special needs
+            $matchesSpecialNeeds = ($hasADHD && $isADHDContent) || ($hasAutism && $isAutismContent);
+            
+            // Check for preference matches
+            $hasPreferenceMatch = !empty(array_intersect($videoValues, $preferences));
+            
+            // Add to appropriate array
+            if ($matchesSpecialNeeds) {
+                $specialNeedsVideos[] = $video;
+            } elseif ($hasPreferenceMatch) {
+                $preferenceVideos[] = $video;
+            }
+        }
         
-        // Only apply filtering if we have results, otherwise show all videos
-        if (!empty($filteredVideos)) {
-            $allVideos = array_values($filteredVideos);
+        // Combine arrays with special needs videos first
+        $filteredVideos = array_merge($specialNeedsVideos, $preferenceVideos);
+        
+        // If no videos match, show all videos
+        if (empty($filteredVideos)) {
+            $filteredVideos = $allVideos;
         }
         
         // Pagination
         $currentPage = $request->input('page', 1);
-        $perPage = 9; // Number of videos per page - small number for children
-        $totalVideos = count($allVideos);
+        $perPage = 9; // Number of videos per page
+        $totalVideos = count($filteredVideos);
         $totalPages = ceil($totalVideos / $perPage);
         
         // Ensure current page is valid
@@ -83,7 +95,7 @@ class VideoController extends Controller
         
         // Get videos for current page
         $offset = ($currentPage - 1) * $perPage;
-        $videos = array_slice($allVideos, $offset, $perPage);
+        $videos = array_slice($filteredVideos, $offset, $perPage);
         
         // Get all learning values for display
         $learningValues = LearningValue::pluck('name', 'id')->toArray();
