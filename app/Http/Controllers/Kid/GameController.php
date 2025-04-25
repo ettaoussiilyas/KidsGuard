@@ -37,8 +37,24 @@ class GameController extends Controller
         $allGames = $gamesData['games'] ?? [];
         
         // Filter games based on preferences if needed
-        // This is a placeholder - you would implement actual filtering logic
-        // based on your application's requirements
+        if (!empty($preferences)) {
+            $filteredGames = array_filter($allGames, function($game) use ($preferences) {
+                // Check if any of the game's educational values match the child's preferences
+                $gameValues = (array) ($game['educational_value_id'] ?? []);
+                
+                // If the game has no educational values, include it anyway
+                if (empty($gameValues)) {
+                    return true;
+                }
+                
+                return count(array_intersect($gameValues, $preferences)) > 0;
+            });
+            
+            // Only apply filtering if we have results, otherwise show all games
+            if (!empty($filteredGames)) {
+                $allGames = array_values($filteredGames);
+            }
+        }
         
         // Pagination
         $currentPage = $request->input('page', 1);
@@ -65,6 +81,7 @@ class GameController extends Controller
         ]);
     }
     
+    // Rest of the controller remains unchanged
     public function show($id)
     {
         // Load games from JSON file

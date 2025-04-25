@@ -7,7 +7,7 @@
             "description": "Sesame Street video: Elmo, Rosita and Big Bird sing \"Where is Elmo?\"",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [4, 5],
             "characters": [
                 "Elmo"
             ],
