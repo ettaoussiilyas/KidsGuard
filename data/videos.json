@@ -5,7 +5,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=27898",
             "image": "https://cdn.jwplayer.com/v2/media/KDJ2vrei/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo, Rosita and Big Bird sing \"Where is Elmo?\"",
-            "category_id": 1,
+            "category_id": [1, 6],
             "age_range": "3-8",
             "educational_value_id": [4, 5],
             "characters": [
@@ -20,9 +20,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27894",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Say hello with Elmo, Abby, and Cookie Monster",
-            "category_id": 1,
+            "category_id": [1, 6],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3],
             "characters": [
                 "Elmo"
             ]
@@ -34,7 +34,7 @@
             "description": "Sesame Street video: Sing Puppies in the Park with Elmo!",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 3, 5],
             "characters": [
                 "Elmo"
             ],
@@ -49,13 +49,13 @@
             "description": "Sesame Street video: Goodnight Body with Elmo and Headspace",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [3, 4, 5],
             "characters": [
                 "Elmo"
             ]
         },
         {
-            "title": "Good Morning Song",
+            "title": "Authism Test Good Morning Song",
             "url": "https://www.sesamestreet.org/videos?vid=27823",
             "image": "https://cdn.jwplayer.com/v2/media/XpPpd9EN/poster.jpg?width=720",
             "description": "Sesame Street video: Good Morning Song",
@@ -76,7 +76,7 @@
             "description": "Sesame Street video: Elmo Was His Name-O",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -100,7 +100,7 @@
             "description": "Sesame Street video: Find Orange with Elmo and Abby!",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -112,7 +112,7 @@
             "description": "Sesame Street video: That's Home Song with Elmo and Tango",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 3, 5],
             "characters": [
                 "Elmo"
             ],
@@ -139,7 +139,7 @@
             "description": "Sesame Street video: A Monster And His Dog",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 5],
             "characters": [
                 "Elmo"
             ]
@@ -178,7 +178,7 @@
             "description": "Sesame Street video: F is for Families with Kelsea Ballerini",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 5],
             "characters": [
                 "Elmo"
             ]
@@ -220,7 +220,7 @@
             "description": "Sesame Street video: Billy Porter performs the Friends with a Penguin Song",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3],
             "characters": [
                 "Elmo"
             ],
@@ -250,7 +250,7 @@
             "description": "Sesame Street video: C is for Cooking with Stephen and Ayesha Curry",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3],
             "characters": [
                 "Elmo"
             ]
@@ -274,7 +274,7 @@
             "description": "Sesame Street video: The Number of the Day: 16",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -310,7 +310,7 @@
             "description": "Sesame Street video: Food Rap Battle: Apple and Banana",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -334,7 +334,7 @@
             "description": "Sesame Street video: Elmo's Virtual Hug",
             "category_id": 1,
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3],
             "characters": [
                 "Elmo"
             ]

@@ -32,29 +32,40 @@ class VideoController extends Controller
         // Get the child's preferences
         $preferences = $childProfile->preferences()->pluck('learning_value_id')->toArray();
         
+        // Check if child has special needs
+        $hasADHD = $childProfile->has_adhd ?? false;
+        $hasAutism = $childProfile->has_autism ?? false;
+        
         // Load videos from JSON file
         $videosJson = File::get(base_path('data/videos.json'));
         $videosData = json_decode($videosJson, true);
         $allVideos = $videosData['videos'] ?? [];
         
-        // Filter videos based on preferences if requested
-        if (!empty($preferences)) {
-            $filteredVideos = array_filter($allVideos, function($video) use ($preferences) {
-                // Check if any of the video's educational values match the child's preferences
-                $videoValues = (array) ($video['educational_value_id'] ?? []);
-                
-                // If the video has no educational values, include it anyway
-                if (empty($videoValues)) {
-                    return true;
-                }
-                
-                return count(array_intersect($videoValues, $preferences)) > 0;
-            });
+        // Filter videos based on preferences and special needs
+        $filteredVideos = array_filter($allVideos, function($video) use ($preferences, $hasADHD, $hasAutism) {
+            $videoValues = (array) ($video['educational_value_id'] ?? []);
             
-            // Only apply filtering if we have results, otherwise show all videos
-            if (!empty($filteredVideos)) {
-                $allVideos = array_values($filteredVideos);
-            }
+            // Handle both single category_id and array of category_ids
+            $videoCategories = is_array($video['category_id']) 
+                ? $video['category_id'] 
+                : [$video['category_id']];
+            
+            // Check for preference matches
+            $hasPreferenceMatch = !empty(array_intersect($videoValues, $preferences));
+            
+            // Check for special needs matches
+            $isADHDContent = in_array(6, $videoCategories); // ADHD category
+            $isAutismContent = in_array(7, $videoCategories); // Autism category
+            
+            // Include if it matches preferences OR matches the child's special needs
+            return $hasPreferenceMatch || 
+                   ($hasADHD && $isADHDContent) || 
+                   ($hasAutism && $isAutismContent);
+        });
+        
+        // Only apply filtering if we have results, otherwise show all videos
+        if (!empty($filteredVideos)) {
+            $allVideos = array_values($filteredVideos);
         }
         
         // Pagination

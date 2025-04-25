@@ -31,34 +31,50 @@ class GameController extends Controller
         // Get the child's preferences
         $preferences = $childProfile->preferences()->pluck('learning_value_id')->toArray();
         
+        // Check if child has special needs
+        $hasADHD = $childProfile->has_adhd ?? false;
+        $hasAutism = $childProfile->has_autism ?? false;
+        
         // Load games from JSON file
         $gamesJson = File::get(base_path('data/games.json'));
         $gamesData = json_decode($gamesJson, true);
         $allGames = $gamesData['games'] ?? [];
         
-        // Filter games based on preferences if needed
-        if (!empty($preferences)) {
-            $filteredGames = array_filter($allGames, function($game) use ($preferences) {
-                // Check if any of the game's educational values match the child's preferences
-                $gameValues = (array) ($game['educational_value_id'] ?? []);
-                
-                // If the game has no educational values, include it anyway
-                if (empty($gameValues)) {
-                    return true;
-                }
-                
-                return count(array_intersect($gameValues, $preferences)) > 0;
-            });
+        // Filter games based on preferences and special needs
+        $filteredGames = array_filter($allGames, function($game) use ($preferences, $hasADHD, $hasAutism) {
+            $gameValues = (array) ($game['educational_value_id'] ?? []);
             
-            // Only apply filtering if we have results, otherwise show all games
-            if (!empty($filteredGames)) {
-                $allGames = array_values($filteredGames);
-            }
+            // Handle both single category_id and array of category_ids
+            $gameCategories = is_array($game['category_id']) 
+                ? $game['category_id'] 
+                : [$game['category_id']];
+            
+            // If the game has no educational values, include it anyway
+            // if (empty($gameValues)) {
+            //     return true;
+            // }
+            
+            // Check for preference matches
+            $hasPreferenceMatch = !empty(array_intersect($gameValues, $preferences));
+            
+            // Check for special needs matches
+            $isADHDContent = in_array(6, $gameCategories); // ADHD category
+            $isAutismContent = in_array(7, $gameCategories); // Autism category
+            
+            // Include if it matches preferences OR matches the child's special needs
+            return $hasPreferenceMatch || 
+                   ($hasADHD && $isADHDContent) || 
+                   ($hasAutism && $isAutismContent);
+        });
+        
+        // Only apply filtering if we have results, otherwise show all games
+        if (!empty($filteredGames)) {
+            $allGames = array_values($filteredGames);
         }
         
         // Pagination
         $currentPage = $request->input('page', 1);
-        $perPage = 9; // Number of games per page - small number for children
+        $perPage = 9; // Number of games per page
         $totalGames = count($allGames);
         $totalPages = ceil($totalGames / $perPage);
         
