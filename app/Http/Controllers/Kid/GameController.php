@@ -81,7 +81,7 @@ class GameController extends Controller
         
         // Pagination
         $currentPage = $request->input('page', 1);
-        $perPage = 9; // Number of games per page
+        $perPage = 12; // Number of games per page
         $totalGames = count($filteredGames);
         $totalPages = ceil($totalGames / $perPage);
         

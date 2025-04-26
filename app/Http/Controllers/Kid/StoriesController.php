@@ -21,7 +21,7 @@ class StoriesController extends Controller
         $pageToken = $request->input('page_token');
         
         if ($search) {
-            $result = $this->youtubeService->getStoriesPlaylistVideos($pageToken, 9, $search);
+            $result = $this->youtubeService->getStoriesPlaylistVideos($pageToken, 12, $search);
         } else {
             $result = $this->youtubeService->getStoriesPlaylistVideos($pageToken);
         }

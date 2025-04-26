@@ -21,7 +21,7 @@ class MusicController extends Controller
         $pageToken = $request->input('page_token');
         $search = $request->input('search');
         
-        $musics = $this->youtubeService->getMusicPlaylistVideos($pageToken, 9, $search);
+        $musics = $this->youtubeService->getMusicPlaylistVideos($pageToken, 12, $search);
         
         return view('kid.musics.index', [
             'musics' => $musics['items'],

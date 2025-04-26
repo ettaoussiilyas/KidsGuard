@@ -22,7 +22,7 @@ class LearningController extends Controller
         $search = $request->input('search');
         $category = $request->input('category', 'math'); // Default to math
         
-        $learningVideos = $this->youtubeService->getLearningPlaylistVideos($pageToken, 9, $search, $category);
+        $learningVideos = $this->youtubeService->getLearningPlaylistVideos($pageToken, 12, $search, $category);
         
         return view('kid.learning.index', [
             'learningVideos' => $learningVideos['items'],

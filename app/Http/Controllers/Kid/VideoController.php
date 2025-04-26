@@ -82,7 +82,7 @@ class VideoController extends Controller
         
         // Pagination
         $currentPage = $request->input('page', 1);
-        $perPage = 9; // Number of videos per page
+        $perPage = 12; // Number of videos per page
         $totalVideos = count($filteredVideos);
         $totalPages = ceil($totalVideos / $perPage);
         
