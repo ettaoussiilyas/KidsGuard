@@ -28,13 +28,11 @@ class LearningValue extends Model
         'age_max' => 'integer',
     ];
 
-    // Keep this for backward compatibility
     public function category()
     {
         return $this->belongsTo(ContentCategory::class, 'category_id');
     }
 
-    // Add the many-to-many relationship
     public function categories()
     {
         return $this->belongsToMany(ContentCategory::class, 'category_learning_value', 'learning_value_id', 'category_id');

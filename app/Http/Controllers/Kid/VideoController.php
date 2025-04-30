@@ -93,7 +93,6 @@ class VideoController extends Controller
             $currentPage = $totalPages;
         }
         
-        // Get videos for current page
         $offset = ($currentPage - 1) * $perPage;
         $videos = array_slice($filteredVideos, $offset, $perPage);
         

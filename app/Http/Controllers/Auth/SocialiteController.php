@@ -61,7 +61,6 @@ class SocialiteController extends Controller
             // Check if user exists with this email
             $user = User::where('email', $socialUser->getEmail())->first();
             
-            // If user doesn't exist, create a new one
             if (!$user) {
                 $user = User::create([
                     'name' => $socialUser->getName(),

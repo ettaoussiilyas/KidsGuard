@@ -18,13 +18,13 @@ class PermissionRole extends Model
         'updated_at'
     ];
 
-    public function roles(): BelongsToMany
-    {
-        return $this->belongsToMany(Role::class);
-    }
+    // public function roles(): BelongsToMany
+    // {
+    //     return $this->belongsToMany(Role::class);
+    // }
 
-    public function permission(): BelongsToMany
-    {
-        return $this->belongsToMany(Permission::class);
-    }
+    // public function permission(): BelongsToMany
+    // {
+    //     return $this->belongsToMany(Permission::class);
+    // }
 }

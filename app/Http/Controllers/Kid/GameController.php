@@ -85,14 +85,12 @@ class GameController extends Controller
         $totalGames = count($filteredGames);
         $totalPages = ceil($totalGames / $perPage);
         
-        // Ensure current page is valid
         if ($currentPage < 1) {
             $currentPage = 1;
         } elseif ($currentPage > $totalPages && $totalPages > 0) {
             $currentPage = $totalPages;
         }
         
-        // Get games for current page
         $offset = ($currentPage - 1) * $perPage;
         $games = array_slice($filteredGames, $offset, $perPage);
         
@@ -104,7 +102,6 @@ class GameController extends Controller
         ]);
     }
     
-    // Rest of the controller remains unchanged
     public function show($id)
     {
         // Load games from JSON file

@@ -118,8 +118,6 @@ class User extends Authenticatable
         return $this;
     }
 
-    // Add this method to your User model class
-
     /**
      * Get the child profiles for the user.
      */

@@ -66,9 +66,7 @@ class KidController extends Controller
     public function switchProfile($id)
     {
         $user = Auth::user();
-        // Use the correct relationship method name
         $childProfile = $user->childProfiles()->findOrFail($id);
-        // Or if the relationship is named differently, use:
         // $childProfile = $user->kidProfiles()->findOrFail($id);
         
         // Store the selected profile in session
