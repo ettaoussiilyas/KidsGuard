@@ -4,7 +4,7 @@
 <div>
     <div class="text-center mb-6">
         <div class="relative inline-block">
-            <img src="https://picsum.photos/600/300" alt="Welcome Back" class="rounded-xl mx-auto mb-4 shadow-md hover:shadow-lg transition-all duration-300">
+            <img src="{{ asset('images/sections/login.jpg') }}" alt="Welcome Back" class="rounded-xl mx-auto mb-4 shadow-md hover:shadow-lg transition-all duration-300">
             <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-white px-4 py-1 rounded-full shadow-md">
                 <span class="text-[#4A90E2] font-bold">Welcome Back!</span>
             </div>

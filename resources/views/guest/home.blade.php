@@ -39,17 +39,17 @@
                     <!-- Stats -->
                     <div class="mt-12 flex flex-wrap gap-8 items-center text-gray-700">
                         <div class="flex flex-col">
-                            <span class="text-2xl font-bold">15.2K</span>
+                            <span class="text-2xl font-bold">1.2K</span>
                             <span class="text-sm text-gray-500">Active students</span>
                         </div>
                         <div class="h-10 w-px bg-gray-300"></div>
                         <div class="flex flex-col">
-                            <span class="text-2xl font-bold">4.5K</span>
+                            <span class="text-2xl font-bold">250</span>
                             <span class="text-sm text-gray-500">Tutors</span>
                         </div>
                         <div class="h-10 w-px bg-gray-300"></div>
                         <div class="flex flex-col">
-                            <span class="text-2xl font-bold">300+</span>
+                            <span class="text-2xl font-bold">100+</span>
                             <span class="text-sm text-gray-500">Resources</span>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                         <!-- Main image - top right -->
                         <div class="col-span-8 col-start-5 row-span-6 row-start-1 relative z-10">
                             <div class="bg-[#A7D8FD] rounded-3xl p-1 shadow-lg h-full">
-                                <img src="https://picsum.photos/600/300" alt="Happy kids learning" class="w-full h-full object-cover rounded-2xl">
+                                <img src="{{ asset('images/sections/elmo_pesine.jpg') }}" alt="Happy kids learning" class="w-full h-full object-cover rounded-2xl">
                             </div>
                             <!-- Decorative circle -->
                             <div class="absolute -top-3 -right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md z-20">
@@ -74,7 +74,7 @@
                         <!-- Second image - middle right -->
                         <div class="col-span-6 col-start-7 row-span-5 row-start-7 relative z-20">
                             <div class="bg-[#D8B4FE] rounded-3xl p-1 shadow-lg h-full">
-                                <img src="https://picsum.photos/300/300?random=1" alt="Child learning" class="w-full h-full object-cover rounded-2xl">
+                                <img src="{{ asset('images/sections/elmo_friend.jpg') }}" alt="Child learning" class="w-full h-full object-cover rounded-2xl">
                             </div>
                             <!-- Decorative circles -->
                             <div class="absolute -bottom-2 right-10 flex">
@@ -88,7 +88,7 @@
                         <!-- Third image - bottom left -->
                         <div class="col-span-6 col-start-1 row-span-6 row-start-7 relative z-10">
                             <div class="bg-[#B6E6BD] rounded-3xl p-1 shadow-lg h-full">
-                                <img src="https://picsum.photos/300/300?random=2" alt="Child with tablet" class="w-full h-full object-cover rounded-2xl">
+                                <img src="{{ asset('images/sections/elmo.jpg') }}" alt="Child with tablet" class="w-full h-full object-cover rounded-2xl">
                             </div>
                             <!-- Decorative star -->
                             <div class="absolute -right-3 top-1/2 transform -translate-y-1/2">
@@ -265,7 +265,7 @@
                     <!-- Main image - top right -->
                     <div class="col-span-8 col-start-5 row-span-7 row-start-1 relative z-10">
                         <div class="bg-[#FFD600]/20 rounded-3xl p-1 shadow-lg h-full">
-                            <img src="https://picsum.photos/600/300" alt="Parent monitoring child" class="w-full h-full object-cover rounded-2xl">
+                            <img src="{{ asset('images/sections/healthy_kids.jpg') }}" alt="Parent monitoring child" class="w-full h-full object-cover rounded-2xl">
                         </div>
                         <!-- Decorative element -->
                         <div class="absolute -top-3 -right-3 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md z-20">
@@ -278,7 +278,7 @@
                     <!-- Second image - bottom left -->
                     <div class="col-span-7 col-start-1 row-span-6 row-start-6 relative z-20">
                         <div class="bg-[#4A90E2]/20 rounded-3xl p-1 shadow-lg h-full">
-                            <img src="https://picsum.photos/300/300?random=3" alt="Family using tablet" class="w-full h-full object-cover rounded-2xl">
+                            <img src="{{ asset('images/sections/girl_pant.jpg') }}" alt="Family using tablet" class="w-full h-full object-cover rounded-2xl">
                         </div>
                     </div>
                 </div>
