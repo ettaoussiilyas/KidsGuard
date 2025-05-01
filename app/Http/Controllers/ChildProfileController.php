@@ -117,7 +117,11 @@ class ChildProfileController extends Controller
         $this->authorize('delete', $childProfile);
         
         if ($childProfile->avatar) {
-            Storage::disk('public')->delete($childProfile->avatar);
+            // Check if the avatar is not a default avatar before deleting
+            $defaultAvatars = ['avatars/girl-default.png', 'avatars/boy-default.png'];
+            if (!in_array($childProfile->avatar, $defaultAvatars)) {
+                Storage::disk('public')->delete($childProfile->avatar);
+            }
         }
         
         $childProfile->delete();
