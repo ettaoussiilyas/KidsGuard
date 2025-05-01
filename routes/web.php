@@ -134,7 +134,7 @@ Route::middleware(['auth', 'role:parent'])->group(function () {
     Route::put('/parent/password/update', [App\Http\Controllers\ParentController::class, 'updatePassword'])->name('parent.password.update');
     Route::delete('/parent/profile/destroy', [App\Http\Controllers\ParentController::class, 'deleteAccount'])->name('parent.profile.destroy');
 
-    // NewsLetter - Fix the routes
+    // NewsLetter
     Route::get('/newsletter', [NewsletterController::class, 'showSubscriptionForm'])->name('newsletter.subscription');
     Route::post('/newsletter/toggle', [NewsletterController::class, 'toggleSubscription'])->name('newsletter.toggle');
     
