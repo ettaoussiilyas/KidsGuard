@@ -8,7 +8,7 @@
         <!-- Right side: User menu -->
         <div class="flex items-center space-x-4">
             <!-- Notifications -->
-            <div class="relative" x-data="{ open: false }">
+            <!-- <div class="relative" x-data="{ open: false }">
                 <button @click="open = !open" class="p-1 rounded-full text-gray-500 hover:text-gray-700 focus:outline-none">
                     <span class="sr-only">View notifications</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -17,7 +17,6 @@
                     <span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-500"></span>
                 </button>
                 
-                <!-- Dropdown menu -->
                 <div x-show="open" @click.away="open = false" class="origin-top-right absolute right-0 mt-2 w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" style="display: none;">
                     <div class="py-1">
                         <div class="px-4 py-2 border-b border-gray-100">
@@ -36,7 +35,7 @@
                         <a href="#" class="block px-4 py-2 text-sm text-center text-blue-600 hover:bg-gray-100">View all notifications</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <!-- User dropdown -->
             <div class="relative" x-data="{ open: false }">
