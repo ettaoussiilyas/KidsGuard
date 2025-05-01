@@ -5,9 +5,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27898",
             "image": "https://cdn.jwplayer.com/v2/media/KDJ2vrei/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo, Rosita and Big Bird sing \"Where is Elmo?\"",
-            "category_id": [1],
+            "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
             "characters": [
                 "Elmo"
             ],
@@ -110,9 +110,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27785",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: That's Home Song with Elmo and Tango",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 6, 7, 3, 5, 12, 13],
+            "educational_value_id": [1, 4, 3, 5],
             "characters": [
                 "Elmo"
             ],
@@ -125,9 +125,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27736",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Naomi Osaka Talks About Sunny Days",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 6, 7, 3, 5, 12, 13],
+            "educational_value_id": [1, 4, 3, 5],
             "characters": [
                 "Elmo"
             ]
@@ -137,9 +137,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27735",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: A Monster And His Dog",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 5],
             "characters": [
                 "Elmo"
             ]
@@ -149,9 +149,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27688",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Meet the Mecha Builders!",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 6, 3, 4, 12, 13],
+            "educational_value_id": [1, 2, 3, 4],
             "characters": [
                 "Elmo"
             ]
@@ -286,7 +286,7 @@
             "description": "Sesame Street video: Twinkle Twinkle Little Star with Julia and Elmo",
             "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
             "characters": [
                 "Elmo"
             ]
@@ -298,7 +298,7 @@
             "description": "Sesame Street video: Elmo's Ducks!",
             "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
             "characters": [
                 "Elmo"
             ]
@@ -310,7 +310,7 @@
             "description": "Sesame Street video: Food Rap Battle: Apple and Banana",
             "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 6, 7, 3, 4, 5],
+            "educational_value_id": [1, 6, 7, 3, 4, 5, 10, 11, 12, 13],
             "characters": [
                 "Elmo"
             ]
@@ -320,9 +320,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26911",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Monster on the Street",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 5, 10, 11, 12, 13],
+            "educational_value_id": [2, 5],
             "characters": [
                 "Elmo"
             ]
@@ -332,9 +332,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26416",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo's Virtual Hug",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 5, 10, 11, 12, 13],
+            "educational_value_id": [2, 5],
             "characters": [
                 "Elmo"
             ]
@@ -344,7 +344,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=26915",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Getting Dressed, Not Stressed",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -356,7 +356,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=1433",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Song: Brushy Brush",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -422,7 +422,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=27733",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Heroes In Your Neighborhood With Jon Batiste",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -434,7 +434,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=27784",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Hooray for Getting Clean Bath Time Song",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -449,7 +449,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=1799",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Belly Breathe",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -461,7 +461,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=25326",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: S is for Songs with Sia",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -476,7 +476,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=1775",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Freeze Dance",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -488,7 +488,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=25679",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Surfin' on Sesame Street Song",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -527,9 +527,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1886",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Riding a Tricycle",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -539,9 +539,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=25700",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Thank You, Clouds with Ellie Goulding",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 3, 5, 11, 12],
+            "educational_value_id": [1, 3, 5],
             "characters": [
                 "Elmo"
             ]
@@ -551,9 +551,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27781",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo's Song Lyric Video",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 3, 5, 11, 12],
+            "educational_value_id": [1, 3, 4, 5],
             "characters": [
                 "Elmo"
             ],
@@ -566,9 +566,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=3186",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Celebrity Lullabies",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 3, 5, 11, 12],
+            "educational_value_id": [1, 3, 5],
             "characters": [
                 "Elmo"
             ]
@@ -578,7 +578,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=1784",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo Feels Proud",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -590,7 +590,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=25611",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo's Jumping In Puddles",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -614,7 +614,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=27584",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Ramp Racers",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -626,7 +626,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=27477",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: We're a Family song",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -641,7 +641,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=3192",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: The First Monster President",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
             "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
@@ -653,9 +653,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=25701",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Come Together with John Legend",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -665,9 +665,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=25710",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Let's Hear It For the Grandparents!",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -701,9 +701,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=24675",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Boo Boo Busters",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -713,9 +713,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1798",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: I Can Sing",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ],
@@ -728,9 +728,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=24670",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Pharrell: B is for Book",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -740,9 +740,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=3255",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: What Is in the Sky?",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -752,9 +752,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=3232",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Four Friends",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -764,9 +764,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=3174",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: How Do We Listen?",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -824,9 +824,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=3098",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Sharing Cookies",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -836,9 +836,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27641",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Letter of the Day: D",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -848,9 +848,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1709",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Letter of the Day: A",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -860,9 +860,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27157",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Indoor Picnic with Julia, Elmo, and Her Family",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -870,7 +870,7 @@
         {
             "title": "Michael Buble: Believe in Yourself",
             "url": "https://www.sesamestreet.org/videos?vid=1741",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+Video",
+            "image": "https://cdn.jwplayer.com/v2/media/KDJ2vrei/poster.jpg?width=720",
             "description": "Sesame Street video: Michael Buble: Believe in Yourself",
             "category_id": [1, 6, 7],
             "age_range": "3-8",
@@ -884,9 +884,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=3211",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Addition Expedition",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Elmo"
             ]
@@ -920,9 +920,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1919",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo in the Sky",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3,4],
             "characters": [
                 "Elmo"
             ]
@@ -932,9 +932,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=25539",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Let's Get Together and Play with Little Big Town",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4],
             "characters": [
                 "Elmo"
             ]
@@ -1016,9 +1016,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26099",
             "image": "https://cdn.jwplayer.com/v2/media/pUwj90iU/poster.jpg?width=720",
             "description": "Sesame Street video: C is for Cookie Lyric Video",
-            "category_id": [1],
+            "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
             "characters": [
                 "Cookie Monster"
             ],
@@ -1043,9 +1043,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27824",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: 5 Little Monkeys with Cookie Monster",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1055,9 +1055,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26293",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Monster Foodie Truck: Fruit Salad",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1091,9 +1091,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1684",
             "image": "https://cdn.jwplayer.com/v2/media/2ouZfs6I/poster.jpg?width=720",
             "description": "Sesame Street video: Power of Yet",
-            "category_id": [1],
+            "category_id": [1, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 12, 13],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1103,9 +1103,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1927",
             "image": "https://cdn.jwplayer.com/v2/media/ZBscXJ2i/poster.jpg?width=720",
             "description": "Sesame Street video: First Time Me Eat Cookie",
-            "category_id": [1],
+            "category_id": [1, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 12, 13],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1139,9 +1139,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2131",
             "image": "https://cdn.jwplayer.com/v2/media/NraZkcf4/poster.jpg?width=720",
             "description": "Sesame Street video: Red Riding Cookie",
-            "category_id": [1],
+            "category_id": [1, 6],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1151,9 +1151,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2022",
             "image": "https://cdn.jwplayer.com/v2/media/4N5WAxrs/poster.jpg?width=720",
             "description": "Sesame Street video: Sorting with Cookie Monster",
-            "category_id": [1],
+            "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1187,9 +1187,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2073",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Pigeons and Cookies and Trash",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 10, 11],
+            "educational_value_id": [2, 3, 4, 1],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1199,9 +1199,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=3157",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: The Biscotti Kid",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 10, 11],
+            "educational_value_id": [2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1211,9 +1211,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1724",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Abby and Cookie Monster Subtract Cookies",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 10, 11],
+            "educational_value_id": [2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1223,9 +1223,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2025",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Zero Is Delicious",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 12, 13],
+            "educational_value_id": [2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1235,9 +1235,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2076",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Up and Down 2",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 12, 13],
+            "educational_value_id": [2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1247,9 +1247,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2113",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: C Is for Cookie",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 12, 13],
+            "educational_value_id": [2, 3, 4, 1],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1283,9 +1283,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2167",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Mystery Box",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1293,7 +1293,7 @@
         {
             "title": "Sesame Street Alphabet",
             "url": "https://www.sesamestreet.org/videos?vid=1690",
-            "image": "https://via.placeholder.com/300x180?text=Sesame+Street+Video",
+            "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Sesame Street Alphabet",
             "category_id": [1, 6, 7],
             "age_range": "3-8",
@@ -1307,9 +1307,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=2019",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Drawing Things Me Love",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1343,9 +1343,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1804",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: The Letter G Song",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 5, 10, 11],
+            "educational_value_id": [2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ],
@@ -1358,9 +1358,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26475",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Cookie Monster Snack Chat: Cookie",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 5, 10, 11],
+            "educational_value_id": [2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1370,9 +1370,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26541",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Cookie Monster Snack Chat: Carrots and Hummus",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 10, 11],
+            "educational_value_id": [1, 2, 3, 4],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1382,9 +1382,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26493",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Cookie Monster Snack Chat: Smoothie",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Cookie Monster"
             ]
@@ -1406,9 +1406,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27942",
             "image": "https://cdn.jwplayer.com/v2/media/EynRDtCr/poster.jpg?width=720",
             "description": "Sesame Street video: Abby, Charlie, and Gabrielle's Bedtime Routines",
-            "category_id": [1],
+            "category_id": [1, 6],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
             "characters": [
                 "Abby Cadabby"
             ]
@@ -1448,7 +1448,7 @@
             "url": "https://www.sesamestreet.org/videos?vid=27782",
             "image": "https://cdn.jwplayer.com/v2/media/jWFWtGIS/poster.jpg?width=720",
             "description": "Sesame Street video: Five Little Fairy Ducks with Elmo, Abby & Rosita",
-            "category_id": [1],
+            "category_id": [1, 6, 7],
             "age_range": "3-8",
             "educational_value_id": [3, 4, 5, 10, 11, 12],
             "characters": [
@@ -1462,7 +1462,7 @@
             "description": "Sesame Street video: Old MacDonald/Best Friends Song",
             "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [3, 4, 5, 10, 11, 12],
+            "educational_value_id": [3, 4, 5, 1],
             "characters": [
                 "Abby Cadabby"
             ],
@@ -1475,9 +1475,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27640",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Find a Habitat for You",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [2, 3, 4, 5, 1],
             "characters": [
                 "Abby Cadabby"
             ]
@@ -1487,9 +1487,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27772",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Elmo and Tango's Mysterious Mysteries: Missing Cricket",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [2, 3, 4, 5, 1],
             "characters": [
                 "Abby Cadabby"
             ],
@@ -1526,9 +1526,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27635",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Make an Instrument, Join the Band Song",
-            "category_id": [1, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [3, 4, 5, 12, 13],
+            "educational_value_id": [3, 4, 5],
             "characters": [
                 "Abby Cadabby"
             ],
@@ -1619,9 +1619,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27497",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Making Bubbles!",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Abby Cadabby"
             ]
@@ -1655,9 +1655,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1752",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Snazzy Shuffle",
-            "category_id": [1, 6, 7],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Abby Cadabby"
             ]
@@ -1669,7 +1669,7 @@
             "description": "Sesame Street video: Drumming for Exercise",
             "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11, 12, 13],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Abby Cadabby"
             ]
@@ -1679,9 +1679,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=25689",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: So Much Alike with Alessia Cara",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Abby Cadabby"
             ]
@@ -1691,9 +1691,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=1899",
             "image": "https://cdn.jwplayer.com/v2/media/sQEb2Okv/poster.jpg?width=720",
             "description": "Sesame Street video: Abby Rescues an Elephant",
-            "category_id": [1, 6],
+            "category_id": [1],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 5],
             "characters": [
                 "Abby Cadabby"
             ]
@@ -1775,9 +1775,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27947",
             "image": "https://cdn.jwplayer.com/v2/media/kS6YaddE/poster.jpg?width=720",
             "description": "Sesame Street video: Reporter Grover: Bedtime Routines with the Count",
-            "category_id": [1],
+            "category_id": [1, 6],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 10, 11],
             "characters": [
                 "Grover"
             ]
@@ -1787,9 +1787,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=27758",
             "image": "https://cdn.jwplayer.com/v2/media/7qBXypGR/poster.jpg?width=720",
             "description": "Sesame Street video: Wheels On Grover's Bus",
-            "category_id": [1],
+            "category_id": [1, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 5],
+            "educational_value_id": [1, 2, 3, 4, 5, 12, 13],
             "characters": [
                 "Grover"
             ]
@@ -1829,9 +1829,9 @@
             "url": "https://www.sesamestreet.org/videos?vid=26506",
             "image": "https://cdn.jwplayer.com/v2/media/MEL30qrh/poster.jpg?width=720",
             "description": "Sesame Street video: Grover Shows Near and Far",
-            "category_id": [1],
+            "category_id": [1, 6, 7],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4],
+            "educational_value_id": [1, 2, 3, 4, 10, 13],
             "characters": [
                 "Grover"
             ]
@@ -1843,7 +1843,7 @@
             "description": "Sesame Street video: Sing With Charlie Puth",
             "category_id": [1, 6],
             "age_range": "3-8",
-            "educational_value_id": [1, 2, 3, 4, 10, 11],
+            "educational_value_id": [1, 2, 3, 4, 10, 11, 12],
             "characters": [
                 "Grover"
             ],
