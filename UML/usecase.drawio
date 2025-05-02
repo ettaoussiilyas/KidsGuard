@@ -1,6 +1,6 @@
-<mxfile host="drawio-plugin" modified="2025-04-30T15:00:17.175Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Eia4XUixbKTG1hCZi1O1" version="22.1.22" type="embed">
+<mxfile host="drawio-plugin" modified="2025-05-02T01:23:56.622Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="gtBlV0cvYHic9lNHyNv5" version="22.1.22" type="embed">
   <diagram id="usecase-diagram" name="Use Case Diagram">
-    <mxGraphModel dx="1210" dy="1770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1383" dy="1866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -20,7 +20,7 @@
           <mxGeometry x="400" y="420" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="8" value="Manage Childs Profiles" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="110" width="140" height="70" as="geometry" />
+          <mxGeometry x="240" y="60" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="9" value="Configure Content Preferences" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="274" y="190" width="140" height="70" as="geometry" />
@@ -53,13 +53,13 @@
           <mxGeometry x="390" y="650" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="20" value="Create Profile" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="612.5" y="130" width="120" height="60" as="geometry" />
+          <mxGeometry x="645" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="21" value="Edit Profile" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="612.5" y="220" width="120" height="60" as="geometry" />
+          <mxGeometry x="650" y="210" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="22" value="Delete Profile" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="610" y="50" width="120" height="60" as="geometry" />
+          <mxGeometry x="645" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="28" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -222,15 +222,6 @@
             <Array as="points">
               <mxPoint x="390" y="778" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="80" value="Manage NewsLetter" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="20" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="81" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="80" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="60" y="340" as="sourcePoint" />
-            <mxPoint x="350" y="475" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="89" value="Create and Sending NewsLetter" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
