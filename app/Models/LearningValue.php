@@ -28,10 +28,10 @@ class LearningValue extends Model
         'age_max' => 'integer',
     ];
 
-    public function category()
-    {
-        return $this->belongsTo(ContentCategory::class, 'category_id');
-    }
+    // public function category()
+    // {
+    //     return $this->belongsTo(ContentCategory::class, 'category_id');
+    // }
 
     public function categories()
     {
