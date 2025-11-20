@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamps();
             
             // Prevent duplicate preferences
-            $table->unique(['child_profile_id', 'learning_value_id']);
+            $table->unique(['child_profile_id', 'learning_value_id'], 'cpp_child_learning_unique');
         });
     }
 

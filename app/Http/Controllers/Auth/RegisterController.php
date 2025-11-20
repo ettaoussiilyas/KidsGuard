@@ -35,9 +35,16 @@ class RegisterController extends Controller
         $parentRole = Role::where('slug', 'parent')->first();
         if ($parentRole) {
             $user->roles()->attach($parentRole->id);
+            // Refresh the user to reload relationships
+            $user->refresh();
+        } else {
+            // If parent role doesn't exist, create it
+            $parentRole = Role::create(['name' => 'Parent', 'slug' => 'parent']);
+            $user->roles()->attach($parentRole->id);
+            $user->refresh();
         }
 
-        Auth::attempt($request->only('email', 'password'));
+        Auth::login($user);
         
         return redirect()->route('parent.space');
     }
