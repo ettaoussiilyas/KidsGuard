@@ -22,9 +22,16 @@ class KidController extends Controller
     public function index(Request $request)
     {
         $user = Auth::user();
-        
+        if (! $user) {
+            return redirect()->route('login');
+        }
+
         $childRole = Role::where('slug', 'child')->first();
-        
+        if (! $childRole) {
+            // Create the child role if it doesn't exist to avoid null property access
+            $childRole = Role::create(['name' => 'Child', 'slug' => 'child']);
+        }
+
         DB::table('role_user')->updateOrInsert(
             ['user_id' => $user->id],
             [
@@ -66,13 +73,17 @@ class KidController extends Controller
     public function switchProfile($id)
     {
         $user = Auth::user();
-        $childProfile = $user->childProfiles()->findOrFail($id);
-        // $childProfile = $user->kidProfiles()->findOrFail($id);
-        
+        if (! $user) {
+            return redirect()->route('login');
+        }
+
+        // Query ChildProfile directly to avoid relation-resolution issues
+        $childProfile = \App\Models\ChildProfile::where('parent_id', $user->id)->findOrFail($id);
+
         // Store the selected profile in session
         session(['current_kid_id' => $childProfile->id]);
         session(['current_kid_name' => $childProfile->name]);
-        
+
         return redirect()->back();
     }
 
